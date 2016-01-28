@@ -1,0 +1,99 @@
+@import url("reset.css");
+
+::-webkit-scrollbar-track-piece{background-color:#012d00;}
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-thumb{background:#186717;}
+
+
+html,body{
+	font-family:Arial, Helvetica, sans-serif;
+	background-color: #000;
+	font-size: 13px;
+	SCROLLBAR-TRACK-COLOR: #012d00;
+	SCROLLBAR-FACE-COLOR: #186717;
+	SCROLLBAR-HIGHLIGHT-COLOR: #012d00;
+	SCROLLBAR-SHADOW-COLOR: #012d00;
+	SCROLLBAR-3DLIGHT-COLOR: #012d00;
+	SCROLLBAR-DARKSHADOW-COLOR: #012d00;
+	SCROLLBAR-ARROW-COLOR: #186717;
+}
+
+
+.abgne_tab1 {width: 1167px;height: 582px;background-image: url(../images/vipclub/vipclub_bg1.png);position: absolute;	top: 75px;	left: 20px;}
+.abgne_tab {width: 1167px;height: 582px;background-image: url(../images/vipclub/vipclub_bg2.png);position: absolute;	top: 75px;	left: 20px;	}
+.abgne_tab3 {width: 1167px;height: 582px;background-image: url(../images/vipclub/vipclub_bg3.png);position: absolute;	top: 75px;	left: 20px;	}
+
+
+.vipclubtab1,.vipclubtab2,.vipclubtab3{width: 163px;height: 40px;color: #fff;font-size: 16px;font-weight: 600;text-align: center;line-height:40px;float: left;margin-right: 16px;}
+.vipclubtab1 a,.vipclubtab2 a,.vipclubtab3 a{color: #af9f9a!important;}
+.vipclubtab1 a:hover,.vipclubtab2 a:hover,.vipclubtab3 a:hover{color: #fff!important;}
+.vipclubmenu{width: 1147px;height: 45px;float: left;}
+
+.viprightbtnlist{  width: 430px;  height: 39px;  float: right;  margin: 0 80px 0 0;}
+.viprightbtnlist3{float: right; }
+
+.btncheckbox{  bottom: 8px;width: 211px;background-image: url(../images/vipclub/vipclub_bt11.png);height: 48px;float: left;position: relative;}
+.btncheckbox1 a{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -322px -31px;width: 17px;height: 17px;position: absolute;  top: 14px;  left: 15px;}
+.btncheckbox1 a:hover{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -322px -11px;}
+.btncheckbox2 a{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -322px -31px;width: 17px;height: 17px;position: absolute;  top: 14px;  left: 117px;}
+.btncheckbox2 a:hover{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -322px -11px;}
+.vipclubslect select{background: #7e756e;  color: #FFF;  border: solid 1px #37312d;  border-radius: 5px;  height: 30px;  line-height: 30px;  padding: 0 3px; }
+.vipclubslect {  float:left;  margin-right: 10px;}
+.gamefatebtn a{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -355px -6px;width: 79px;height: 31px;float: left;}
+.gamefatebtn a:hover{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -354px -5px;}
+
+
+
+
+/*選單尺寸*/
+.vipclubsize-M{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -445px -10px;width: 89px;height: 23px;float: left;  position: absolute;  top: 3px;  right: 10px;}
+.vipclubsize-L{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -445px -41px;width: 89px;height: 23px;float: left;  position: absolute;  top: 3px;  right: 10px;}
+.vipclubsize-XL{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -445px -72px;width: 89px;height: 23px;float: left;  position: absolute;  top: 3px;  right: 10px;}
+.tablesize-M a{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -445px -140px;width: 24px;height: 23px;position: absolute;left: 0;}
+.tablesize-M a:hover{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -445px -104px;width: 24px;height: 23px;}
+.tablesize-L a{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -445px -140px;width: 24px;height: 23px;  position: absolute; right: 33px;}
+.tablesize-L a:hover{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -477px -104px;width: 24px;height: 23px;}
+.tablesize-XL a{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -445px -140px;width: 24px;height: 23px;position: absolute;right: 0;}
+.tablesize-XL a:hover{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -509px -104px;width: 24px;height: 23px; margin-right: 1px;}
+
+
+/*遊戲桌總覽*/
+.gametable-XLcon{padding: 20px 6px;		width: 1167px;  		height: 542px;float: left;}
+.gametable-1XL,.gametable-2XL{width: 231px;height: 231px;float: left;  margin-top: 10px;}
+.gametable-1XL a{background-image: url(../images/vipclub/vipclub_1XLbox.png);width: 231px;height: 231px;float: left;}
+.gametable-1XL a:hover{background-image: url(../images/vipclub/vipclub_1XLbox-2.png);}
+.gametable-2XL a{background-image: url(../images/vipclub/vipclub_2XLbox.png);width: 231px;height: 231px;float: left;}
+.gametable-2XL a:hover{background-image: url(../images/vipclub/vipclub_2XLbox-2.png);}
+
+
+.gametable-1L a{background-image: url(../images/vipclub/vipclub_1Lbox.png);width: 291px;height: 129px;float: left;}
+.gametable-1L a:hover{background-image: url(../images/vipclub/vipclub_1Lbox-2.png);}
+.gametable-2L a{background-image: url(../images/vipclub/vipclub_2Lbox.png);width: 291px;height: 129px;float: left;}
+.gametable-2L a:hover{background-image: url(../images/vipclub/vipclub_2Lbox-2.png);}
+.gametable-Lcon{width: 1167px;height: 520px;float: left;margin: 0 6px;}
+.gametable-2Lcon{padding: 15px 15px;		width: 1167px;  		height: 502px;float: left;}
+
+
+.gametable-1Mcon{background-image: url(../images/vipclub/vipclub_1Mbox.png);width: 1114px;height:  507px;float: left;margin: 20px 28px;}
+.gametable-2Mcon{background-image: url(../images/vipclub/vipclub_2Mbox.png);width: 1114px;height: 507px;float: left;margin: 20px 28px;}
+.gametable-Mmenu{width: 1114px;height: 54px;float: left;  position: relative;}
+.gametable-Mlist{width: 538px;height: 892px;float: left;}
+.Mcheckbox a{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -322px -31px;width: 17px;height: 17px;position: absolute;right: 345px;  top: 21px;}
+.Mcheckbox a:hover{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -322px -11px;}
+.Mcheckbox2 a{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -322px -31px;width: 17px;height: 17px;position: absolute;right: 270px;  top: 21px;}
+.Mcheckbox2 a:hover{background-image: url(../images/vipclub/vipclub_imgskin.png);background-position: -322px -11px;}
+
+/*我的俱樂部*/
+.abgne_tab3 img{margin: 10px 10px;}
+.vipclub_3btngo{width: 60px;height: 29px;  position: absolute;  top: 112px;  left: 715px;}
+.vipclub_3btngo a{background-image: url(../images/vipclub/vipclub_3btngo.png);width: 60px;height: 29px;display: block;}
+.vipclub_3btngo a:hover{margin: 1px 0 0 1px;}
+.vipclub_3btnbut{width: 60px;height: 30px;  position: absolute;    bottom: 50px;  right: 150px;}
+.vipclub_3btnbut a{background-image: url(../images/vipclub/vipclub_3btnbut.png);width: 60px;height: 30px;display: block;}
+.vipclub_3btnbut a:hover{margin: 1px 0 0 1px;}
+.vipclub_3btnok{width: 60px;height: 30px;  position: absolute;    bottom: 120px;  right: 150px;}
+.vipclub_3btnok a{background-image: url(../images/vipclub/vipclub_3btnok.png);width: 60px;height: 30px;display: block;}
+.vipclub_3btnok a:hover{margin: 1px 0 0 1px;}
+.vipclub_3btnfb{width: 247px;height: 67px;  position: absolute;      top: 150px;  right: 55px;}
+.vipclub_3btnfb a{background-image: url(../images/vipclub/vipclub_3btnfb.png);width: 247px;height: 67px;display: block;}
+.vipclub_3btnfb a:hover{margin: 1px 0 0 1px;}

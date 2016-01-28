@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html{ margin: 0; padding:0; height: 100%; background: #000; font-family: Arial, 微軟正黑體, Helvetica, sans-serif; font-size: 12px; line-height: 20px;}
+a, a:link, a:visited{ color: #ffa100; text-decoration: none;}
+a:hover{ color: #a5c700;}
+ul,li{ list-style:none; padding:0; margin:0;}
+img{border-style:none;border-width: 0px;}
+
+@media only screen and (max-width : 1119px) {
+	.othergames_boxbg{ width:1024px!important; height:565px!important; background:url(../images/othergame_bg_s.png) no-repeat!important;}
+	.yahoo_ccbg{ width:760px; height:390px !important;}
+	.win_box { left:770px!important;}
+	.right_02{ height:290px!important;}
+	.right_02 .win_04{ height:270px!important;}
+	.pic_box { margin:5px 0 0 15px !important;width: 120px!important;height: 150px!important;}
+	.Flashbox{width: 450px !important;height:450px !important;margin: 8px 210px !important;}
+	.pic_boxbg,.gameblockbg{width:125px!important;}
+	.pic_box .pic{width: 120px!important;}
+	.pic_box .icon_hot,.pic_box .icon_new{ left:80px!important;}
+	.pic_box .g_name{ width:120px!important;line-height:33px!important; font-size:13px!important;top:110px!important;}
+	.gameblock{width: 120px!important;padding: 5px 10px 0 5px!important;}
+	.gameblock .gametxts {font-size:13px!important; width:110px!important; height:100px!important; padding-top: 3px!important;  padding-left: 2px!important;}
+	.gameblock .goplay img{width:60px!important;}
+	.btnbox{  margin: 5px 0 0 3px!important;width: 118px!important;}
+	.btnbox img{width:45%!important;}
+	.pager{ padding:15px 0 !important;margin-left: 35%!important;}
+}
+
+@media only screen and (min-width : 1120px) and (max-width : 1199px) {
+	.othergames_boxbg{ width:1120px!important; height:620px!important; background:url(../images/othergame_bg_m.png) no-repeat!important;}
+	.yahoo_ccbg{ width:920px!important;}
+	.win_box { left:865px!important;}
+	.right_02{ height:343px!important;}
+	.right_02 .win_04{ height:320px!important;}
+	.pager{ padding:15px 0 !important;}
+	.pic_box {margin:15px 10px!important;width: 140px!important;height: 150px!important;}
+	.Flashbox{width: 500px !important;height:500px !important;margin: 10px 230px !important;}
+	.ccpages{margin-top: 20px!important;}
+	.pic_boxbg,.gameblockbg{width:145px!important;}
+	.pic_box .pic{width: 140px!important;}
+	.pic_box .icon_hot,.pic_box .icon_new{ left:100px!important;}
+	.pic_box .g_name{ width:140px!important;line-height:33px!important; font-size:16px!important;top:130px!important;}
+	.gameblock{width: 140px!important;padding: 5px 10px 0 5px!important;}
+	.gameblock .gametxts {font-size:15px!important; width:130px!important; height:100px!important; padding-top: 10px!important;  padding-left: 5px!important;}
+	.gameblock .goplay img{width:60px!important;}
+	.btnbox{  margin: 15px 0 0 5px!important;width: 135px!important;}
+	.btnbox img{width:45%!important;}
+}
+
+
+
+/* Arsto遊戲 */
+.othergames_boxbg{ padding-top:10px; overflow:hidden; position:relative;width:1200px; height:665px; background:url(../images/othergame_bg.png) no-repeat;}
+#cloes_img{ position:absolute; right:15px; top:13px;}
+.othergames_top{ width:270px; height:40px; color:#fff9e9; font-weight:bold; line-height:40px; font-size:21px; margin:0 0 3px 45px; text-shadow: 1px 1px 3px #000;}
+.othergames_topbar{ height:50px; background:rgba(0,0,0,0.5); font-size:13px; color:#ffd60a; font-weight:bold; line-height:50px; margin:0 10px; padding-left:30px;}
+.othergames_topbar_no{ height:50px; font-size:13px; color:#ffd60a; line-height:50px; margin-left:10px; padding-left:30px; position:relative;}
+.othergames_topbar img,.othergames_topbar_no img{ vertical-align:middle;}
+.othergames_topbar select,.cgcoco_box select,.othergames_topbar_no select{ background:#7e756e; color:#FFF; border:solid 1px #37312d; border-radius:5px; height:30px; line-height:30px; padding:0 3px;}
+.cgcoco_box{ width:261px; height:234px; padding-top:65px; font-size:13px; color:#ffd60a; font-weight:bold; line-height:35px; background:url(../images/othergame_imgbtn07.png) no-repeat;}.cgcoco_box span{ line-height:10px !important;}
+.cgcoco_box img{ margin:13px 0 5px 0;}
+.cocohave{ width:271px; height:37px; color:#FFF; font-size:15px; text-align:center; line-height:36px; font-weight:bold; text-shadow:1px 1px 2px #000; background:url(../images/othergame_img08.png) no-repeat; margin-top:5px; float:left;}
+.cocohave p{margin: 0;padding-left: 10px;text-align: left;float: left;}
+.cchang_btn{ width:95px; height:30px; margin:9px 0 0 10px; float:left; }
+.cchang_btn a{ background:url(../images/othergame_imgbtn11-1.png);width:95px; height:30px;display: block;}
+.cchang_btn a:hover{margin: 1px 0 0 1px;}
+.cchang_right{ top:100px; position:absolute; z-index:9999;}
+.yahoo_ccbg{ height:395px; margin:35px 0 0 10px; width:970px;}
+.ccpages{ width:100%;}
+.turnout_btn{ width:95px; height:30px; margin:9px 0 0 10px; float:left; cursor:default; position:relative; background:url(../images/turnout_imgbtn12-3.png);display:block;}
+.turnout_btn:hover .turnout_Tis{display:block;}
+.turnout_btn .turnout_Tis{ display:none; position:absolute;top:35px;left:60%;margin-left:-56px;width:117px;height:38px;background:url(../images/tis.png) no-repeat; z-index:999;}
+.turnout_btn a{ background:url(../images/turnout_imgbtn12-1.png);width:111px; height:37px;display: block;}
+.turnout_btn a:hover{margin: 1px 0 0 1px;}
+
+
+/* 遊戲介紹 */
+.pic_box { width:164px; height:190px; float:left;display:block; position: relative; margin:10px 5px ;}
+.pic_boxbg{width:164px; height:190px;}
+.pic_boxbg img{width: 100%;}
+.pic_box .pic{width: 158px;height: 135px;top: 8px;left: 2px;z-index: 1;display: block;position: absolute;}
+.pic_box .pic img{ width:100%; border-radius:5px;}
+.pic_box .icon_hot,.pic_box .icon_new{ width:32px; height:38px; top:1px; right:14px; z-index:99; display:block; position:absolute;}
+.icon_hot img{width: 100%;}
+.pic_box .g_name{ width:150px; height:30x; line-height:30px; font-size:16px; font-weight:bold; text-align:center; color:#FFF; top:150px; left:5px; display:block; position:absolute; overflow:hidden;}
+.pic_box:hover .gameblock{ display:block;}
+.pic_box .gameblock { width:142px; height:180px;   padding: 15px 10px 0 15px;  font-size: 12px; z-index:9999; color:#FFF; overflow:hidden; position:absolute; display:none;}
+.gameblockbg{width:164px; height:190px;position: absolute;z-index:-1;top:0px;left: 0px;}
+.gameblockbg img{width: 100%;}
+.gameblock .gametxts { width:142px; height:120px; overflow:hidden; display:block; margin:0 auto;}
+.gameblock .goplay { width:70px; height:38px; margin:18px auto 0 auto; display:block;float: left;}
+.gameblock .goplay img{width: 100%;}
+.gameblock .gainfo { width:70px; height:38px; margin:18px auto 0 auto; display:block;float: left;}
+.gameblock .gainfo img{width: 100%;}
+.ci{ text-align:center; margin:0 auto;}
+.hi_top5{ margin-top:5px;}.hi_top10{ margin-top:10px;}.hi_top15{ margin-top:15px;}
+.btnbox{  margin-top: 10px;width: 164px;}
+.btnbox img{width:42%;height: auto;}
+
+
+/* pager  */
+.page_box{ width:100%; display:inline-block;}
+.pager{ text-align:center;padding:70px 0;margin-left: 40%;}
+.pager > div{ display:inline-block;float: left;}
+.pager > div a{ color:#ded1c8; font-size: 14px; width:25px; height:25px; line-height:25px; background:#221f1d; border:solid 1px #121212; margin-left:-5px; display:block; text-decoration:none;}
+.pager > div a:hover{ background:#443b35;}
+.pager > div a.selected{ background:#443b35;}
+.pager > div a.first{ border-radius:3px 0 0 3px;}
+.pager > div a.last{ border-radius:0 3px 3px 0;}
+
+/* win box */
+.win_box { width:240px; height:570px; top:70px; z-index:999; position:absolute; display:block;left:945px;}
+.right_01{ width:230px; height:130px; padding-top:65px; padding-right:8px; background:url(../images/images_02.png) no-repeat 0 -5px;}
+.right_02{ width:230px; padding-right:8px; background:url(../images/images_02.png) no-repeat bottom; overflow:hidden; height:390px;}
+.win_02,.win_03{ height:30px; line-height:28px; font-weight:bold; margin:0 auto; text-align:center;}
+.right_01 .win_01 img{ margin-right:2px;}
+.right_01 .win_01{ width:146px; height:28px; line-height:28px; margin-top:5px; font-weight:bold; margin:0 auto; text-align:center; overflow:hidden; text-shadow:0px 0px 5px #000;}
+.right_01 .win_02{ width:146px; color:#FF0; font-size:15px; line-height:34px;}
+.right_01 .win_03{ width:146px; color:#999; font-size:11px; font-weight:normal; letter-spacing:-0.5px; line-height:22px;}
+.right_02 .win_04{ width:196px; margin:0 0 0 22px; overflow:hidden; height:390px;}
+.right_02 .win_04 .ww_list{ width:188px; height:42px; border:solid 1px #333; display:block; padding:3px; margin-bottom:4px; background:rgba(0,0,0,0.6)}
+.ww_list .ww01{ width:99px; height:20px; line-height:20px; color:#FFF; font-size:15px; overflow:hidden; display:block; float:left; overflow:hidden;}
+.ww_list .ww02{ width:89px; height:20px; line-height:20px; color:#F00; text-align:right; display:block; font-weight:bold; float:left;}	
+.ww_list .ww03{ width:99px; height:20px; line-height:20px; color:#b3a005; text-decoration:underline; font-weight:bold; display:block; float:left; overflow:hidden;}
+.ww_list .ww04{ width:89px; height:20px; line-height:20px; color:#b3a005;font-size:11px; text-align:right; display:block; float:left;}
+.text01{ color:#FFF;}
+
+
+
+.reflash{width: 18px;height: 18px;float: right;margin: 9px 15px 0 0;}
+.reflash a{background:url(../images/reflash.png);display: block;  width: 18px;  height: 18px;}
+.reflash a:hover{margin: 1px 0 0 1px;} 
+
+#FlashID{width: 100%; height: auto ;}
+.Flashbox{width: 550px;height: 550px;margin: 10px 250px;  float: left;}
+.back_img{width: 88px;height: 30px;position:absolute; right:50px; top:15px;}
+.back_img a{background:url(../images/back.png); display:block; width:88px; height:30px; line-height:30px; font-size:16px; text-align:center; color:#e6ba78;}
+.back_img a:hover{margin: 1px 0 0 1px; color:#e6ba78;}

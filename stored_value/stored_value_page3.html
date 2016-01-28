@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Club One</title>
+<link href="css/stva_layout.css" rel="stylesheet" type="text/css">
+<!-- abgne-yahoo-carousell  -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="Script/tabjs.js"></script>
+<script type="text/javascript" src="Script/JScript.js"></script>
+<!-- tab  -->
+<link href="css/tabcss_stva.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+<!-- event txt  -->
+<script>
+$(function(){
+	$(".menu li a").click(function(){
+		var _this=$(this);
+		if(_this.next("ul").length>0){
+			if(_this.next().is(":visible")){
+				//隱藏子選單並替換符號
+				_this.html(_this.html().replace("▲","▼")).next().hide();
+			}else{
+				//開啟子選單並替換符號
+				_this.html(_this.html().replace("▼","▲")).next().show();
+			}
+			//關閉連結
+			return false;
+		}
+	});
+
+	$("a").focus( function(){
+		$(this).blur();
+	});
+});
+</script>
+<!--[if lt IE 10]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<!-- [endif]  -->
+</head>
+</head>
+<body>
+<div class="all">
+<div class="stored_value_warpper">
+<div class="stva_header">
+ <div class="stva_header_left">儲值中心</div>
+ <div class="stva_header_right"><a href="../play.html"></a></div>
+ <div class="stva_header_btn"><a href="stored_value_page.html" class="colorYellow">返回儲值中心</a></div>
+</div>
+<div class="stva_content">
+ <div class="stva_page_tab">
+ <div class="stored_contbox4">
+  <div class="stva_headguide"><span>1.選擇幣別及金幣</span><img src="images/stored_v_img_icon.png">2.購買確認</div>
+ </div>
+ <div class="stored_contbox5">
+  
+  <div class="stva_news panelPattern">
+    <div class="marg5 Gold_txt">
+    <div class="news_f1">活動快訊：</div>
+    <div class="news_f2"><a href="">《黃金週》購買金幣銀幣贈送50%</a></div>
+    <div class="news_f3">2014/00/00~2014/00/00</div>
+    </div>
+  </div>
+ </div>
+ <div class="stored_contbox6">
+  <div class="stva_contleft">
+   <div class="stva_coin">
+   <div class="ci">請選擇幣別：</div>
+   <div class="f_left_coin">
+        <!-- datetime-carousel  -->
+        <div class="stvacoin-carousel">
+        <div class="btnt_stva">
+            <a href="" class="prev">Prev</a>
+            <a href="" class="next">Next</a>
+        </div>
+        <div class="frame_rank">
+          <ul>
+             <li><img src="images/cion_g.png">金幣</li>
+             <li><a href="stored_value_page3_2.html"><img src="images/cion_f.png">銀幣</a></li>
+          </ul>
+        </div><!-- frame end  -->
+        </div><!-- abgne-yahoo-carousel end -->
+   </div>
+  </div>
+   <div class="stcoin_img"><img src="images/stored_v_img2.png"></div>
+   <div class="stcoin_txt_top">儲值說明</div>
+   <div class="stcoin_txt">台幣100 = 金幣100<br>
+   台幣100 = 銀幣10,000.00</div>
+  </div>
+  <div class="stva_contright">
+  <!-- 頁面切換  -->
+  <div class="abgne_tab">
+     <ul class="tabs">
+       <li><a href="#tab1">購買金額</a></li>
+       <li><a href="#tab2">活動說明</a></li>
+     </ul>
+     <div class="tab_container">
+       <div id="tab1" class="tab_content">
+       <div class="pd2">
+         <div class="buycoin_list">
+           <ul>
+           <li>
+            <div class="buycoin_box1"><img src="images/bo_005_s.png"></div>
+            <div class="buycoin_box2"><span class="cotxt01">$10,000,000</span><span class="cotxt02"></span><span class="cotxt03">加碼活動</span></div>
+            <div class="buycoin_box3"><div class="buycoin_btt"><a href="stored_value_page4.html"><span class="cotxt04">限VIP等級會員</span><span class="cotxt05">$10,000,000</span></a></div>
+            <div class="cotxt06"></div>
+            </div>
+           </li>
+           <li>
+            <div class="buycoin_box1"><img src="images/bo_005_s.png"></div>
+            <div class="buycoin_box2"><span class="cotxt01 us">$20,000,000</span><span class="cotxt02">$10,000,000</span><span class="cotxt03">VIP專屬限額活動-儲值點數再加碼</span></div>
+            <div class="buycoin_box3"><div class="buycoin_btt"><a href="stored_value_page4.html"><span class="cotxt05">BUY</span><span class="cotxt05">$10,000,000</span></a></div>
+            <div class="cotxt06">限額活動剩餘數量：1000</div>
+            </div>
+           </li>
+           <li>
+            <div class="buycoin_box1"><img src="images/bo_005_s.png"></div>
+            <div class="buycoin_box2"><span class="cotxt01">$10,000,000</span><span class="cotxt02"></span><span class="cotxt03">買金幣送銀幣</span></div>
+            <div class="buycoin_box3"><div class="buycoin_btt"><a href="stored_value_page4.html"><span class="cotxt05">BUY</span><span class="cotxt05">$10,000,000</span></a></div>
+            <div class="cotxt06">限額活動剩餘數量：1000</div>
+            </div>
+           </li>
+           <li>
+            <div class="buycoin_box1"><img src="images/bo_005_s.png"></div>
+            <div class="buycoin_box2"><span class="cotxt01">$10,000,000</span><span class="cotxt02"></span><span class="cotxt03"></span></div>
+            <div class="buycoin_box3"><div class="buycoin_btt"><a href="stored_value_page4.html"><span class="cotxt05">BUY</span><span class="cotxt05">$10,000,000</span></a></div>
+            <div class="cotxt06"></div>
+            </div>
+           </li>
+           <li>
+            <div class="buycoin_box1"><img src="images/bo_005_s.png"></div>
+            <div class="buycoin_box2"><span class="cotxt01 us">$10,000,000</span><span class="cotxt02">$20,000,000</span><span class="cotxt03">加碼活動</span></div>
+            <div class="buycoin_box3"><div class="buycoin_btt"><a href="stored_value_page4.html"><span class="cotxt05">BUY</span><span class="cotxt05">$10,000,000</span></a></div>
+            <div class="cotxt06">限額活動剩餘數量：1000</div>
+            </div>
+           </li>
+           </ul>
+         </div>
+       </div>
+       </div>
+       <div id="tab2" class="tab_content">
+       <div class="pd2">
+       <div class="pd3">
+        <ul class="menu">
+        <li><a href="">主要活動<span class="txt_open">▼</span></a>
+    	  <ul class="submenu">
+        	<li>活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文活動的內文</li>
+          </ul>
+        </li>
+        <li><a href="">活動1<span class="txt_open">▼</span></a>
+    	  <ul class="submenu">
+        	<li>活動1內文活動1內文活動1內文活動1內文活動1內文活動1內文活動1內文</li>
+          </ul>
+        </li>
+        <li><a href="">活動2<span class="txt_open">▼</span></a>
+    	  <ul class="submenu">
+        	<li>活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文活動2內文</li>
+          </ul>
+        </li>
+        </ul>
+       </div>
+       </div>
+       </div>
+     </div>
+  </div>
+  <!-- 頁面切換end -->
+  </div>
+ </div>
+ </div>
+</div>
+</div>
+</div>
+</body>
+</html>

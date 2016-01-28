@@ -1,0 +1,70 @@
+body{
+	margin: 0;
+	background-color: #000;
+	font-family:"微軟正黑體";
+}
+.outer {
+	width: 100%;
+	height: 100%;
+	background: url(../images/404-BG_big.jpg) no-repeat center top;
+}
+
+.wrapper {
+	height: 1060px;
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.txtblock1{
+	background:url(../images/404-block.png) no-repeat;
+	width: 668px;
+	height: 474px;
+	float: left;
+	display: block;
+	margin-top: 220px;
+	margin-left: 150px;
+}
+.txt {
+	font-family:"微軟正黑體",Verdana, Geneva, sans-serif;
+	font-size: 15px;
+	line-height: 25px;
+	color: #FFF;
+	float: left;
+	width: 500px;
+	text-decoration: none;
+	margin:130px 0 20px 70px;
+}
+.txt h3{ font-family:"微軟正黑體"; font-size:40px; color:#FFF; line-height:60px; margin:0;}
+.txt a{color: #FFF;text-decoration: none;}
+.txt a:hover{color:#F90;text-decoration: none;}
+
+.btn404 { background:url(../images/assets22.png) no-repeat 0px -308px; float:left; height:75px; width:325px; display:block; margin-top:30px; margin-left:125px;}
+.btn404 a,.btn404-libox a{ background-image:url(../images/assets22.png) no-repeat 0px -308px; float:left; height:75px; width:325px; display:block;}
+.btn404 a:hover,.btn404-libox a:hover{ background-position: -342px -308px;}
+
+.btn405 { background:url(../images/assets.png) no-repeat 0px -776px; float:left; height:75px; width:325px; display:block; margin-top:30px; margin-left:125px;}
+.btn405 a,.btn405-libox a{ background-image:url(../images/assets22.png) no-repeat 0px -776px; float:left; height:75px; width:325px; display:block;}
+.btn405 a:hover,.btn405-libox a:hover{ background-position: -342px -776px;}
+
+.btn406 { float:left; height:75px; width:325px; margin-top:30px; margin-left:125px; display:block;}
+.btn406 a{ background:url(../images/imgbackplay-3.png) no-repeat; float:left; height:75px; width:325px; display:block;}
+.btn406 a:hover{ background:url(../images/imgbackplay-33.png) no-repeat;}
+
+/* 404 light box */
+.box404{ width:335px; height:350px; padding:80px 30px 5px 35px; line-height:22px; background:url(../images/404-BG.png); font-family:"微軟正黑體"; color:#FFF; font-size:14px;}
+.box404 a{color:#FFF; text-decoration: none;}
+.box404 a:hover{color:#F90; text-decoration: none;}
+.hand404{ width:330px; height:60px; line-height:60px; font-size:30px; font-family:"微軟正黑體",Verdana, Geneva, sans-serif;}
+.btn404-libox { background: url(../images/assets.png) no-repeat 0px -308px; width: 325px; height: 75px; display: block; margin-top: 30px;}
+
+.txt span{font-size:18px;font-weight:bold;line-height:28px !important;color: #DCB36B;}
+.ci{ text-align:center;line-height:45px !important;}
+span.color_w{ color:#FFF; font-size:18px; line-height:45px;}
+
+.btnadd_1,.btnadd_2{ float:left; height:75px; width:255px; margin-top:5px; margin-left:60px; display:block;}.btnadd_2{ margin-left:20px !important;}
+.btnadd_1 a,.btnadd_2 a{ float:left; height:75px; width:255px; display:block;}
+.btnadd_1 a{ background:url(../images/addiction-icon.png) no-repeat;}
+.btnadd_2 a{ background:url(../images/addiction-icon.png) left -75px no-repeat;}
+.btnadd_1 a:hover{ background:url(../images/addiction-icon.png) -341px top no-repeat;}
+.btnadd_2 a:hover{ background:url(../images/addiction-icon.png) -341px -75px no-repeat;}
+

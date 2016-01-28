@@ -1,0 +1,109 @@
+
+ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+.abgne_tab {
+	clear: left;
+	width: 210px;
+	margin-top: 7px;
+	margin-right: auto;
+	margin-left: auto;	
+	}
+ul.tabs {
+		width: 100%;
+		height: 22px;
+		border-radius:3px 3px 0 0;
+		padding-left:1px;
+	}
+ul.tabs li {
+	font-size: 12px;
+	width: 100px;
+	color:#FFF;
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	overflow: hidden;
+	position: relative;
+	margin-left: 2px;
+	margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border: 1px solid #73655c;
+	border-right: none;
+	border-radius: 3px 3px 0 0;
+	background-color: #5d4f46;
+	}
+	ul.tabs li a {
+	display: block;
+	padding: 0 10px;
+	color: #a0938a;
+	text-decoration: none;
+	text-align: left;
+	padding: 0 20px;
+	}
+	ul.tabs li a:hover {
+		color: #FFF;
+		background: #a0938a;
+	}
+	ul.tabs li.active  {
+		color: #FFF;
+		font-weight:bold;
+		background: #83776f;
+		border-bottom: 1px solid #83776f;
+
+	}
+	ul.tabs li.active a { color:#FFF;}
+	ul.tabs li.active a:hover {
+		color: #FFF;
+		background: #83776f;
+
+	}
+	
+	div.tab_container {
+	clear: left;
+	width: 200px;
+	height:215px;
+	padding:5px;
+	border-top: solid 3px #83776f;
+	background: #1d1612;
+	}
+	div.tab_container .tab_content {
+		padding: 3px 0px;
+		font-size:12px;
+		color:#dcdcdc;
+	}
+	div.tab_container .tab_content h2 {
+		margin: 0 0 20px;
+	}
+	
+.Gold{
+	background-image: url(../images/cion_g.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 23px;
+	background-position: 5px 3px;
+	display: block;
+	float: left;
+	padding-left:3px;
+	}
+
+.Silver{
+	background-image: url(../images/cion_f.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 23px;
+	background-position: 5px 3px;
+	display: block;
+	float: left;
+	padding-left:3px;
+	}
+.txt_01{ width:50px; height:20px; line-height:20px; display:block; float:left; margin:0px 5px 5px 5px;}
+.txt_02{ width:128px; height:20px; line-height:20px; display:block; float:left; text-align:center; color:#FF0; margin:0px 0px 5px 0px;}
+.txt_03{ width: 200px; height: 27px; line-height: 13px; display: block; float: left; text-align: left; color:#999; margin:0px 0px 4px 0px; border-bottom: 1px solid #534640;}
+.txt_04{ width: 200px; line-height: 20px; display: block; float: left; margin-bottom:4px;}
+.box_01{ background: #2d2321; text-align:center; line-height:23px;}
+.box_02{ background: #3f3430; text-align:center; line-height:23px;}
+.txt_04 table.01 {border-collapse:separate; border-spacing:10px;}
+.txt_04 table tr td{ border-bottom:solid 1px #534640; text-align:center; line-height:23px; }
+
+

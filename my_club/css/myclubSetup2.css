@@ -1,0 +1,137 @@
+::-webkit-scrollbar-track-piece{background-color:#000;}
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-thumb{background:#312923;} 
+
+ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+.mesg_page_tab {
+	width: 900px;
+	margin:0 auto;
+	display: block;
+}
+.abgne_tab {
+	clear: left;
+	margin: 0 auto;
+}
+.abgne_tab ul.tabs {
+	width: 885px;
+	height: 30px;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+	text-align: center;
+	padding-left: 15px;
+}
+.abgne_tab ul.tabs li {
+	float: left;
+	height: 30px;
+	width: 120px;
+	line-height: 32px;
+	position: relative;
+	margin-right: 2px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border-left: none;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+	background-color: #2b221d;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	font-weight: bold;
+}
+
+.abgne_tab ul.tabs li a {
+	    height: 30px;
+		display: block;
+		color: #fff;
+		text-decoration: none;
+}
+.abgne_tab ul.tabs li a:hover {
+	    height: 30px;
+		color: #FFF;
+		background:#5B4841;
+		border-radius: 5px 5px 0 0;
+}
+
+.abgne_tab ul.tabs li.active  {
+		background: #82756d;
+}
+	
+.abgne_tab div.tab_container {
+	font-family: "微軟正黑體";
+	clear: left;
+	color: #FFF;
+	border-radius: 0 5px 5px 5px;
+	height: 420px;
+	background:url(../../images/myclub/myc_bg4.png) no-repeat;
+}
+.abgne_tab div.tab_container .tab_content { padding: 12px 8px; position:relative;}
+.title1 {
+	font-family: "微軟正黑體";
+	font-size: 18px;
+	line-height: 30px;
+	color: #C90;
+}
+
+.tab_content ul,.tab_content ul li,.tab_content ul li a{ display:inline-block;color: #87E8F7;}
+.tab_content ul li a:hover{color: #f3f787;}
+.tab_content ul li img{ float: left;margin:5px 10px 0 0;}
+.tab_content ul li{ border-bottom:dashed 1px #000;width: 662px;}
+.tab_content ul li:nth-child(even) {background:#443b35;}
+.evencolor{background:#443b35;}
+
+.tab_content table tr td{ line-height:38px;}
+.tab_content table.table4box tr td{ width:46%; height:60px; line-height:30px; background:#2e2620; border:solid 1px #261c13; box-shadow:inset 5px 5px 10px #261f1a; border-radius:8px; margin:2px 4px; padding:10px; display:block; float:left;}
+.tab_content table.table4box tr td .inp{ width:330px; color:#a8a8a8; padding:3px 5px; margin-left:10px; background:#161310; border:solid 1px #231c16; border-radius:6px; line-height:22px;}
+
+.tab_content table.table5box tr td{ height:43px; padding:0 2px; border-bottom:solid 1px #5f5954;}
+.tab_content table.table5box tr td img{ margin:0 3px; vertical-align:middle;}
+.tab_content table.table6box{ background:url(../../images/myclub/myc_bg5.png)no-repeat center 3px;}
+.tab_content table.table5box tr td div.td_box1{ height:18px; line-height:18px;}
+.tab_content table.table5box tr td div.td_box3{ padding:0 5px; float:left; line-height:30px;}
+.tab_content table.table5box tr td div.td_box3 img{ margin-top:7px;}
+.td_box2{ width:17px; height:17px; line-height:17px; text-align:center; background:url(../../images/myclub/fu05.png); margin:0 auto;}
+.td_box4{ width:80px; height:38px; display:block; margin-left:5px; float:left;}
+.td_box4 a{ width:80px; height:38px; display:block; color:#FFF; text-align:center; line-height:36px; background:url(../../images/myclub/btn_SysBtn06_hor.png); background-size:80px;}
+table.table7box{ background:url(../../images/myclub/VIPReport01.png); background-size:530px 200px; padding-bottom:3px; display:inline-table;}
+table.table7box tr td{ height:40px !important; font-size:14px;}
+.table8box_box{ width:875px; height:365px; padding:5px; background:url(../../images/myclub/VIPReport02.png) no-repeat; background-size:880px 365px;}
+table.table8box tr td{ height:42px !important; font-size:14px;}
+
+.boxm_left70{ margin-left:70px; display:block;}
+.boxm_left50{ margin-left:50px; display:block;}
+.fon-s15{ font-size:15px;}
+
+#apDiv5{
+	position:absolute;
+	width:90px;
+	height:34px;
+	line-height:27px;
+	z-index:1;
+	color:#e6ba56;
+	display:block; text-align:center; top:313px; right:26px;
+}
+#apDiv5 a{ width:90px; height:34px; line-height:30px; color:#F90; background:url(../../images/myclub/btn_SysBtn04_hor.png); display:block;}
+#apDiv6{ width:100px; height:25px; z-index:2; position:absolute; display:block; top:-25px; right:-5px;}
+#apDiv6 a{ width:100px; height:25px; line-height:10px; color:#FFF; display:block;}
+.inpoicon{ width:17px; height:17px; background:url(../../images/myclub/Lobby_VipClub_01.png) -855px -740px; position:absolute; display:block; top:-28px; right:100px; cursor:pointer;}
+.inpoicon:hover{ background-position: -874px -740px;}
+.apDiv7{ width:50px; height:25px; margin-right:10px; display:block; float:right;}
+.apDiv7 a{ width:50px; height:25px; line-height:25px; text-align:center; color:#FFF; background:url(../../images/myclub/btn_SysBtn06_hor.png); background-size:50px; display:block;}
+#apDiv8{ width:185px; height:35px; z-index:2; position:absolute; display:block; top:-30px; right:-5px;}
+#apDiv8 input{ width:100px; color:#a8a8a8; padding:0px 5px; margin-left:10px; background:#161310; border:solid 1px #231c16; border-radius:6px; line-height:22px;}
+.apDiv9,.apDiv10,.apDiv11{
+	height: 28px;
+	line-height:28px;
+	color:#e6ba56; border-left:solid 2px #000;
+	background:url(../../images/myclub/Lobby_VipClub_01.png) -510px -80px; background-size:900px;
+	display:block; text-align:center;
+	border-radius:3px;
+}
+.apDiv9{width: 70px;}
+.apDiv10{width: 55px;}
+.apDiv11{width: 145px;}
+.apDiv9:hover,.apDiv10:hover,.apDiv11:hover{ background-position: -510px -33px;}
+.apDiv9 img,.apDiv10 img,.apDiv11 img{ float:right; margin:2px 1px 0 0; width:27px; height:auto;}
+.apDiv12{ width:90px; height:30px; display:block; margin-left:5px;}
+.apDiv12 a{ width:90px; height:30px; display:block; color:#FFF; text-align:center; line-height:30px; background:url(../../images/myclub/btn_SysBtn06_hor.png); background-size:90px 30px;}.apDiv13 a{ font-size:12px;}
+

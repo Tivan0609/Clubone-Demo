@@ -1,0 +1,725 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html{ margin: 0; padding:0; height: 100%; background: #000; font-family: Arial, 微軟正黑體, Helvetica, sans-serif; font-size: 12px; line-height: 20px;}
+a, a:link, a:visited{ color: #ffa100; text-decoration: none;}
+a:hover{ color: #a5c700;}
+ul,li{ list-style:none; padding:0; margin:0;}
+img{border-style:none;border-width: 0px;}
+
+@media only screen and (max-width : 1359px) {
+	.othergames_boxbg{ width:1024px!important; height:565px!important; background:url(../images/othergame_bg_s.png) no-repeat!important;}
+	#cloes_img{ right:37px !important;}
+	.yahoo_ccbg{ width:750px; height:390px !important;}
+	.win_box { left:755px!important;}
+	.right_02{ height:290px!important;}
+	.right_02 .win_04{ height:270px!important;}
+	.pic_box_at { margin:5px 0 0 15px !important;width: 120px!important;height: 150px!important;}
+	.Flashbox{width: 450px !important;height:450px !important;margin: 0px 210px !important;}
+	.pic_boxbg,.gameblockbg{width:125px!important;}
+	.pic_box_at .pic_at{width: 120px!important;}
+	.pic_box_at .icon_hot,.pic_box_at .icon_new{ left:80px!important;}
+	.pic_box_at .g_name{ width:120px!important;line-height:33px!important; font-size:13px!important;top:110px!important;}
+	.gameblock{width: 120px!important;padding: 5px 10px 0 5px!important;}
+	.gameblock .gametxts {font-size:11px!important; width:110px!important; height:100px!important; padding: 3px 5px 0 2px!important;line-height:16px!important;}
+	.gameblock .goplay img{width:60px!important;}
+	.btnbox{  margin: 5px 0 0 3px!important;width: 118px!important;}
+	.btnbox img{width:45%!important;padding: 0 0 0 2px!important;}
+	.pager{ padding:15px 0 !important;margin-left: 35%!important;}
+}
+
+@media only screen and (min-width : 1360px) and (max-width : 1439px) {
+	.othergames_boxbg{ width:1120px!important; height:620px!important; background:url(../images/othergame_bg_m.png) no-repeat!important;}
+	.othergames_topbar{ width:1070px!important;}
+	.yahoo_ccbg{ width:920px!important;}
+	.win_box { left:865px!important;}
+	.right_02{ height:343px!important;}
+	.right_02 .win_04{ height:320px!important;}
+	.pager{ padding:15px 0 !important;}
+	.pic_box_at {margin:15px 10px!important;width: 140px!important;height: 150px!important;}
+	.Flashbox{width: 500px !important;height:500px !important;margin: 0px 230px !important;}
+	.ccpages{margin-top: 20px!important;}
+	.pic_boxbg,.gameblockbg{width:145px!important;}
+	.pic_box_at .pic_at{width: 140px!important;}
+	.pic_box_at .icon_hot,.pic_box_at .icon_new{ left:100px!important;}
+	.pic_box_at .g_name{ width:140px!important;line-height:33px!important; font-size:16px!important;top:130px!important;}
+	.gameblock{width: 140px!important;padding: 5px 10px 0 5px!important;}
+	.gameblock .gametxts {font-size:12px!important; width:130px!important; height:100px!important;  padding: 8px 0px 0 2px!important;}
+	.gameblock .goplay img{width:60px!important;}
+	.btnbox{  margin: 15px 0 0 8px!important;width: 135px!important;}
+	.btnbox img{width:45%!important;margin-top: 3px!important;}
+}
+
+
+
+/* Arsto遊戲 */
+.othergames_boxbg{ padding-top:10px; overflow:hidden; position:relative;width:1200px; height:665px; background:url(../images/othergame_bg.png) no-repeat;}
+#cloes_img{ position:absolute; right:15px; top:13px;}
+.othergames_top{ width:270px; height:40px; color:#fff9e9; font-weight:bold; line-height:40px; font-size:21px; margin:0 0 3px 45px; text-shadow: 1px 1px 3px #000;}
+.othergames_topbar{ height:50px; background:rgba(0,0,0,0.5); font-size:13px; color:#ffd60a; font-weight:bold; line-height:50px; margin:0 10px; padding-left:30px;}
+.othergames_topbar_no{ height:50px; font-size:13px; color:#ffd60a; line-height:50px; margin-left:10px; padding-left:30px; position:relative;}
+.othergames_topbar img,.othergames_topbar_no img{ vertical-align:middle;}
+.othergames_topbar select,.cgcoco_box select,.othergames_topbar_no select{ background:#7e756e; color:#FFF; border:solid 1px #37312d; border-radius:5px; height:30px; line-height:30px; padding:0 3px;}
+.cgcoco_box{ width:261px; height:234px; padding-top:65px; font-size:13px; color:#ffd60a; font-weight:bold; line-height:35px; background:url(../images/othergame_imgbtn07.png) no-repeat;}.cgcoco_box span{ line-height:10px !important;}
+.cgcoco_box img{ margin:13px 0 5px 0;}
+.cocohave{ width:271px; height:37px; color:#FFF; font-size:15px; text-align:center; line-height:36px; font-weight:bold; text-shadow:1px 1px 2px #000; background:url(../images/othergame_img08.png) no-repeat; margin-top:5px; float:left;}
+.cocohave p{margin: 0;padding-left: 10px;text-align: left;float: left;}
+.cchang_btn{ width:95px; height:30px; margin:9px 0 0 10px; float:left; }
+.cchang_btn a{ background:url(../images_tw/othergame_imgbtn11-1.png);width:95px; height:30px;display: block;}
+.cchang_btn a:hover{margin: 1px 0 0 1px;}
+.cchang_right{ top:100px; position:absolute; z-index:9999;}
+.yahoo_ccbg{ height:395px; margin:35px 0 0 10px; width:970px;}
+.ccpages{ width:100%;}
+.turnout_btn{ width:95px; height:30px; margin:9px 0 0 10px; float:left; cursor:default; position:relative; background:url(../images/turnout_imgbtn12-3.png);display:block;}
+.turnout_btn:hover .turnout_Tis{display:block;}
+.turnout_btn .turnout_Tis{ display:none; position:absolute;top:35px;left:60%;margin-left:-56px;width:117px;height:38px;background:url(../images/tis.png) no-repeat; z-index:999;}
+.turnout_btn a{ background:url(../images_tw/turnout_imgbtn12-1.png);width:111px; height:37px;display: block;}
+.turnout_btn a:hover{margin: 1px 0 0 1px;}
+
+
+/* 遊戲介紹 */
+.frame .pic_box_at { width:164px; height:190px; float:left;display:block; position: relative; margin:10px 5px ;}
+.frame .pic_boxbg{width:164px; height:190px;}
+.frame .pic_boxbg img{width: 100%;}
+.frame .pic_box_at .pic_at{width: 158px;height: 135px;top: 8px;left: 2px;z-index: 1;display: block;position: absolute;}
+.frame .pic_box_at .pic_at img{ width:100%; border-radius:5px;}
+.frame .pic_box_at .icon_hot,.pic_box .icon_new{ width:32px; height:38px; top:1px; right:14px; z-index:99; display:block; position:absolute;}
+.frame .icon_hot img{width: 100%;}
+.frame .pic_box_at .g_name{ width:150px; height:30x; line-height:30px; font-size:16px; font-weight:bold; text-align:center; color:#FFF; top:150px; left:5px; display:block; position:absolute; overflow:hidden;}
+.frame .pic_box_at:hover .gameblock{ display:block;}
+.frame .pic_box_at .gameblock { width:142px; height:180px; padding:15px 10px 0 15px; font-size:12px; z-index:9999; color:#FFF; overflow:hidden; position:absolute; display:none;}
+.gameblockbg{width:164px; height:190px;position: absolute;z-index:-1;top:0px;left: 0px;}
+.gameblockbg img{width: 100%;}
+.gameblock .gametxts { width:142px; height:120px; overflow:hidden; display:block; margin:0 auto;}
+.gameblock .goplay { width:70px; height:38px; margin:18px auto 0 auto; display:block;float: left;}
+.gameblock .goplay img{width: 100%;}
+.gameblock .gainfo { width:70px; height:38px; margin:18px auto 0 auto; display:block;float: left;}
+.gameblock .gainfo img{width: 100%;}
+.ci{ text-align:center; margin:0 auto;}
+.hi_top5{ margin-top:5px;}.hi_top10{ margin-top:10px;}.hi_top15{ margin-top:15px;}
+.btnbox{  margin-top: 12px;width: 164px;}
+.btnbox img{width:42%;height: auto;}
+
+
+/* pager  */
+.page_box{ width:100%; display:inline-block;}
+.pager{ text-align:center;padding:70px 0;margin-left: 40%;}
+.pager > div{ display:inline-block;float: left;}
+.pager > div a{ color:#ded1c8; font-size: 14px; width:25px; height:25px; line-height:25px; background:#221f1d; border:solid 1px #121212; margin-left:-5px; display:block; text-decoration:none;}
+.pager > div a:hover{ background:#443b35;}
+.pager > div a.selected{ background:#443b35;}
+.pager > div a.first{ border-radius:3px 0 0 3px;}
+.pager > div a.last{ border-radius:0 3px 3px 0;}
+
+/* win box */
+.win_box { width:240px; height:570px; top:70px; z-index:999; position:absolute; display:block;left:945px;}
+.right_01{ width:230px; height:130px; padding-top:65px; padding-right:8px; background:url(../images_tw/images_02.png) no-repeat 0 -5px;}
+.right_02{ width:230px; padding-right:8px; background:url(../images_tw/images_02.png) no-repeat bottom; overflow:hidden; height:390px;}
+.win_02,.win_03{ height:30px; line-height:28px; font-weight:bold; margin:0 auto; text-align:center;}
+.right_01 .win_01 img{ margin-right:2px;}
+.right_01 .win_01{ width:146px; height:28px; line-height:28px; margin-top:5px; font-weight:bold; margin:0 auto; text-align:center; overflow:hidden; text-shadow:0px 0px 5px #000;}
+.right_01 .win_02{ width:146px; color:#FF0; font-size:15px; line-height:34px;}
+.right_01 .win_03{ width:146px; color:#999; font-size:11px; font-weight:normal; letter-spacing:-0.5px; line-height:22px;}
+.right_02 .win_04{ width:196px; margin:0 0 0 22px; overflow:hidden; height:390px;}
+.right_02 .win_04 .ww_list{ width:188px; height:42px; border:solid 1px #333; display:block; padding:3px; margin-bottom:4px; background:rgba(0,0,0,0.6)}
+.ww_list .ww01{ width:99px; height:20px; line-height:20px; color:#FFF; font-size:15px; overflow:hidden; display:block; float:left; overflow:hidden;}
+.ww_list .ww02{ width:89px; height:20px; line-height:20px; color:#F00; text-align:right; display:block; font-weight:bold; float:left;}	
+.ww_list .ww03{ width:99px; height:20px; line-height:20px; color:#b3a005; text-decoration:underline; font-weight:bold; display:block; float:left; overflow:hidden;}
+.ww_list .ww04{ width:89px; height:20px; line-height:20px; color:#b3a005;font-size:11px; text-align:right; display:block; float:left;}
+.text01{ color:#FFF;}
+
+
+
+.reflash{width: 18px;height: 18px;float: right;margin: 9px 15px 0 0;}
+.reflash a{background:url(../images_tw/reflash.png);display: block;  width: 18px;  height: 18px;}
+.reflash a:hover{margin: 1px 0 0 1px;} 
+
+#FlashID{width: 100%; height: auto ;}
+.Flashbox{width: 550px;height: 550px;margin: 0px 250px;  float: left;}
+.back_img{width: 88px;height: 30px;position:absolute; right:50px; top:15px;}
+.back_img a{background:url(../images_tw/back.png); display:block; width:88px; height:30px; line-height:30px; font-size:16px; text-align:center; color:#e6ba78;}
+.back_img a:hover{margin: 1px 0 0 1px; color:#e6ba78;}
+
+
+
+/*  club layout  */
+.wrapper_main{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	min-height: 900px;
+}
+.wrapper_play{  position: relative; overflow: hidden; min-width: 1200px;}
+.imgBG{ width: 100%; height: 100%; background-image: url(../images/loginBG.jpg); background-repeat: no-repeat; background-position: center center; background-size: contain; position: absolute; z-index:0; top: 0;}
+.clubLogo{ width: 420px; height: 218px; background: url(../images/assets_others.png) no-repeat 0 -181px;}
+.interface{ 
+	position: relative;
+	width: 1400px; 			
+	margin: 0 auto;	
+	z-index: 99;
+	margin-top: 20px;
+	margin-bottom: 10px;	
+}
+.interface .userIn, .interface .playerInstall{ 
+	width: 385px;
+	background: url(../images/transparentBlack.png) repeat; 
+	-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+	padding: 20px 0;	
+	overflow: hidden;
+}
+.interface .userIn, .interface .playerInstall, .interface .clubLogo{ margin-left: 100px;}
+.welcomeSlogun{ width: 229px; height: 76px; background: url(../images/assets_others.png) no-repeat -214px -31px; margin: 0 auto; margin-top: 20px; margin-bottom: 30px;}
+.playerInstall{ margin-top: 6px;}
+
+.btn{ background: url(../images/assets.png) no-repeat; margin: 0 auto; margin-bottom: 10px; cursor: pointer;}
+.btn, .btn a{ width: 325px; height: 75px; display: block;}
+.btn.loginSignin{ background-position: 0 0;}
+.btn.loginSignin:hover{ background-position: -342px 0;}
+
+.btn.guest{ background-position: 0 -75px;}
+.btn.guest:hover{ background-position: -342px -75px;}
+.btn.guest_no{ background-position: -342px -230px;}
+
+.btn.unityPlayer{ background-position: 0 -150px;}
+.btn.unityPlayer_no{ background-position: 0 -224px;}
+.btn.unityPlayer:hover{ background-position: -342px -150px;}
+
+.desc{ color: #fff; width: 300px; margin: 0 auto; font-size: 15px;}
+
+
+.homeFooter{ 
+	height: 22px;
+	text-align:center;
+	padding-top:2px;
+	color:#999;  
+	margin: 0 auto;
+	background:url(../images/homeFooter_bg.jpg);
+	overflow: hidden;
+	margin-top:3px;
+}
+.homeFooter > div{ margin-left: 140px;}
+.clubLogo_footer{ width: 114px; height: 25px; background: url(../images/assets_others.png) no-repeat -216px 0; margin-top: 25px;}
+.rightWords{ font-size: 12px; color: #fff; padding: 5px;}
+
+/* play.html */
+.pageHeader{ width: 1400px; margin: 0 auto;}
+.pageHeader{ height: 90px; background: #000; position: relative; z-index: 999; background: url(../images/headerBack.png) repeat-x;}
+.pageHeader .navigator{ width: 1400px; margin: 0 auto; position: relative;}
+.menu{ position: absolute; top: 0; right: 160px; width: 330px;}
+.menuItem{
+	width: 500px;
+	height: 94px;
+	float: left;
+	margin-left: 85px;
+}
+.menu-p2{ position: absolute; top: 0; right: 0; width: 150px;}
+.menu-p2 ul,.menu-p2 ul li,.menu-p2 ul li a{ display:block;}
+.menu-p2 ul li{ margin-top:20px;}
+.menu-p2 ul li a{ width:38px; height:25px; padding-top:30px; text-align:center; float:left; margin-right:10px; color:#e6ba78;}
+.picon1,.picon2,.picon3,.menu-p2 ul li:hover{ background:url(../images/assets_others.png) no-repeat;}
+.menu-p2 ul li:hover{ background-position:-122px -600px;}
+.picon1{ background-position:left -600px;}
+.picon2{ background-position:-40px -600px;}
+.picon3{ background-position:-82px -600px;}
+.bodyContent{ width: 1400px; margin: 0 auto; position: relative;}
+.playContent{
+	width: auto;
+	height: 680px;
+	background: url(../images/lobby.jpg) no-repeat;
+	background-size: 1600px;
+	margin-right:200px;
+	display: block;
+	border-top:solid 2px #5a5044 !important;
+}
+.conttop_link{ width:668px; height:51px;}
+.contdown_games{ margin-top:90px; float: left;
+	width: 1120px;
+	height: 440px;
+	margin: 0 50px;
+}
+
+.game-mj13,.game-mjff{width: 100%;}.game-mj13 img,.game-mjff img{width: 100%; height:675px;}
+.contdown_banner{ position:absolute; width: 1060px; height:150px; margin-left:5%; z-index:9; display:none;}.contdown_banner img{ border:solid 1px #b07611;}
+.bodyContent .ccbg_gif{ position:absolute; z-index:99; left:0; bottom:0;}
+.banner01{ float:left; margin-right:10px;}.banner02{ float:left;}
+.playIM{ width: 200px;  height: 100%; position: absolute; right: 0; top: 3px; background: #1b1a17;}
+
+
+
+/* 兌換代幣 */
+.playContent .otherg_buyboxbox{ width:270px; height:400px; padding:0 65px; top:20%; left:30%; color:#FFF; z-index:9999; position:absolute; background: url(../../images/im-card-bg2.png) no-repeat; display:block;}
+.otherg_buyboxbox table select {
+  background: #7e756e;
+  color: #FFF;
+  border: solid 1px #37312d;
+  border-radius: 5px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 3px;
+}
+.otherg_buyboxbox .h_na2{
+	width:90px;
+	height:20px; margin:28px 0 12px 90px;
+	background: url(../../images/g-number-img.png) left -350px;
+	float:left;
+}
+.otherg_buyboxbox table h1{ font-size:14px !important; font-weight:normal !important;}
+.otherg_buyboxbox table h2{ width:100px; color:#FC0; font-size:12px; font-weight:normal !important;}
+.otherg_buyboxbox table h3{ float:left; color:#939393; font-size:13px; font-weight:normal !important;}
+.left_m_casi2 { margin: 5px 20px 10px 0; border: 1px solid #000; border-right: 1px solid #353434; border-bottom: 2px solid #353434;	box-shadow:inset -2px -2px 1px #FFF; box-shadow:1px 1px 2px #000; display:block; float:left; text-align:center;}
+.left_m_casi2 input{height:33px; line-height:33px; color:#ffd557;border-radius:5px; background-color:#2b2925; border:none; padding:0 5px;}
+.gnu_button_ok{ width:90px; height:42px; margin: 10px 0 0 40px; display:block; float:left;}
+.gnu_button_ok a{ width:90px; height:42px; background: url(../../images/g-number-img.png) left -245px; display:block;}
+.gnu_button_ok a:hover{ background-position: -90px -245px;}
+.gnu_button_cn{ width:90px; height:42px; margin: 10px 0 0 10px; display:block; float:left;}
+.gnu_button_cn a{ width:90px; height:42px; background: url(../../images/g-number-img.png) left -290px; display:block;}
+.gnu_button_cn a:hover{ background-position: -90px -290px;}
+
+
+#light_buy_xx{ width:20px; height:20px; margin:0 !important;}
+.buytoptxt{ color:#FFF; font-weight:bold; font-size:15px; text-align:center;}
+
+.bodyContent .cstyle_box{ display:none; position:absolute; height:180px; font-size:13px; border-radius:10px; padding-left:10px; background:rgba(50,48,36,0.9); position:absolute; z-index:1001; left:0; bottom:1%; line-height:30px; color:#FFF;}
+.bodyContent .cstyle_box img{ border-radius:6px; box-shadow: 1px 1px 5px rgba(0,0,0,0.5); border:solid 4px #817d62;}
+.cstyle_box img:hover{ border:solid 4px #FFF;}
+.cstyle_box span.yesit img{ border:solid 4px #FFF; box-shadow: 0px 0px 6px #FFF;}
+#cstyle_xxx{ width:20px; height:20px; border:none;}
+.black_xx{ display:none; position: absolute; top: 0%; left: 0%;}
+
+
+@media only screen and (max-width : 1359px) {
+	.headerTop, .pageHeader{ width: 1200px; margin: 0 auto;}
+	.pageHeader .navigator, .bodyContent{ width: 1200px;}
+	.pageHeader{ background: url(../images/headerBack-s.png)-5px !important;}
+	.menuItem{ margin-left:45px !important;}
+	.mainLogo{ margin-left:10px !important;}
+	.menu{ right:116px !important;}
+	.money.gold,.money.silver{ left: 167px !important;}
+	.menu-p2{ width:120px !important;}
+	.menu-p2 ul li a{ margin-right:0 !important;}
+	.wrapper_play{  margin: 0 auto;}
+	.desc-before.imgbefore, .pagebox{ width: 970px;}
+	.in_g{ padding-top:40px !important;}
+	.in_games_box{ width:990px !important; height:558px !important; background-size:990px !important;}
+	.igb_down_left{ height:310px;}.igb_left ul li{ font-size:13px !important;}
+	.igb_down_left ul{ padding-left:28px; margin-top:-32px;}
+	.igb_down_left ul li{ float:left; margin:0 5px 5px 0; display:block;}
+	.igb_down_left ul li img{ width:230px !important; height:auto;}
+	.igb_down_right table{ margin-top:-10px !important;}
+	.banner01 img,.banner02 img{ width:auto !important; height:158px !important;}
+	.homeFooter{ width:1200px;}
+	.playContent { background-size:1290px auto; background-position: left 50px; background:url(../images/lobby-s.jpg); border-top:solid 3px #5a5044 !important;}
+	.playContent table{ margin-right:150px;}
+	.othergames_boxbg{ width:1000px; background-size:1000px 678px;}
+	.othergames_boxbg table{ width:1000px;}
+	.othergames_topbar{ width:950px;}
+	#banner01{ width:680px; margin-right:5px;}#banner02{ width:274px;}
+	#Image35{ margin:15px 5px 15px 0;}#Image36{ margin:15px 0;}
+	#Image37{ width:340px; height:auto !important; margin-left:5px;}#Image38{ width:340px; height:auto !important; margin:0px;}.cgcoco_box{ margin-left:0px; margin-right:5px;}
+	.yahoo_ccbg{ width:1000px; margin-top:15px; background-size:970px 512px;}
+	.yahoo_ccbg2{ width:1000px; margin-top:15px; background-size:970px 512px;}
+	.new_vipclub_bg{ width:1004px; background-size:966px 542px;}
+	.newvc ul{ width:950px; height:460px; margin-left:30px;}
+	.newvc ul li{ width:185px; height:182px; margin:2px 1px 8px 3px; float:left;}
+	.newvc ul li:hover span{ width:185px; height:182px;}
+	.newvc33 ul{ width:950px; height:460px; margin-left:30px;}
+	.newvc33 ul li{ width:185px; height:136px; margin:0 1px 12px 3px !important;}
+	.newvc33 ul li:hover span{ width:185px; height:136px;}
+	.contdown_banner{ margin-right:8%; margin-top:-3%;}.contdown_banner img{ height:100px;}
+	.bodyContent .cstyle_box{ width:940px; margin-left:2%; bottom:6.8%;}.bodyContent .cstyle_box table{ width:930px;}
+	.bodyContent .cstyle_box img{ width:205px;}
+	.style1{ width:1000px; background-size:1000px;}
+	.style2{ width:1000px; background-size:1000px;}
+	.style3{ width:1000px; background-size:1000px;}
+	.game_tatow{left: 20px!important;top:15px!important;}
+	.game_tatow{margin-left: 5px!important;}
+	.contdown_games{ margin-top:90px; margin: 0 5px;}
+}
+
+@media only screen and (min-width : 1360px) and (max-width : 1439px) {
+	.contdown_games { margin-top:90px;  margin: 0 0px!important;}
+	.headerTop, .pageHeader{ width: 1320px; margin: 0 auto;}
+	.pageHeader .navigator, .bodyContent{ width: 1320px;}
+	.pageHeader{ background: url(../images/headerBack-m.png)-25px !important;}
+	.menuItem{ margin-left:85px !important;}
+	.wrapper_play{  margin: 0 auto;}
+	.desc-before.imgbefore, .pagebox{ width: 1000px;}
+	.in_g{ padding-top:20px !important;}
+	.in_games_box{ width:1110px !important; height:626px !important; background-size:1110px !important;}
+	.igb_down_left{ height:365px;}
+	.igb_down_left ul{ padding-left:35px; margin-top:-25px;}
+	.igb_down_left ul li{ float:left; margin:5px 5px 0 0; display:block;}
+	.igb_down_left ul li img{ width:255px !important; height:auto;}
+	.igb_down_right table{ margin-top:-10px !important;}
+	.homeFooter{ width:1320px;}
+	.playContent { background-size:1290px auto; background-position: left 50px; background:url(../images/lobby-m.jpg); border-top:solid 3px #5a5044 !important;}
+	.othergames_boxbg{ width:1110px; background-size:1110px 678px;}
+	.othergames_boxbg table{ width:1110px;}
+	.othergames_topbar{ width:1060px;}
+	#banner01{ margin-right:10px;}
+	#Image35{ margin:15px 20px 15px 0;}#Image36{ margin:15px 0;}
+	.cgcoco_box{ margin-left:0px; margin-right:12px;}
+	.yahoo_ccbg{ width:1110px; margin-top:15px; background-size:1060px 512px;}
+	.yahoo_ccbg2{ width:1110px; margin-top:15px; background-size:1060px 512px;}
+	.new_vipclub_bg{ width:1110px; background-size:1072px 542px;}
+	.newvc ul{ width:1050px; height:460px; margin-left:30px;}
+	.newvc ul li{ width:200px; height:196px; margin:2px 5px 8px 5px; float:left;}
+	.newvc ul li:hover span{ width:200px; height:196px;}
+	.contdown_banner{ margin-left:2.4%; margin-top:-1%;}
+	.bodyContent .cstyle_box{ width:1060px; margin-left:2.4%; bottom:2.8%;}.bodyContent .cstyle_box table{ width:1050px;}
+	.bodyContent .cstyle_box img{ width:205px;}
+	.style1{ width:1120px !important; background-size:1120px !important;}
+	.style2{ width:1120px !important; background-size:1120px !important;}
+	.style3{ width:1120px !important; background-size:1120px !important;}
+	.newvc33 ul{ width:1050px; height:460px; margin-left:30px;}
+	.newvc33 ul li{ width:190px; height:139px; margin:0 4px 9px 14px; float:left;}
+	.newvc33 ul li:hover span{ width:190px; height:139px;}
+}
+
+@media only screen and (min-width : 1440px) {
+	.headerTop, .pageHeader{ width: 1400px; margin: 0 auto;}
+	.pageHeader .navigator, .bodyContent{ width: 1400px;}
+	.wrapper_play{ width: 100%; margin: 0 auto;}
+	.desc-before.imgbefore, .pagebox{ width: 1200px;}
+	.homeFooter{ width:1400px;}
+	.playContent { background-size:1290px auto; background-position: left 50px; background:url(../images/lobby.jpg); border-top:solid 2px #5a5044 !important;}
+	.igb_down_left{ height:390px;}
+	.igb_down_left ul{ padding-left:40px; margin-top:-20px;}
+	.igb_down_left ul li{ float:left; margin:5px 5px 0 0; display:block;}
+	.igb_down_left ul li img{ width:270px !important; height:auto;}
+	.othergames_boxbg{ width:1200px; background-size:1200px 678px;}
+	.othergames_boxbg table{ width:1200px;}
+	.othergames_topbar{ width:1150px;}
+	#banner01{ margin-right:15px;}
+	#Image35{ margin:15px 30px 15px 0;}#Image36{ margin:15px 0;}
+	.cgcoco_box{ margin-left:0px; margin-right:20px;}
+	.yahoo_ccbg{ width:1200px; margin-top:15px; background-size:1150px 512px;}
+	.yahoo_ccbg2{ width:1200px; margin-top:15px; background-size:1150px 512px;}
+	.new_vipclub_bg{ width:1200px; background-size:1160px 542px;}
+	.newvc ul{ width:1140px; height:460px; margin-left:30px;}
+	.newvc ul li{ width:217px; height:213px;  margin:5px 1px 0 8px; float:left;}
+	.newvc ul li:hover span{ width:217px; height:213px;}
+	.bodyContent .cstyle_box{ width:1100px; margin-left:5%; bottom:1.8%;}.bodyContent .cstyle_box table{ width:1090px;}
+	.bodyContent .cstyle_box img{ width:220px;}
+	.style1{ width:1200px !important; background-size:1200px !important; background-position:left -60px !important;}
+	.style2{ width:1200px !important; background-size:1200px !important;}
+	.style3{ width:1200px !important; background-size:1200px !important;}
+	.newvc33 ul{ width:1140px; height:470px; margin-left:55px;}
+	.newvc33 ul li{ width:202px; height:148px;  margin:0 0 8px 14px; float:left;}
+	.newvc33 ul li:hover span{ width:202px; height:148px;}
+}
+
+/* 404 page */
+.interface-404{ position: relative; width: 100%; height:100%; margin: 0 auto; z-index: 99; margin-top: 20px; margin-bottom: 10px;}
+.imgBG404{ width: 100%; height: 100%; background-image: url(../images/404-BG.jpg); background-repeat: no-repeat; background-position: center top; background-size: contain; position: absolute; z-index:0; top: 0;}
+.interface .clubLogo-404{ width: 320px; height: 150px; background: url(../images/assets_others.png) no-repeat 0 -420px; margin:120px 0 50px 380px;}
+.desc-404{ color: #fff; width: 30%; margin-left:33%; margin-top:23%; font-size: 14px;}
+.btn404{ width:23%; height: 8%; margin: 0 auto; margin-bottom: 10px; margin-top:2%; cursor: pointer;}
+.btn404,.btn404 a{ display: block;}
+.btn404.backplay{ background: url(../images/imgbackplay-1.png) no-repeat; background-size: contain;}
+.btn404.backplay:hover{ background: url(../images/imgbackplay-1.png) no-repeat; background-size: contain;}
+
+/* before-page */
+.loadbg{ width: 100%; height: 0; background: url(../images/load-BG.jpg)no-repeat center top; clear: both; display: block; content: ".";}
+.interface-before{ position: relative; width: 100%; height:100%; margin: 0 auto; z-index: 99; margin-top: 30px; margin-bottom: 10px;}
+.desc-before,.desc-before2{ color: #fff; width:100%; margin-top:10%; margin:0 auto; font-size: 15px; line-height:26px;}
+.desc-before2{ width:28%; text-indent:-55px;}
+.imgbefore{ width: 100%; height: 100%; background: url(../images/before-bg.png)no-repeat center top; background-size: 100%;}
+.pagebox,.pagebox2{ width:50%; margin-left:20%; padding-top:10%;}.pagebox2{ padding-top:10%;}
+.btn-before{ width:320px; height:70px; margin: 0 auto; margin-bottom: 10px; margin-top:10%; cursor: pointer;}
+.btn-before,.btn-before a{ display: block;}
+.btn-before.backplay{ background: url(../images/imgbackplay-1.png) no-repeat; background-size: contain;}
+.btn-before.backplay:hover{ background: url(../images/imgbackplay-1.png) no-repeat; background-size: contain;}
+.iconbox{ width:380px; height:70px; margin:5% 0 10px 0; cursor: pointer; font-weight:bold;}.iconbox img{border:0;}
+.hatop{ width:190px; height:60px; background:url(../images/before-bg-img.png); margin-bottom:5px;}
+span.no1,span.no2{ width:110px; height:30px; background:url(../images/assets.png)left -465px; display:block;}
+span.no2{background:url(../images/assets.png)left -514px; margin-top:10px;}
+span.pagetxt,span.pagetxt2{ width:85%; display:block; line-height:20px; padding-bottom:5px; margin-left:1%;}span.pagetxt2{ margin:1% 0;}
+span.pagetxt3{ width:100%; display:block; line-height:20px; padding-bottom:10%; margin-left:1%; margin-bottom:14%;}
+span.pagetxt3 img{ text-align:right; width:300px;}
+.him50{ margin-top:20%;}
+
+.btn2{ background: url(../images/assets.png) no-repeat; background-size:800px; margin: 0 auto; margin-bottom: 10px; cursor: pointer;}
+.btn2, .btn2 a{ width: 255px; height: 55px; display: block;}
+.btn2.Signin-s{ background-position: 0 0;}
+.btn2.Signin-s:hover{ background-position: -274px 0;}
+.btn2.unityPlayer-s{ background-position: 0 -120px;}
+.btn2.unityPlayer-s:hover{ background-position: -274px -120px;}
+.btn2.ConfirmPC2{ background-position: 0 -500px;}
+.btn2.ConfirmPC2:hover{ background-position: -274px -500px;}
+.btn2.Confirming2{ background-position: 0 -560px;}
+
+/* for IE8 */
+.loadbgie8{ width: 100%; height: 0; background:url(../images/load-BG.jpg); background-repeat:no-repeat; background-position:center top; clear: both; display: block; content: ".";}
+.desc-beforeie8{ color: #fff; width:960px; margin-top:10%; margin:0 auto; font-size: 15px; line-height:26px;}
+.imgie8{ width:960px; height: 748px; background:url(../images/before-bg-ie8.png); background-repeat:no-repeat; background-position:center top;}
+.pagebox3{ width:50%; margin-left:100px; padding-top:150px;}
+
+/* lightbox */
+.black_overlay{
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index:1001;
+            -moz-opacity: 0.8;
+            opacity:.80;
+            filter: alpha(opacity=80);
+        }
+.white_content {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 50%;
+            height: 50%;
+            padding: 16px;
+            border: 16px solid orange;
+            background-color: white;
+            z-index:1002;
+            overflow: auto;
+        }
+
+
+.in_g{ width:100%; position:relative; padding-top:5px;}
+.in_games_box{ width:1170px; height:660px; margin:5px 0 0 5px; background:url(../images/ingame-img01.png) no-repeat; background-size:1170px; display:block; z-index:999; position:absolute;}
+.xxx a{ width:30px; height:31px; margin:8px 8px 0 0; background:url(../images/xxx.png); display:block; float:right;}
+.game_tatow{ position:absolute; top:20px; width:20%; height:25px; line-height:25px; font-weight:bold; color:#ffeda7; font-size:20px; display:block;margin-left: 2%;}
+.igb_top{ margin-top:4.6%; height:40px;  width: 75%;float: left;}
+.igb_left{ width:60%; height:auto; float:left;margin:5px 0 0 25px;}
+.igb_left img{width: 100%;}
+.igb_left ul,.igb_left ul li{ display:block;}
+.igb_left ul{ width:80%; height:35px; margin:0 auto; float:right;}
+.igb_left ul li{ width:12.3%; font-size:15px; line-height:30px; color:#a27c50; text-align:center; float:left; border-right:solid 1px #685138; cursor:pointer;}
+.igb_left ul li:hover{ color:#FFF; background:#322318; border-radius:4px; box-shadow:inset 0px 0px 20px #1f140d;}
+.igb_left ul img:hover{ margin:1px 0 0 1px;}
+.igb_right{ width:15%; height:auto ; float:left;margin: 20px 0 0 0;}
+.igb_right ul,.igb_right ul li{ display:block;}
+.igb_right ul{ width:90%; float:right;}
+.igb_right ul li{ float:left;  margin-bottom: 5px;}
+.igb_gotogame{ width:15%; height:auto; float:left;  margin: 2.5% 0 0 2%;}
+
+.igb_down{
+	height: 400px;
+	margin-top: 80px;width: 75%;  float: left;
+}
+.igb_down_left{ width:100%; float:left; height:390px;  padding: 2% 0 0 0.3%;;}
+.igb_down_left ul{ width:100%; display:block;}
+.igb_down_left ul li{ float:left; display:block;}
+.igb_down_left ul li img{ width:500px; height:auto;}
+.igb_down_right{ width:24%; float:right;  padding-top: 3.5%;}
+.igb_down_right table{ margin-left:1%; width:85%;}.igb_down_right table img{ width:100%;}
+
+/*  My Club  */
+.playContent2{
+	width: auto;
+	height: 680px;
+	background: url(../images/myclub/myc_bg.jpg) center top no-repeat;
+	background-size: 1200px;
+	margin-right:200px;
+	display: block;
+}
+.myb-top{ width:1173px; height:158px; background:url(../images/myclub/myb-top-bg.png) left -292px; margin:0 auto; position:relative; color:#FFF;}
+.myb-topbox1,.myb-topbox2,.myb-topbox3,.myb-topbox4,.myb-topbox5,.myb-topbox6,.myb-topbox7{ position:absolute; display:block; font-weight:bold; font-size:13px;}
+.myb-topbox1{ width:128px; height:128px; top:5px; left:116px;}
+.myb-topbox2{ width:815px; height:28px; top:5px; left:250px; color:#ffe548; line-height:28px; padding:0 5px; font-size:15px; border:solid 1px #473c36; border-radius:3px;}
+.myb-topbox3{ width:300px; height:66px; top:40px; left:260px; text-align:left;}
+.myb-topbox3 table tr td{ height:22px; line-height:22px;}
+.myb-topbox4{ width:345px; height:60px; top:40px; left:560px; line-height:19px; padding:2px 5px; border:solid 1px #473c36; border-radius:3px;}
+.myb-topbox4 span{ font-weight:normal;}
+.myb-topbox5{ width:152px; height:64px; top:40px; left:922px; font-weight:normal; text-align:center; border:solid 1px #473c36; border-radius:3px; box-shadow:inset 0px 0px 10px #000;}
+.myb-topbox5 div{ width:50%; line-height:20px; padding-top:10px; float:left; display:block;}.myb-topbox5 div span{ color:#F90;}
+.myb-topbox6{ width:125px; height:26px; left:790px; top:42px; font-size:12px;}
+.myb-topbox6 img{vertical-align:middle;}
+.myb-topbox7{ width:795px; height:31px; top:110px; left:250px; color:#ffe548; line-height:28px; background:#0a0505; padding:0 15px; font-size:15px; border-radius:20px 20px 0 0;}
+.myb-topbox7 img{vertical-align:middle; right:0;}
+.myb-topbox7 span,.myb-topbox7 span a{ display:block; text-align:center; float:right; color:#FFF; }
+span.btnn01,span.btnn01 a,span.btnn02,span.btnn02 a{ width:86px; height:30px; line-height:30px;}
+.btnn01{ background:url(../images/myclub/btn_SysBtn02_nor.png); margin-right:3px;}.btnn01:hover{ background:url(../images/myclub/btn_SysBtn02_hor.png); }
+.btnn02{ background:url(../images/myclub/btn_SysBtn01_nor.png); margin-right:3px;}.btnn02:hover{ background:url(../images/myclub/btn_SysBtn02_hor.png); }
+span.btnn03{ width:30px; margin-right:20px;}
+.myb-topbox7 .cn_icon{ width:120px; height:24px; background:url(../images/myclub/ch_icon.png); margin:4px 0 0 10PX; display:inline-block;}
+.myb-topbox7 .cn_icon a{ width:20px; height:24px; margin:0 5px; float:left; display:block;}
+.myb-down{
+	width: 100%;
+	height: 520px;
+	margin: 0 auto;
+	position: relative;
+}
+.myb-downbox1,.myb-downbox2,.myb-downbox3,.myb-downbox5,.myb-downbox6,.myb-downbox7-Setup,.myb-downbox8,.bgblack,.myb-downbox3st2,.myb-downbox3st3,.myb-downbox3st4{position:absolute; display: block;}
+.myb-downbox1{ width:50px; height:70px; left:4px; top:260px; background:url(../images/myclub/btn_SysBtn09_hor.png); cursor:pointer; z-index:2;}
+.myb-downbox1:hover{background:url(../images/myclub/btn_SysBtn09_hor.png) no-repeat -49px 0px;}
+.myb-downbox2{ width:50px; height:70px; right:3px; top:260px; background:url(../images/myclub/btn_SysBtn08_hor.png); cursor:pointer; z-index:2;}
+.myb-downbox2:hover{background:url(../images/myclub/btn_SysBtn08_hor.png) no-repeat -49px 0px;}
+.myb-downbox3,.myb-downbox3st2,.myb-downbox3st3,.myb-downbox3st4{ top:0px; overflow:hidden;}
+.myb-downbox3st2 table,.myb-downbox3st3 table{ margin-right:7.5%;}
+.myb-downbox3{ width:1020px; left:90px;}.myb-downbox3 table{ width:1020px; }.myb-downbox3 table tr td{ width:340px; display:inline-block;}
+.myb-downbox3st4{ width:900px; left:170px;}
+.myb-downbox3st4 div.myc_img_004-1{ width:900px; height:510px; background:url(../images/myclub/myc_img_004-1-b.png); display:block;}
+.myb-downbox3st4 div.myc_img_004-1 img{ width:900px;}
+.myb-downbox3st2{ width:1240px; left:25px; top:5px !important;}
+.myb-downbox3st3{ width:1240px; left:22px; top:-8px !important;}
+.myb-downbox3 table img{ width:340px !important;}
+.myb-downbox3st2 table img{ width:280px; margin-right:5px; margin-bottom:1px; cursor:pointer;}
+.myb-downbox3st3 table img{ width:380px;}
+.myb-downbox4{ width:978px; height:36px; text-align:right; margin:0 auto; display:none;}
+.myb-downbox5{ width:580px; height:520px; padding-top:40px; left:28%; top:-15%; background:url(../images/myclub/myc_bg2.png) no-repeat center top; z-index:3;}
+.myb-downbox6,.myb-downbox6 a{ width:23px; height:23px; display:block;}
+.myb-downbox6{ background:url(../images/myclub/coinx-img.png); background-size:23px; z-index:4; right:26%; top:-11%; z-index:4;}
+
+.bgblack{ width:100%; height:680px; background:rgba(0,0,0,0.4); top:0; z-index:3;}
+
+/* 管理跳出頁 */
+@media only screen and (max-width : 1359px) {
+	.myb-downbox7-Setup{ left:2% !important;}
+	.myb-downbox8{ right:4.3% !important;}
+	.myb-top{ width:978px; background:url(../images/myclub/myb-top-bg.png) left top;}
+	.myb-topbox1{left:62px;}
+	.myb-topbox2{left:192px; width:686px;}
+	.myb-topbox3{left:200px; width:200px;}
+	.myb-topbox4{left:400px;}
+	.myb-topbox5{left:763px; width:125px;}
+	.myb-topbox6{left:600px;}
+	.myb-topbox7{left:196px; width:660px;}
+	.myb-downbox3 { width:685px !important; height:500px; left:160px !important;}
+	.myb-downbox3st2 { width:850px !important; height:500px; left:70px !important;}
+	.myb-downbox3st3 { width:760px !important; height:520px; left:120px !important;}
+	.myb-downbox3st4 { left:50px !important}
+	.vipclubmenu{width: 970px;}
+	.viprightbtnlist {margin: 0 0;}
+	.viprightbtnlist3{float: right;  margin-right: 10px;}
+	.abgne_tab3 img{width:99%;  margin-top: 40px;}
+	.vipclub_3btnok {  right: 100px;  bottom: 150px;}
+	.vipclub_3btnfb {   right: 10px;  top: 170px;}
+	.vipclub_3btnbut {bottom: 90px;  right: 100px;}
+	.vipclub_3btngo {  top: 130px;  left: 595px;}
+	.abgne_tab,.abgne_tab1,.abgne_tab3{overflow:hidden;max-width: 960px; }
+	.gametable-XLcon{width: 970px;padding: 20px 20px;  max-height: 460px;  overflow: hidden;}
+	.gametable-Lcon{width: 940px;  padding: 30px 35px;overflow: hidden;max-height: 420px;}
+	.gametable-1L a,.gametable-2L a{margin:10px 10px 10px 5px;}
+	.gametable-L{margin: 10px 12px;}
+	.vipclubsize-XL,.vipclubsize-L,.vipclubsize-M{  right: 22px;  top: 48px;}
+	.vipclubslect {margin-right: 5px;}
+	.gametable-1Mcon {background-image: url(../images/vipclub/vipclub_1Mbox2.png);  width: 960px;  float: left;  margin: 50px 5px;background-repeat: no-repeat;}
+	.gametable-2Mcon{background-image: url(../images/vipclub/vipclub_2Mbox2.png);width: 960px;float: left;margin: 50px 5px;background-repeat: no-repeat;}
+	}
+@media only screen and (min-width : 1360px) and (max-width : 1439px) {
+	.myb-downbox7-Setup{ left:7.3% !important;}
+	.myb-downbox8{ right:9.2% !important;}
+	.myb-top{ width:1110px; background:#F00; background:url(../images/myclub/myb-top-bg.png) left -146px;}
+	.myb-topbox1{left:86px;}
+	.myb-topbox2{left:218px; width:780px;}
+	.myb-topbox3{left:223px; width:270px;}
+	.myb-topbox4{left:493px;}
+	.myb-topbox5{left:856px;}
+	.myb-topbox6{left:725px;}
+	.myb-topbox7{left:218px; width:760px;}
+	.myb-downbox3 { width:1020px; left:50px !important;}
+	.myb-downbox3st2 { width:850px !important; height:500px; left:130px !important;}
+	.myb-downbox3st3 { width:760px !important; height:520px; left:230px !important;}
+	.myb-downbox3st4 { left:100px !important}
+	.vipclubmenu{width: 1110px;}
+	.viprightbtnlist {margin: 0 140px 0 0;}
+	.viprightbtnlist3{float: right;  margin-right: 40px;}
+	.abgne_tab3 img{width:99%;}
+	.vipclub_3btnok {  right: 120px;bottom: 150px;}
+	.vipclub_3btnfb {  right: 28px;}
+	.vipclub_3btnbut {bottom: 80px;  right: 120px;}
+	.vipclub_3btngo {top: 107px;  left: 665px;}
+	.vipclubsize-XL{right: 0;}
+	.abgne_tab,.abgne_tab1,.abgne_tab3{overflow:hidden;max-width: 1070px; }
+	.gametable-XLcon{width: 1070px;padding: 20px 60px;  max-height: 460px;  overflow: hidden;}
+	.gametable-Lcon{width: 1070px;   padding: 0 60px;max-height: 540px;overflow: hidden;}
+	.gametable-1L a,.gametable-2L a{margin:0 12px;}
+	.gametable-2XL,.gametable-1XL,{margin:5px 5px;}
+	.gametable-L{margin: 0 20px;}
+	.gametable-1Mcon {  width: 1050px;  float: left;  margin: 20px 10px;background-image: url(../images/vipclub/vipclub_1Mbox1.png) ;background-repeat: no-repeat;}
+	.gametable-2Mcon{background-image: url(../images/vipclub/vipclub_2Mbox1.png);width: 1050px;float: left;margin: 20px 10px;background-repeat: no-repeat;}
+	}
+
+.myb-downbox7-Setup{ width:960px; height:700px; left:10%; top:-30%; background:url(../images/myclub/Lobby_VipClub_03.png) no-repeat top; background-size:960px; z-index:3;}
+.myb-downbox8,.myb-downbox8 a{ width:30px; height:30px; display:block;}
+.myb-downbox8{ background:url(../images/myclub/coinx-img.png); background-size:30px; z-index:4; right:12%; top:-26%; z-index:4;}
+
+/* 管理跳出頁 3區塊 */
+.setup_box_01,.setup_box_02,.setup_box_03,.setup_box_04{ float:left; display:block;}
+.setup_box_01{ width:100%; height:190px; position:relative;}
+.setup_box_02{ width:48%; height:440px;}
+.setup_box_03{ width:52%;}
+.setup_box_04{ width:100%; height:440px;}
+
+.sb01_D1,.sb01_D2,.sb01_D3,.sb01_D4,.sb01_D5{ position:absolute; z-index:4; display:block; color:#FFF;}
+.sb01_D1{ width:100px; height:32px; line-height:33px; top:20px; left:40px; }
+.sb01_D2{ width:310px; height:32px; line-height:33px; top:20px; left:210px;}
+.sb01_D3{ width:160px; height:80px; top:75px; left:35px;}
+.sb01_D4{ width:270px; height:88px; top:71px; left:204px; color:#ffd557;}
+.sb01_D5{ width:450px; height:75px; top:77px; right:7px;}
+
+.sb01_D3 .muboxD2_1,.sb01_D3 .muboxD2_ch,.sb01_D3 .muboxD2_ch a{ float:left; display:block;}
+.sb01_D3 .muboxD2_1 img{ width:80px; height:auto;}
+.sb01_D3 .muboxD2_ch,.sb01_D3 .muboxD2_ch a{ width:57px; height:34px; line-height:34px;}
+.sb01_D3 .muboxD2_ch{ margin:45px 10px 0 10px;}
+.sb01_D3 .muboxD2_ch a{ background:url(../images/myclub/btn_SysBtn07_hor.png) no-repeat; text-indent:20px;}
+.sb01_D3 .muboxD2_ch a:hover{ background:url(../images/myclub/btn_SysBtn07_nor.png); color:#FFF;}
+
+.sb01_D4 table tr td{ height:43px; padding:1px;}
+.sb01_D4 table tr td.fsimg img{ width:auto; height:43px;}
+.sb01_D4 table tr td span{ height:35px; line-height:33px; float:left;}
+.sb01_D4 table tr td span.muboxD4_txt{ width:105px;}
+.sb01_D4 table tr td span.muboxD4_1btn,.sb01_D4 table tr td span.muboxD4_2btn{ width:50px; height:30px; margin-top:3px; background:url(../images/myclub/Lobby_VipClub_01.png); cursor:pointer; background-size:900px; display:block;}
+.sb01_D4 table tr td span.muboxD4_1btn a,.sb01_D4 table tr td span.muboxD4_2btn a{ width:50px; height:30px; display:block;}
+.sb01_D4 table tr td span.muboxD4_1btn{ background-position: -447px -2px;}
+.sb01_D4 table tr td span.muboxD4_2btn{ background-position: -447px -33px;}
+
+.sb01_D5 ul,.sb01_D5 ul li,.sb01_D5 ul li a{ display:block;}
+.sb01_D5 ul{ width:100%; height:86px;}
+.sb01_D5 ul li{ float:left;}
+.sb01_D5 ul li a{ width:83px; height:25px; padding-top:50px; line-height:20px; text-align:center; color:#F90; background:url(../images/myclub/Lobby_VipClub_02.png); background-size:950px;}
+.sb01_D5 ul li a.muboxicon01{ background-position: -367px -271px;}
+.sb01_D5 ul li a.muboxicon01:hover,.sb01_D5 ul li a.muboxicon01.sta{ background-position: -280px -191px;}
+.sb01_D5 ul li a.muboxicon02{ background-position: -280px -271px;}
+.sb01_D5 ul li a.muboxicon02:hover,.sb01_D5 ul li a.muboxicon02.sta{ background-position: -280px -111px;}
+.sb01_D5 ul li a.muboxicon03{ background-position: -541px -271px;}
+.sb01_D5 ul li a.muboxicon03:hover,.sb01_D5 ul li a.muboxicon03.sta{ background-position: -454px -32px;}
+.sb01_D5 ul li a.muboxicon04{ background-position: -366px -111px;}
+.sb01_D5 ul li a.muboxicon04:hover,.sb01_D5 ul li a.muboxicon04.sta{ background-position: -366px -32px;}
+.sb01_D5 ul li a.muboxicon05{ background-position: -453px -191px; color:#999 !important;}
+
+.sb02_box1,.sb02_box2{ margin-left:30px; width:410px; display:block;}
+.sb02_box1{ height:42px; background:url(../images/myclub/Lobby_VipClub_02.png) -265px -367px; background-size:900px; padding:5px 0 0 5px;}
+.sb02_box2{ height:380px; position:relative;}
+.sb02_D1{ width: 131px; height: 28px; line-height:28px; color:#e6ba56; background:url(../images/myclub/Lobby_VipClub_01.png) -508px -80px; background-size:900px;
+display:block; text-align:center; margin-right:5px; float:left;}
+.sb02_D1:hover{ background-position: -508px -33px;}
+.sb02_D1 img{ float:right; margin:2px 1px 0 0; width:27px; height:auto;}
+.sb02_D2,.sb02_D3,.sb02_D4,.sb02_D5,.sb02_D6,.sb02_D7{ display:block; position:absolute;}
+.sb02_D2{ width:155px; height:40px; line-height:47px; top:20px; left:90px; color:#FFF; padding-left:48px; background:url(../images/myclub/Lobby_VipClub_02.png) 0 -10px; background-size:850px;}
+.sb02_D3{ width:295px; height:170px; top:90px; left:50px; background:url(../images/myclub/Lobby_VipClub_02.png) -290px -452px; background-size:990px;}
+.sb02_D4{ width:300px; height:50px; top:290px; left:50px; color:#FFF; text-align:center;}
+.sb02_D5{ width:90px; height:34px; top:335px; left:160px; background:url(../images/myclub/btn_SysBtn04_hor.png);}
+.sb02_D6{ width:90px; height:34px; top:0; right:0; background:url(../images/myclub/btn_SysBtn04_hor.png);}
+.sb02_D7{ width:90px; height:50px; top:35px; right:0; background:url(../images/myclub/btn_SysBtn05_hor.png);}
+
+.sb02_D2 span.sb02_D2_txt{ width:80px; display:inline-block;}
+.sb02_D4 img{ vertical-align:middle; margin-right:3px;}
+.sb02_D5 a,.sb02_D6 a{ width:90px; height:34px; line-height:32px; color:#FFF; text-align:center; display:block;}.sb02_D6 a{ color:#F90;}
+.sb02_D7 a{ width:90px; height:30px; padding:10px 0; line-height:15px; color:#FFF; text-align:center; display:block;}
+
+
+/* CSS lightbox 設定 */
+.black_overlay{ display: none; position: absolute; top: -50%; left: 0%; width: 100%; height: 150%; background-color: black; z-index:100; -moz-opacity: 0.6; opacity:.60;
+ filter: alpha(opacity=60);}
+.white_content1,.openD_ok { display: none; position: absolute; top: 20%; left: 39%; width: 260px; height: 105px; padding:70px 13px 15px 13px; font-size:16px; color:#FFF; line-height:30px; text-align:center; background:url(../images/myclub/Lobby_VipClub_01.png)-590px -410px; background-size:1500px; z-index:101; overflow: auto; }
+.apDiv13{ width:90px; height:30px; display:block; margin:5px auto;}
+.apDiv13 a{ width:90px; height:30px; display:block; color:#FFF; text-align:center; line-height:30px;background:url(../images/myclub/btn_SysBtn06_hor.png); background-size:90px 30px; font-size:12px; }
+.openD_ok { display:block !important; top: 38.8% !important; left: 33.4% !important;}
+.white_content2{ display:none; position: absolute; top: 3%; left: 30%; width: 440px; height: 275px; padding:8px 20px 15px 20px; font-size:13px; color:#FFF; line-height:30px; text-align:center; background:url(../images/myclub/Lobby_VipClub_01.png)0px -170px; background-size:1250px 850px; z-index:101; overflow: auto; }
+.white_content2 img{ margin:20px auto;}
+
+ 
+ 
+.color_y1{ color:#fdd165;}

@@ -1,0 +1,12 @@
+@media only screen and (max-width : 1359px) {
+	.all{ background:url(../../images/bbg-s.jpg) no-repeat center top !important;}
+}
+
+@media only screen and (min-width : 1360px) and (max-width : 1439px) {
+	.all{ background:url(../../images/bbg-m.jpg) no-repeat center top !important;}
+}
+
+@media only screen and (min-width : 1440px) {
+	.all{ background:url(../../images/bbg-b.jpg) no-repeat center top !important;}
+}
+

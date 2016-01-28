@@ -1,0 +1,151 @@
+::-webkit-scrollbar-track-piece{background-color:#000;}
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-thumb{background:#312923;} 
+
+ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+.mesg_page_tab {
+	width: 470px;
+	display: block;
+}
+.abgne_tab {
+	clear: left;
+	margin: 0 auto;
+}
+.abgne_tab ul.tabs {
+	width: 470px;
+	height: 30px;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+	text-align: center;
+	padding-left: 15px;
+}
+.abgne_tab ul.tabs li {
+	float: left;
+	height: 30px;
+	width: 120px;
+	line-height: 32px;
+	position: relative;
+	margin-right: 2px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border-left: none;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+	background-color: #2b221d;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	font-weight: bold;
+}
+
+.abgne_tab ul.tabs li a {
+	    height: 30px;
+		display: block;
+		color: #fff;
+		text-decoration: none;
+}
+.abgne_tab ul.tabs li a:hover {
+	    height: 30px;
+		color: #FFF;
+		background:#5B4841;
+		border-radius: 5px 5px 0 0;
+}
+
+.abgne_tab ul.tabs li.active  {
+		background: #82756d;
+}
+	
+.abgne_tab div.tab_container {
+	font-family: "微軟正黑體";
+	clear: left;
+	color: #FFF;
+	overflow: hidden;
+	border-radius: 0 5px 5px 5px;
+	height: 400px;
+	background:url(../../images/myclub/myc_bg3.png) no-repeat -24px -83px;
+	background-size:524px 520px;
+}
+.abgne_tab div.tab_container .tab_content { padding: 15px 8px; position:relative;}
+.title1 {
+	font-family: "微軟正黑體";
+	font-size: 18px;
+	line-height: 30px;
+	color: #C90;
+}
+
+.tab_content ul,.tab_content ul li,.tab_content ul li a{ display:inline-block;color: #87E8F7;}
+.tab_content ul li a:hover{color: #f3f787;}
+.tab_content ul li img{ float: left;margin:5px 10px 0 0;}
+.tab_content ul li{ border-bottom:dashed 1px #000;width: 662px;}
+.tab_content ul li:nth-child(even) {background:#443b35;}
+.evencolor{background:#443b35;}
+
+.tab_content table tr td{ line-height:38px;}
+.tab_content table.table2box tr td{ line-height:34px;}
+.tab_content table.table3box tr td{ line-height:31px;}
+
+#apDiv1,#apDiv2{
+	position: absolute;
+	width: 100px;
+	height: 28px;
+	line-height:27px;
+	z-index: 1;
+	color:#e6ba56;
+	background:url(../../images/myclub/Lobby_VipClub_01.png) -220px -80px;
+	background-size: 900px;
+	display:block;
+}
+#apDiv1{ top:49px; right:245px; text-align:center;}
+#apDiv2{ top:172px; right:40px; text-indent:5px;}
+#apDiv1 img,#apDiv2 img{ float:right; margin:2px 1px 0 0; width:27px; height:auto;}
+#apDiv3,#apDiv4{
+	position: absolute;
+	width: 90px;
+	height: 34px;
+	line-height:27px;
+	z-index: 1;
+	color:#e6ba56;
+	display:block; text-align:center; top:350px; right:180px;
+}
+#apDiv4{ top:230px !important; right:220px !important;}
+#apDiv3 a,#apDiv4 a{ width:90px; height:34px; line-height:30px; color:#FFF; background:url(../../images/myclub/btn_SysBtn04_hor.png); display:block;}
+
+/* 新增遊戲桌 */
+.black_D{ display:block; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:100; -moz-opacity: 0.5; opacity:.50;
+ filter: alpha(opacity=50);}
+.openD_bg { display:block; position: absolute; top: 27%; left: 27%; width: 440px; height: 370px; padding:8px 20px 15px 20px; font-size:13px; color:#FFF; line-height:30px; text-align:center; background:url(../../images/myclub/Lobby_VipClub_01.png)0px -238px; background-size:1250px 1150px; z-index:101; overflow: auto; }
+.openD_D1box,.openD_D2box,.openD_D3box,.openD_D4box,.openD_D5box,.openD_D6box,.openD_D7box{ position:absolute; display:block; z-index:103px;}
+.openD_D1box{ width: 440px; height: 29px; top:40px; left:17px;}
+.openD_D2box{ width: 273px; height: 33px; top:90px; left:25px; padding:4px 0 0 4px; box-shadow:inset 0px 0px 10px rgba(0,0,0,0.8); border-radius:5px;}
+.openD_D3box{ width: 120px; height: 33px; top:92px; right:30px; text-align:left;}.openD_D3box img{ vertical-align:middle; margin-right:3px;}
+.openD_D4box{ width: 290px; height: 160px; top:140px; left:100px; background:url(../../images/myclub/Lobby_VipClub_02.png) 0 -290px;}
+.openD_D5box{ width: 290px; height: 40px; top:325px; left:100px;}
+.openD_D6box{ width: 20px; height: 20px; top:13px; right:10px; background:url(../../images/myclub/coinx-img.png); background-size:20px;}
+.openD_D6box a{ width:20px; height:20px; display:block;}
+.openD_D7box{ width: 435px; height: 250px; top:75px; left:24px;}.openD_D7box img{ margin:5px auto;}
+.openD_D7box table tr td{ text-align:left;}.openD_D7box table tr td div{ text-align:left !important; text-indent:5px;}
+.nono1{ float:left !important; margin-left:50px !important;}
+.nono2{ float:left !important; margin-left:5px !important;}
+
+
+.openD_D1box ul,.openD_bg ul li{ display:block;}
+.openD_D1box ul{ width:440px; height:28px; margin:3px 0 0 5px;}
+.openD_D1box ul li{ float:left; width:106px; height:28px; line-height:28px; margin:0 2px; color:#FFF; border-radius:3px; background:url(../../images/myclub/Lobby_VipClub_02.png) right top;}
+.openD_D1box ul li.color_bg_gr{ background:url(../../images/myclub/Lobby_VipClub_02.png) right -43px;}
+
+.openD_D2box .openD_D1{ width: 131px; height: 28px; line-height:28px; color:#e6ba56; background:url(../../images/myclub/Lobby_VipClub_01.png) -508px -80px; background-size:900px; text-align:center; margin-right:5px; float:left;}
+.openD_D2box .openD_D1:hover{ background-position: -508px -33px;}
+.openD_D2box .openD_D1 img{ float:right; margin:2px 1px 0 0; width:27px; height:auto;}
+
+.apDiv14{width: 255px;
+	height: 28px;
+	line-height:28px;
+	text-align:left !important;
+	text-indent:5px;
+	color:#e6ba56; border-left:solid 2px #000;
+	background:url(../../images/myclub/Lobby_VipClub_01.png) -510px -80px; background-size:900px;
+	display:block; text-align:center;
+	border-radius:3px;
+}
+.apDiv14:hover{ background-position: -510px -33px;}
+.apDiv14 img{ float:right; margin:2px 1px 0 0; width:27px; height:auto;}

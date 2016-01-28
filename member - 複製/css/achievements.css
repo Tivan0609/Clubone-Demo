@@ -1,0 +1,299 @@
+/*success_box1*/
+.success_box1{
+	width: 524px;
+	height: 281px;
+	background: url(../images/success_box1.png) no-repeat;
+	position: relative;
+	margin: 8px 0 0 15px;
+	padding-top: 3px;
+}
+.success_btn{
+	width: 495px;
+	height: 83px;
+	background: url(../images/success_object.png) 0 -240px no-repeat;
+	margin: 6px 0 0 13px;
+	float: left;
+	display: block;
+}
+.success_btn_no{
+	width: 495px;
+	height: 83px;
+	background: url(../images/success_object.png) 0 -150px no-repeat;
+	margin: 6px 0 0 13px;
+	float: left;
+	display: block;
+}
+.success_btn .layup{ position:absolute; z-index:999;}
+.success_kindicon{
+	width: 48px;
+	height: 50px;
+	float: left;
+	margin-right: 10px;
+}
+.success_kindicon img{
+	margin-top: 18px;
+	margin-left: 11px;
+}
+.success_btntxtbox{
+	float: left;
+	width: 261px;
+	margin-left:10px; 
+}
+.success_btntxtbox h1,.success_getbox h1{
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	margin: 8px 0 0 2px;
+}
+.success_getbox h1{
+	margin-top: 19px;
+	text-align: center;
+}
+.success_btntxtbox p{
+	font-size: 13px;
+	color: #000;
+	margin: 0 0 0 2px;
+	line-height: 15px;
+	height: 33px;
+}
+.bounsbar{
+	width: 258px;
+	height: 19px;
+	background: url(../images/success_object.png) -180px -6px no-repeat;
+	float: left;
+	display: block;
+
+}
+.bounsbar h2,.success_getbox h2{
+        color: #eddf95;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 20px;
+        float: left;
+        display: block;
+        margin: 0 0 0 2px;
+}
+.bounsbar h2.info,.success_getbox h2.info{width:98px;}
+.bounsbar h2.cointxt,.success_getbox h2.cointxt{width:120px;}
+.success_getbox h2{ float:none; text-align:center; color:#FFF; font-weight:normal;}
+.bounsbaricon{
+	width: 16px;
+	height: 16px;
+	background: url(../images/cion_g.png) no-repeat;
+	float: left;
+    margin: 1px 0 0 4px;
+}
+.bounsbaricon2{
+	width: 16px;
+	height: 16px;
+	background: url(../images/cion_f.png)no-repeat; 
+	float: left;
+    margin: 1px 0 0 4px;
+}
+.bounsbaricon3{
+        width: 16px;
+        height: 16px;
+        background: url(../images/cion_info.png)no-repeat;
+        float: left;
+    margin-top: 1px;
+}
+
+
+.success_getbox{
+	width: 80px;
+	height: 71px;
+	background: url(../images/success_object.png) -400px -335px no-repeat;
+	float: left;
+	margin: 7px 0 0 10px;
+}
+.success_getbtn{
+	width: 63px;
+	height: 37px;
+	float: right;
+	margin: 23px 5px 0 0;
+}
+.success_getbtn a{
+	background: url(../images/success_object.png) -158px -36px no-repeat;
+	width: 63px;
+	height: 37px;
+	display: block;
+}
+.success_getbtn a:hover{
+	background: url(../images/success_object.png) -157px -35px no-repeat;
+}
+
+/*success_box2*/
+
+.success_titlebar{
+	width: 554px;
+	height: 34px;
+	margin-top: 10px;
+	background-color: #2c221f;
+}
+.success_title{
+	width: auto;
+	color: #f0eabc;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	float: left;
+	position: relative;
+	line-height: 34px;
+	margin-left: 20px;
+}
+.success_box2{
+	width: 526px;
+	height: 187px;
+	background: url(../images/success_box2.png) no-repeat;
+	position: relative;
+	margin: 10px 0 0 15px;
+	padding-top: 3px;
+}
+.success_box2 h3{
+	color: #f0eabc;
+	font-size: 13px;
+	margin: 14px 2px 12px 41px;
+	float: left;
+
+}
+.allrunnnning{
+	background: url(../images/success_object.png) -3px -339px no-repeat;
+	width: 389px;
+	height: 18px;
+	display: block;
+	float: left;
+	margin-top: 11px;
+	position: relative;
+}
+.allrunnnning h4{
+	position: absolute;
+	right: 0;
+	color: #fff;
+	font-size: 11px;
+	font-weight:bold;
+	text-shadow: 0px 0px 3px #000,
+ 0px 0px 3px #000;
+ 	margin: 4px 8px 0 0;
+ 	letter-spacing: 2px;
+}
+.otherrunnnn{
+	width: 518px;
+	height: 138px;
+	display: block;
+	float: left;
+	overflow-y: auto;
+	-ms-scrollbar-base-color:#312923;-ms-scrollbar-track-color:#221F1D;
+}
+.srunnnning{
+	background: url(../images/success_object.png) -3px -371px no-repeat;
+	width: 131px;
+	height: 18px;
+	display: block;
+	float: left;
+	position: relative;
+	margin-bottom: 10px;
+}
+.otherrunnnn-box1{
+	width: 103px;
+	height: 114px;
+	float: left;
+	display: block;
+	margin-left: 9px;
+}
+.otherrunnnn-box1 h3{
+	float: right;
+	margin: 4px 2px 10px 0;
+}
+.otherrunnnn-box2{
+	width: 131px;
+	height: 114px;
+	float: left;
+	display: block;
+}
+
+.otherrunnnn-box2 img{
+	float: left;
+}
+.otherrunnnn h4{
+	position: absolute;
+	right: 0;
+	color: #fff;
+	font-size: 11px;
+	font-weight:bold;
+	text-shadow: 0px 0px 3px #000,0px 0px 3px #000;
+ 	margin: 4px 8px 0 0;
+ 	letter-spacing: 2px;
+}
+.space{width: 15px;height: 100px;display: block;float: left;}
+.notyetbox{
+	background: url(../images/notyetbg.png);
+	width: 409px;
+	height: 229px;
+	margin: auto;
+	margin-top: 25px;
+}
+.success_box1 h3{
+	color: #6B6644;
+	font-size: 13px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+/*success_box3*/
+.success_box3{
+	width: 524px;
+	height: 457px;
+	background: url(../images/success_box3.png) no-repeat;
+	margin:0 0 0 15px;
+	float: left;
+}
+.success_radio{
+	width: 539px;
+	height: 34px;
+	float: left;
+	display: block;
+	margin-top: 5px;
+}
+.success_radio input{
+	margin: 14px 5px 0 25px!important;
+	float: left;
+}
+.success_radio p{
+	color: #fff;
+	font-size: 13px;
+	float: left;
+	margin: 0;
+	letter-spacing: 0px;
+	margin-top: 12px;
+}
+.success_showtag{
+	background: url(../images/success_object.png) -235px -32px no-repeat;
+	width: 155px;
+	height: 35px;
+	float: right;
+	display: block;
+}
+.success_showtag p{
+	margin-left: 18px;
+	margin-right: 18px;
+	color: #f0eabc;
+	font-size: 13px;
+	letter-spacing: 0px;
+}
+.success_luckbtn{
+	background: url(../images/success_object.png) -403px -33px no-repeat;
+	width: 41px;
+	height: 48px;
+	display: block;
+	float: right;
+	margin: 23px 14px 0 0;
+}
+.success_btngary{
+
+}
+
+.pager{ text-align:center; height:26px; width:524px; display:block; float:left; margin:5px 0 0 190px !important;}
+
+
+.first,.last,.pagesnum,.pages{display: block;float: left;}

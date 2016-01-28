@@ -1,0 +1,435 @@
+
+.sidebar {
+  display: block;
+  float: left;
+  width: 120px;
+  background: #333;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:12px;
+}
+.content {
+  display: block;
+  overflow: hidden;
+  width: auto;
+}
+
+.sidebar-nav,.achievement-nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.sidebar-nav ul,.achievement-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sidebar-nav a,.achievement-nav a,
+.sidebar-nav a:hover,.achievement-nav a:hover,
+.sidebar-nav a:focus,.achievement-nav a:focus,
+.sidebar-nav a:active,.achievement-nav a:active {
+  outline: none;
+}
+
+.sidebar-nav ul li,.achievement-nav ul li,
+.sidebar-nav ul a,.achievement-nav ul a {
+  display: block;width:120px;
+}
+.sidebar-nav ul a,.achievement-nav ul a {
+  color: #000;
+  text-align:center;
+  border-top: 1px solid rgb(0, 0, 0);
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
+  background:url(../images/images_record01.png);
+}
+.sidebar-nav ul a {height:45px;}
+.achievement-nav ul a {height:32px;}
+.sidebar-nav ul a,.achievement-nav ul a { position:relative;}
+.sidebar-nav ul a span,.achievement-nav ul a span{ position:absolute; left:0; top:50%; width:100%; transform:translateY(-50%);line-height:13px;}
+.achievement-nav ul a {line-height:31px !important;}
+.sidebar-nav ul a:hover,
+.sidebar-nav ul a:focus,
+.sidebar-nav ul a:active {
+  color: #370e07;
+  text-decoration: none;
+}
+.achievement-nav ul a:hover,
+.achievement-nav ul a:focus,
+.achievement-nav ul a:active {
+  text-decoration: none;
+  color: #FFF !important;
+  background: #514b4d !important;
+  box-shadow: inset 0px 0px 35px #281705,inset 0px 0px 25px #000,inset 0px 0px 5px #000,inset -5px -5px 55px #9a8164,inset 2px 2px 2px rgba(224, 198, 169, 0.3) !important;
+}
+
+.sidebar-nav ul ul a,.achievement-nav ul ul a {
+  color:#FFF;
+  line-height:36px;
+  background:#140e0e;
+}
+.sidebar-nav ul ul a:hover,.achievement-nav ul ul a:hover,
+.sidebar-nav ul ul a:focus,.achievement-nav ul ul a:focus,
+.sidebar-nav ul ul a:active,.achievement-nav ul ul a:active {
+  color:#fabd52;
+}
+
+.sidebar-nav ul a.btn-primary2,.achievement-nav ul a.btn-primary2{
+  color:#FFF !important;
+  background:#514b4d !important;
+  box-shadow:inset 0px 0px 35px #281705,inset 0px 0px 25px #000,inset 0px 0px 5px #000,inset -5px -5px 55px #9a8164,inset 2px 2px 2px rgba(224, 198, 169, 0.3) !important;
+}
+
+/*record_rightbox*/
+.rankingtitle{
+  float: left;
+}
+
+
+.member_propertytop5{
+  background: url(../images/friendsranking_topbar.jpg);
+  background-repeat: no-repeat;
+  width: 553px;
+  height: 316px;
+  position: relative;
+}
+.pro_top1,.pro_top2,.pro_top3,.pro_top4,.pro_top5{  width: 220px;height: 72px;position: absolute;}
+.pro_top1{left: 177px;}
+.pro_top2{
+  top:60px;
+  left: 215px;
+  z-index: 2;
+}
+.pro_top3{
+  top:120px;
+  left: 257px;
+  z-index: 3;
+}
+.pro_top4{
+  top:180px;
+  left: 295px;
+  z-index: 4;
+}
+.pro_top5{
+  top:240px;
+  left: 332px;
+  z-index: 5;
+}
+.rankingtop6btn a{
+  background: url(../images/ranking_top6btn.png);
+  width: 87px;
+  height: 25px;
+  position: absolute;
+  top:20px;
+  left: 445px;
+}
+.rankinglist .friendsrankingbtn{ width: 101px; height: 21px; position: absolute; top:10px; right: 15px; z-index:999;}
+.rankinglist .friendsrankingbtn a{
+  background: url(../images/friendsrankingbtn.png);
+  width: 101px;
+  height: 21px;
+  display:block;
+}
+.friendsrankingbtn_sall a{
+  background: url(../images/backbtn3.png);
+  width: 101px;
+  height: 21px;
+  position: absolute;
+  top:10px;
+  left: 419px;
+}
+.ranking_memberleft{float: left;}
+.ranking_memberright{
+  float: left;
+  width: 165px;
+}
+
+.ranking_memberpic{
+    background: url(../images/ranking_memberpic.png);
+    width: 54px;
+    height: 54px;
+    margin-top: 13px;
+}
+
+.ranking_membername{
+  color: #e9e1bf;
+  font-size: 12px;
+  float: left;
+  margin-top: 8px;
+  margin-left: 15px;
+  width: 135px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.ranking_membertop5btn{
+  background: url(../images/ranking_top5btn.png) no-repeat;
+    width: 157px;
+    height: 23px;
+	padding-left:5px;
+	margin-left: 3px;
+    color: #e9e1bf;
+    font-size: 12px;
+    line-height: 23px;
+    text-align: center;
+	float: left;
+}
+
+.member_propertyfriendsrank{
+	background: url(../images/friendsranking_bar.png);
+	background-repeat: no-repeat;
+	width: 535px;
+	height: 173px;
+	margin: 5px 9px;
+	color: #fff;
+	font-size: 13px;
+	text-align: center;
+	line-height: 2;
+}
+
+.member_propertymy{
+  background: url(../images/friendsranking_bar2.png);
+  background-repeat: no-repeat;
+  width: 532px;
+  height: 31px;
+  margin:5px 10px;
+  color: #e9e1be;
+  font-size: 13px;
+  position: relative;
+  
+}
+.propertymy_money{
+  margin: 5px 0 0 10px;
+  position: absolute;
+}
+.propertymy_rank{
+  margin: 3px 0 0 270px;
+  position: absolute;
+}
+
+.member_bonustop5{
+  background: url(../images/bonustop5_topbar.jpg);
+  background-repeat: no-repeat;
+  width: 553px;
+  height: 316px;
+  position: relative;
+}
+.bonus_top1 ,.bonus_top2 ,.bonus_top3,.bonus_top4,.bonus_top5{  width: 120px;height: 100px;position: absolute; }
+.bonus_top1{
+  top:10px;
+  left: 8px;
+}
+.bonus_top2{
+  top:44px;
+  left: 108px;
+}
+.bonus_top3{
+  top:82px;
+  left: 212px;
+}
+.bonus_top4{
+  top:112px;
+  left: 319px;
+}
+.bonus_top5{
+  top:144px;
+  left: 425px;
+}
+.bonus_memberpic{
+    background: url(../images/ranking_memberpic.png);
+    width: 54px;
+    height: 54px;
+    margin:0 0 4px 33px;
+}
+
+.bonus_membername{
+  color: #e9e1bf;
+  font-size: 12px;
+  text-align: center;
+  padding-left: 3px;
+  width: 120px;
+  height: 17px;
+}
+
+.bonus_membertop5btn{
+  background: url(../images/ranking_top5btn.png);
+    width: 126px;
+    height: 23px;
+    position: absolute; 
+    color: #e9e1bf;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+}
+.rankinglist{
+  background: url(../images/rankinglist_bg.png);
+    width: 532px;
+    height: 486px;
+    position: relative;
+    color: #e9e1bf;
+    font-size: 12px;
+    line-height: 2;
+    margin:10px 0 0 10px;
+}
+.allrankinglist{
+  background: url(../images/allrankinglistbg.png);
+    width: 532px;
+    height: 518px;
+    position: relative;
+    color: #e9e1bf;
+    font-size: 12px;
+    line-height: 2;
+    margin:10px 0 0 10px;
+}
+
+.rankinglist_barlist{
+    margin: 45px 0 0 9px;
+    width: 514px;
+    height: 432px;
+    float: left;
+    overflow: auto;
+    max-height: 468px;
+}
+.rankinglist_barlist2{
+    margin: 12px 0 0 9px;
+    width: 514px;
+    height: 465px;
+    float: left;
+    overflow: auto;
+    max-height: 468px;
+}
+.allrankinglist_barlist{
+    margin:10px 0 0 9px;
+    width: 514px;
+    height: 439px;
+    float: left;
+    overflow: auto;
+    max-height: 430px;
+}
+
+
+.rankinglist_bar{
+  background: url(../images/rankinglist_bar.png); 
+  width: 495px;
+  height: 49px;
+  margin-bottom: 5px;
+  float:left;
+}
+.rankinglist_bar_no{
+  background: url(../images/rankinglist_bar_no.png) no-repeat; 
+  width: 495px;
+  height: 49px;
+  margin-bottom: 5px;
+}
+
+.list_num{
+  display:inline;
+  width: 90px;
+  height: 46px;
+  font-size: 13pt;
+  font-family:  "Microsoft JhengHei";
+  font-weight: bold;
+  float: left;
+  text-align: center;
+  text-shadow:2px 2px 5px #000;
+  color: #fff;
+  margin-top: 6px;
+}
+.list_title{
+  display:inline;
+  width: 90px;
+  height: 46px;
+  float: left;
+}
+.listrank_memberpic,.list_name,.list_content{  display:inline;float: left;}
+.listrank_memberpic{margin:6px 0 0 6px; width: 37px;height: 37px;}
+.list_name{margin:12px 0 0 4px;width: 110px;height: 24px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.list_content{
+width: 164px;
+height: 49px;
+line-height: inherit;
+padding: 6px 0 0 5px;
+}
+.list_money{
+  color: #fff;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: italic;
+  letter-spacing: inherit;
+  line-height: 1;
+  height: 15px;
+  width: 175px;
+}
+.list_cost{
+  color: #fff;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: italic;
+  letter-spacing: inherit;
+  line-height: 2.4;
+}
+.list_times{
+  color: #fff;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: 2.4;
+}
+.list_date{
+  color: #d5b9a6;
+  letter-spacing:normal;
+  width: 175px;
+  height: 20px;
+  line-height:20px;
+  overflow:hidden;
+}
+.list_date span.dt1{ font-size:12px; width:115px; float:left; display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.list_date span.dt2{ font-size:11px; width:60px; float:left; display:block;}
+.list_replay{
+  float: right;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+.list_replay a{
+    background-image: url(../images/replaybtn.png);
+    width: 63px;
+    height: 30px;
+    display: block;
+}
+.list_replay a:hover {
+margin: 1px 0 0 1px;
+}
+.list_gotorankingbtn{
+float: right;
+margin-top: 12px;
+margin-right: 10px;
+
+}
+.list_gotorankingbtn a{
+  background-image: url(../images/gotorankingbtn.png);
+  width: 67px;
+  height: 30px;
+  display: block;
+}
+.list_gotorankingbtn a:hover {
+margin: 1px 0 0 1px;
+}
+.backbtn{ float:left;margin: 6px 0 0 10px;}
+.backbtn a{
+  background-image: url(../images/backbtn.png);
+  width: 50px;
+  height: 18px;
+  display: block;
+}
+.backbtn2 a{
+  background-image: url(../images/backbtn2.png);
+  width: 86px;
+  height: 21px;
+  position: absolute;
+  top:10px;
+  left: 434px;
+}
+.backbtn a:hover,.backbtn2 a:hover {margin: 1px 0 0 1px;}
+.rankingtop6btn a:hover {margin: 1px 0 0 1px;}
+.friendsrankingbtn a:hover {margin: 1px 0 0 1px;}
+.friendsrankingbtn_sall a:hover {margin: 1px 0 0 1px;}
+.friendsrank_box{ width:520px; height:140px; float: left;}
+
+.listrank_memberpic img{width: 37px; height: 37px; }

@@ -1,0 +1,476 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/memberCenter.css" />
+<link href="css/record.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="Script/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="Script/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="Script/tabjs.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index_myassets.css">
+<link rel="stylesheet" type="text/css" href="css/mCustomScrollbar.css">
+<script src="Script/jquery.js"></script>
+<script src="Script/jquery.tabs.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.Png,.Png img');
+// <![CDATA[
+if((window.navigator.appName.toUpperCase().indexOf("MICROSOFT")>=0)&&(document.execCommand))
+try{
+document.execCommand("BackgroundImageCache", false, true);
+ }
+catch(e){}
+// ]]>
+</script>
+<![endif]-->
+<!--[if lte IE 8]>
+<style>
+.wrapper_play{ min-width: 1400px;}
+</style>
+<![endif]-->
+
+<!--[if lt IE 10]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<!-- [endif]  -->
+</head>
+
+<body>
+<div class="all">
+<div class="mw-memberWrapper">
+	<div class="memberMenu">
+    	<ul>
+    		<li class="info"><a href="member_info.html"><div class="linkText">帳戶設置</div></a></li>
+            <li class="tradeLog selected"><a href="member_myAssets.html"><div class="linkText">我的財富</div></a></li>
+    		<li class="friends"><a href="member_friendList.html"><div class="linkText">我的好友</div></a></li>
+    		<li class="record"><a href="member_record.html"><div class="linkText">我的戰績</div></a></li>
+    		<li class="rank"><a href="member_property.html"><div class="linkText">我的排行</div></a></li>
+    		<li class="achievements"><a href="member_achievements_1.html"><div class="linkText">我的成就</div></a></li>
+    	</ul>
+    </div>
+    <div class="memberBody">
+    <div class="Wealth Png clear">
+    <div class="WealthTop">
+    	<div class="HeadTou clear">
+        	<div class="TouXian left" style="z-index:997;">
+            	<p class="TouImg Png"><img src="images/tou.jpg"></p>
+                <p class="rzVip Png"><img src="images/rzVip.png"><span class="rzTxt"><strong>會員等級是？</strong>會員等級從低到高為平台會員 > 進階會員> VIP會員。</span></p>
+            </div><!--TouXian-->
+            <div class="TouTxt left">
+            	<div class="TouName Png"><span class="NameTxt">會員暱稱完美對子</span><span class="NameVip"><img src="images/VIP_CLUB_LEVEL_1.png" /></span><span class="VipSj"><a href="#">升级VIP</a></span></div><!--TouName-->
+                <ul class="TouTxtList">     
+                	<li><div class="TouTxtIco Ico_jin"><p class="TxtWord"><strong>金幣是什麼？</strong><br/>金幣是……</p></div>金幣:499,764,764.75<a href="#" class="Touxt">充值</a></li>
+                    <li><div class="TouTxtIco Ico_yin"><p class="TxtWord"><strong>銀幣是什麼？</strong><br/>銀幣是……</p></div>銀幣:500,000,000,00<a href="#" class="Touxt">充值</a></li>
+                    <li><div class="TouTxtIco Ico_jif"><p class="TxtWord"><strong>積分是什麼？</strong><br/>積分是……</p></div>積分:500,000<a href="#" class="Touxt">積分商場</a></li>
+                </ul><!--TouTxtList-->
+            </div><!--TouTxt-->
+        </div><!--HeadTou-->
+    </div><!--WealthTop-->
+    <div class="WealthBot">
+    	<ul class="WealthMenu clear">
+            <li class="current">用户等级</li>
+            <li>金幣詳情</li>
+            <li>銀幣詳情</li>
+            <li>積分詳情</li>
+        </ul>
+        <div class="WealthCon">
+        	<div class="WCon">
+            	<div class="WConTxt clear" style="display:none;">
+                	<p>您的用户等级：<span class="Yellow">非認證會員</span></p>
+                    <p>綁定手機直接成為認證會員<input class="band Png" name="btn" type="button"></p>
+                    <p>升级VIP<input class="cZhi Png" name="btn" type="button"></p>
+                </div><!--WConTxt-->
+                <div class="WConTxt clear">
+                    <!--<p>您的用户等级：<span class="green">認證會員</span></p>
+                    <p>已绑定手机：137*****574<input class="band_a Png" name="btn" type="button"></p>
+                    <p>升级VIP<input class="cZhi Png" name="btn" type="button"></p>-->
+                </div><!--WConTxt-->
+                <p class="VipTit">VIP用户等级升级表</p>
+                <div class="VipGrade">
+                  <table width="672" border="0" cellspacing="0" cellpadding="0" class="ci">
+                  <tr>
+                      <td>等級</td>
+                      <td class="coler01">金幣</td>
+                      <td>等級</td>
+                      <td class="coler01">金幣</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td class="coler02">0</td>
+                      <td>6</td>
+                      <td class="coler02">24000</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td class="coler01">1500</td>
+                      <td>7</td>
+                      <td class="coler01">48000</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td class="coler02">0</td>
+                      <td>8</td>
+                      <td class="coler02">24000</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td class="coler01">1500</td>
+                      <td>9</td>
+                      <td class="coler01">48000</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td class="coler02">0</td>
+                      <td>10</td>
+                      <td class="coler02">24000</td>
+                    </tr>
+                  </table>
+              </div><!--VipGrade-->
+            </div><!--WCon-->
+            <div class="WCon hide">
+                <div class="tableBox clear">
+                	<p class="number">序號</p>
+                    <p class="time">時間</p>
+                    <p class="Source">來源</p>
+                    <p class="expend">消耗</p>
+                    <p class="Money">金錢</p>
+                    <p class="remark">備注</p>
+                </div><!--tableBox-->
+              <div class="tableList">
+                	<table width="672" border="0" cellspacing="0" cellpadding="0" class="ci">
+  <tr>
+    <td width="47px">1</td>
+    <td width="83px" class="coler01">--</td>
+    <td width="160px">--</td>
+    <td width="160px" class="coler01">--</td>
+    <td width="78px">20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+                </table>
+                </div><!--tableList-->
+            </div><!--WCon-->
+            <div class="WCon hide">
+            	<div class="tableBox clear">
+                    <p class="number">序號</p>
+                    <p class="time">時間</p>
+                    <p class="Source">來源</p>
+                    <p class="expend">消耗</p>
+                    <p class="Money">金錢</p>
+                    <p class="remark">備注</p>
+                </div><!--tableBox-->
+                <div class="tableList">
+                	<table width="672" border="0" cellspacing="0" cellpadding="0" class="ci">
+  <tr>
+    <td width="47px">1</td>
+    <td width="83px" class="coler01">--</td>
+    <td width="160px">--</td>
+    <td width="160px" class="coler01">--</td>
+    <td width="78px">20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+                </table>
+                </div><!--tableList-->
+            </div><!--WCon-->
+            <div class="WCon hide">
+            	<div class="tableBox clear">
+                	<p class="number">序號</p>
+                    <p class="time">時間</p>
+                    <p class="Source">來源</p>
+                    <p class="expend">消耗</p>
+                    <p class="Money">金錢</p>
+                    <p class="remark">備注</p>
+                </div><!--tableBox-->
+                <div class="tableList">
+                	<table width="672" border="0" cellspacing="0" cellpadding="0" class="ci">
+  <tr>
+    <td width="47px">1</td>
+    <td width="83px" class="coler01">--</td>
+    <td width="160px">--</td>
+    <td width="160px" class="coler01">--</td>
+    <td width="78px">20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="coler01">--</td>
+    <td>--</td>
+    <td class="coler01">--</td>
+    <td>20</td>
+    <td class="coler01">總金幣值</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="coler02">--</td>
+    <td>--</td>
+    <td class="coler02">--</td>
+    <td>20</td>
+    <td class="coler02">總金幣值</td>
+  </tr>
+
+                </table>
+                </div><!--tableList-->
+            </div><!--WCon-->
+        </div><!--WealthCon-->
+    </div><!--WealthBot-->
+</div><!--Account-->
+</div>
+    <div class="mw-btnClose"><a href="../play.html"></a></div>
+</div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$('.WealthBot').Tabs({
+		event:'click'
+	});
+	$('.TouTxtIco').each(function(index, element) {
+        $(this).hover(function(){
+			$(this).find('.TxtWord').stop(true,true).show();
+		},function(){
+			$(this).find('.TxtWord').stop(true,true).hide();
+		});
+    });
+	$('.rzVip').hover(function(){
+		$(this).find('.rzTxt').stop(true,true).show();
+	},function(){
+		$(this).find('.rzTxt').stop(true,true).hide();
+	});
+});
+</script>
+</body>
+</html>

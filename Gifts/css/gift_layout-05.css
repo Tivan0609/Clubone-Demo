@@ -1,0 +1,43 @@
+
+.gf_05bar{margin-top: 20px !important;width: 570px;height: 41px;}
+.gf_05moneytitle{
+	  width: 400px;
+  height: 35px;
+  color: #fadaaf;
+  font-size: 15px;
+  font-family: "微軟正黑體";
+  margin: 5px 15px;
+}
+.gold{  color: #f8b200;}
+.argen{  color: #959595;}
+.gf_05moneytitle input{padding: 2px 0;  vertical-align: middle;}
+
+.gf-05table{width: 569px; height: 299px; float: left;	background-image: url(../images/gf-05broad.png);margin-left: 15px;color: #fff;}
+.gf05tbaletxt1{  font-family: "微軟正黑體";  color: #fadaaf;  font-size: 15px;text-align: center;}
+.gf05tbaletxt2{ font-family: "微軟正黑體";  color: #fadaaf;  font-size: 15px;margin-left: 15px;}
+.gf05tbaletxt3{ font-family: "微軟正黑體";  color: #fadaaf;  font-size: 15px;margin-left: 19px;}
+.gf05tbaletxt4{ font-family: "微軟正黑體";  color: #fadaaf;  font-size: 15px;margin-left: 40px;}
+.gf05tbaletxt5{ font-family: "微軟正黑體";  color: #fadaaf;  font-size: 15px;margin-left: 30px;}
+.gf-05table table{margin-top: 8px;}
+.gf-05table tr{color: #fff;font-size: 13px;}
+.gf-05table td{border-right-style:solid; border-right-color:#261c0c;border-right-width:1px;}
+
+.deadbtn{background:url(../images/gifts_img_skin.png) -417px -88px;width: 60px;height: 25px;display: block;}
+.gotalreadybtn{background:url(../images/gifts_img_skin.png) -484px -88px;width: 60px;height: 25px;display: block;}
+
+.highbtn,.lowbtn{width: 23px;height: 18px;float: right; }
+.highbtn a{background:url(../images/gifts_img_skin.png) -509px -55px;width: 23px;height: 18px;display: block;vertical-align: middle;}
+.lowbtn a{background:url(../images/gifts_img_skin.png) -539px -55px;width: 23px;height: 18px;display: block;vertical-align: middle;}
+.highbtn a:hover{background:url(../images/gifts_img_skin.png) -508px -54px;width: 23px;height: 18px;display: block;vertical-align: middle;}
+.lowbtn a:hover{background:url(../images/gifts_img_skin.png) -538px -54px;width: 23px;height: 18px;display: block;vertical-align: middle;}
+.r1{margin: 3px 35px 0 0;}
+.r2{margin: 3px 10px 0 0;}
+.r3{margin: 3px 13px 0 0;}
+td span{display: block;font-size: 10px;}
+
+
+.pack_list_box{ width:590px; height:414px; line-height:32px; background: url(../images/my_date_img05.gif);}
+.pager_nb{ width:590px; height:30px; text-align:center; display:block;  margin-top: 5px;float: left;}
+.pager_nb span { width:25px; height:25px; line-height:25px; border:solid 1px #121010; margin-left:-1px; display:inline-block;color: #fff;}
+.pager_nb span a{ width:25px; height:25px; line-height:25px; background:#312d2b; display:block; cursor:pointer;}
+.pager_nb span a:hover{ background:#2d2321;}

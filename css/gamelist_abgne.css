@@ -1,0 +1,101 @@
+/* gamelist_box_con */
+/* Sample  abgne-yahoo-carousel */
+.abgne-yahoo-carousel {
+	width: 1120px;
+	height: 430px;
+	position: relative;
+}
+.abgne-yahoo-carousel * { margin: 0; padding: 0;}
+.abgne-yahoo-carousel ul, .abgne-yahoo-carousel li { list-style: none;}
+.abgne-yahoo-carousel .page { position: absolute; top: 12px; right: 80px;}
+.abgne-yahoo-carousel .btn {
+	position: absolute;
+	top: 200px;
+	height: 60px;
+	width: 1140px;
+	left: -15px;
+	background: none !important;
+}
+.abgne-yahoo-carousel .btn a { width: 30px;	height: 60px; float: left; text-indent: -9999px;}
+.abgne-yahoo-carousel .btn a.prev { float:left;	margin-left:5px; background:url(../images/assets.png) -2px -5px;}
+.abgne-yahoo-carousel .btn a.next {	float:right; background:url(../images/assets.png) -45px -5px;}
+.abgne-yahoo-carousel .frame {
+	position: relative;
+	overflow: hidden;
+	width: 1060px;	/* (li 的寬度 + li 的邊框寬度 * 2 ) * 一次要顯示的數量 + li 的右邊界 * (一次要顯示的數量 - 1) */
+	height: 430px;
+	left: 30px;
+}
+.abgne-yahoo-carousel ul {
+	width: 99999px;
+	position: absolute;
+	padding-top: 10px;
+}
+.abgne-yahoo-carousel li {
+	float: left;
+	width: 1100px;
+	height: 440px;
+	position: relative;
+}
+@media only screen and (max-width : 1359px) {
+	.pic_box,.pic_box .pic { width:225px !important; height:178px !important;}
+	.abgne-yahoo-carousel .btn { left:-5px !important; width:990px !important;}
+	.abgne-yahoo-carousel .frame { width: 900px !important; top:15px; left:45px !important;}
+	.abgne-yahoo-carousel .btn { top: 190px !important;}
+	.pic_box .bbgobox{   width: 217px !important;  height: 141px !important;  left: 2px !important;}
+	.bbgobox .btngogame{ margin-top: -38px!important;  margin-right: 0px!important;width: 60%!important;}
+	.bbgobox .btngoinfo{margin: 8px 0 0 0px!important;width: 52%!important;}
+	.bbgobox span{ height:88px !important; padding:3px 5px !important; font-size:12px !important; line-height:15px !important;}
+	.othergames_boxbg table .contdown_games .abgne-yahoo-carousel .btn { width: 976px!important; left:10px !important;}
+	.othergames_boxbg table .contdown_games .abgne-yahoo-carousel .frame { width: 906px !important; top:30px; left:50px !important;}
+	.othergames_boxbg table .contdown_games .abgne-yahoo-carousel ul li{ width: 906px !important;}
+	.pic_box_mg{ width:150px !important; margin:0 0 0 1px !important;}
+	.mgV1-0,.mgV1-01,.mgV1-02,.mgV1-03,.mgV1-04,.mgV1-05,.mgV2-0,.mgV2-01,.mgV2-02,.mgV2-03,.mgV2-04,.mgV2-05{ background-size:150px !important;}
+}
+@media only screen and (min-width : 1360px) and (max-width : 1439px) {
+	.abgne-yahoo-carousel .btn { width: 1124px!important; left: -5px !important;}
+	.abgne-yahoo-carousel .frame { left:33px !important;margin-top: 0!important;}
+	.othergames_boxbg table .contdown_games .abgne-yahoo-carousel .btn { width: 1065px!important; left: 18px !important;}
+	.othergames_boxbg table .contdown_games .abgne-yahoo-carousel .frame { width: 1000px !important; top:15px !important; left:55px !important;}
+	.pic_box_mg{ width:158px !important; margin: 0 3px 0 5px !important;}
+	.mgV1-0,.mgV1-01,.mgV1-02,.mgV1-03,.mgV1-04,.mgV1-05,.mgV2-0,.mgV2-01,.mgV2-02,.mgV2-03,.mgV2-04,.mgV2-05{ background-size:158px !important;}	
+}
+@media only screen and (min-width : 1440px) {
+	.othergames_boxbg table .contdown_games .abgne-yahoo-carousel .frame { top:15px !important;}
+}
+
+.pic_box { width:265px; height:210px; float:left; display:block; position: relative;}
+.pic_box .pic{ width:265px; height:210px; top:0; left:0; display:block; z-index:1; position:absolute;}
+.pic_box .pic img{ width:100%; border-radius:5px;}
+.pic_box .icon_hot,.pic_box .icon_put{ width:48px; height:60px; left:10px; z-index: 22; background:url(../images/assets.png); position:absolute; display:block;}
+.pic_box .icon_hot{ background-position:-90px 0;}
+.pic_box .icon_put{ background-position:-140px 0;}
+.pic_box .bbgobox {width: 258px;  height: 169px;  border-radius: 6px 6px 0 0;  top: 4px;  z-index: 33;  overflow: hidden;  background: rgba(0,0,0,0.9);  position: absolute;  display: none;}
+.pic_box:hover .bbgobox{ display:block;}
+.bbgobox span{ height:110px; color:#FFF; padding:7px 12px; line-height:20px; display:block; overflow:hidden;}
+.bbgobox .btngogame{ float: right;  margin-top: -38px;  margin-right: 8px;width: 56%;}
+.btngogame a img{width:100%;}
+.bbgobox .btngoinfo{margin: 5px 0 0 8px;width:48%;height: auto;display: block;}
+.btngoinfo a img{width:100%;}
+
+
+.ci{ text-align:center; margin:0 auto;}
+.hi_top5{ margin-top:5px;}.hi_top10{ margin-top:10px;}.hi_top15{ margin-top:15px;}
+
+/* 其它遊戲-MG館 */
+.pic_box_mg { width:164px; height:200px; float:left; display:block; position: relative; margin: 0 5px 0 6px;}
+.mgV1-0,.mgV1-01,.mgV1-02,.mgV1-03,.mgV1-04,.mgV1-05,.mgV2-0,.mgV2-01,.mgV2-02,.mgV2-03,.mgV2-04,.mgV2-05{ cursor:pointer;}
+.mgV1-0{ background:url(../images/games_img/mgV1-0.png); background-repeat:no-repeat;}
+.mgV1-01{ background:url(../images/games_img/mgV1-01.png); background-repeat:no-repeat;}
+.mgV1-02{ background:url(../images/games_img/mgV1-02.png); background-repeat:no-repeat;}
+.mgV1-03{ background:url(../images/games_img/mgV1-03.png); background-repeat:no-repeat;}
+.mgV1-04{ background:url(../images/games_img/mgV1-04.png); background-repeat:no-repeat;}
+.mgV1-05{ background:url(../images/games_img/mgV1-05.png); background-repeat:no-repeat;}
+.mgV1-0:hover,.mgV1-01:hover,.mgV1-02:hover,.mgV1-03:hover,.mgV1-04:hover,.mgV1-05:hover{ background:url(../images/games_img/mgV1-0.png); background-repeat:no-repeat;}
+.mgV2-0{ background:url(../images/games_img/mgV2-0.png); background-repeat:no-repeat;}
+.mgV2-01{ background:url(../images/games_img/mgV2-01.png); background-repeat:no-repeat;}
+.mgV2-02{ background:url(../images/games_img/mgV2-02.png); background-repeat:no-repeat;}
+.mgV2-03{ background:url(../images/games_img/mgV2-03.png); background-repeat:no-repeat;}
+.mgV2-04{ background:url(../images/games_img/mgV2-04.png); background-repeat:no-repeat;}
+.mgV2-05{ background:url(../images/games_img/mgV2-05.png); background-repeat:no-repeat;}
+.mgV2-0:hover,.mgV2-01:hover,.mgV2-02:hover,.mgV2-03:hover,.mgV2-04:hover,.mgV2-05:hover{ background:url(../images/games_img/mgV2-0.png); background-repeat:no-repeat;}

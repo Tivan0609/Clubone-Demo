@@ -1,0 +1,42 @@
+/* datetime-carousel */
+.datetime-carousel {
+	width: 600px;
+	height: 118px;
+	position: relative;
+	display:block;
+	background:url(../images/gifts_img_02bg2.png) no-repeat;
+}
+.datetime-carousel * { margin: 0; padding: 0;}
+.datetime-carousel ul, .abgne-yahoo-carousel li { list-style: none;}
+.datetime-carousel .page_date { position: absolute; top: 0px; right: 15px;}
+.datetime-carousel .btnt_s { width: 600px; height: 25px; position: absolute; top: 40px; left: 0; border:none !important;}
+.datetime-carousel .btnt_s a { width: 30px; height: 40px; float: left; text-indent: -9999px;}
+.datetime-carousel .btnt_s a.prev { float:left;  background:url(../images/gifts_img_skin.png) -480px 0;}
+.datetime-carousel .btnt_s a.next { float:right; background:url(../images/gifts_img_skin.png) -510px 0;}
+.datetime-carousel .datetime {
+	position: relative;
+	overflow: hidden;
+	width: 537px;	/* (li 的寬度 + li 的邊框寬度 * 2 ) * 一次要顯示的數量 + li 的右邊界 * (一次要顯示的數量 - 1) */
+	height: 130px;
+	padding-top:15px;
+	text-align:center;
+	color:#FFF;
+	left: 33px;
+}
+.datetime-carousel ul { width: 99999px; position: absolute;}
+.datetime-carousel li {
+	float: left !important;
+	width: 76px;
+	height: 140px;
+	line-height:23px !important;
+	position: relative;	
+}
+
+.datetime-carousel .datetime .gift_fs{ width:66px; height:66px; line-height:66px; text-align:center; background:url(../images/gifts_img_skin.png) 0 -50px; margin-left:5px; float:left; display:block; position:relative;}
+.datetime-carousel .datetime .gift_fs img{ width:60px; height:60px; margin:3px; display:block;}
+.datetime-carousel .datetime .gift_fs .gift_fs_name{ width:66px; height:18px; line-height:18px; text-align:center; top:70px; left:0; z-index:1; overflow:hidden; text-overflow:ellipsis; white-space: nowrap; position:absolute; display:block;}
+.datetime-carousel .datetime .gift_fs .gift_fs_ch{ width:20px; height:20px; line-height:20px; text-align:center; top:0; right:-5px; z-index:2; overflow:hidden; position:absolute; display:block;}
+.datetime-carousel .datetime .gift_fs:hover .tip{ display:block;}
+.datetime-carousel .datetime .gift_fs .tip{ width:80px; height:25px; top:70px; left:-7px; z-index:99; overflow:visible; position:absolute; display:none;}
+.datetime-carousel .datetime .gift_fs .tip span{ padding: 1px 1px 3px 1px; background:#524435; line-height:18px; border-radius:3px; -webkit-border-radius:3px; display:inline-block; word-wrap:break-word; }
+.datetime-carousel .datetime ul li.white_f{ width:2px !important; height:88px; border-right: solid 1px #FFF;}

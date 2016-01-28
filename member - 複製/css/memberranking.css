@@ -1,0 +1,9 @@
+body,html{ font-family:Verdana, Geneva, sans-serif; background:#000;}
+
+.member_property{
+  width: 555px;
+  height: 571px;
+  right: 0;
+  font-size: 15pt;
+  color: #fffcf5;
+}

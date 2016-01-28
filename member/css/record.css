@@ -1,0 +1,114 @@
+
+ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+.abgne_tab {
+	clear: left;
+	width: 210px;
+	margin-top: 7px;
+	margin-right: auto;
+	margin-left: auto;	
+	}
+ul.tabs {
+		width: 100%;
+		height: 22px;
+		border-radius:3px 3px 0 0;
+		padding-left:1px;
+
+
+	}
+ul.tabs li {
+	font-size: 12px;
+	width: 100px;
+	color: #646464;
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	overflow: hidden;
+	position: relative;
+	margin-left: 2px;
+	margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border: 1px solid #DED3A0;
+
+	border-left: none;
+	border-radius: 3px 3px 0 0;
+	background-color: #ACA39D;
+	}
+	ul.tabs li a {
+	display: block;
+	padding: 0 10px;
+	color: #333;
+	text-decoration: none;
+	text-align: left;
+	padding: 0 20px;
+	}
+	ul.tabs li a:hover {
+		color: #000;
+		text-shadow:0px 0px 3px #FFF;
+		background: #F3EFDC;
+	}
+	ul.tabs li.active  {
+		color: #000;
+		text-shadow:0px 0px 3px #FFF;
+		background: #F3EFDC;
+		border-bottom: 1px solid #fff;
+		background-image:url(../images/storagepile_img01.png);
+		background-position:left -560px;
+	}
+	ul.tabs li.active a:hover {
+		color: #000;
+		text-shadow:0px 0px 3px #FFF;
+		background: #F3EFDC;
+		background-image:url(../images/storagepile_img01.png);
+		background-position:left -560px;
+	}
+	
+	div.tab_container {
+	clear: left;
+	width: 200px;
+	height:218px;
+	padding:5px;
+	border-top: none;
+	background-color: #F3EFDC;
+	}
+	div.tab_container .tab_content {
+		padding: 3px 0px;
+		font-size:12px;
+	}
+	div.tab_container .tab_content h2 {
+		margin: 0 0 20px;
+	}
+	
+.Gold{
+	background-image: url(../images/coin.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 23px;
+	background-position: 0px -4px;
+	display: block;
+	float: left;
+	padding-left:3px;
+	}
+
+.Silver{
+	background-image: url(../images/coin.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 23px;
+	background-position: -26px -4px;
+	display: block;
+	float: left;
+	padding-left:3px;
+	}
+.txt_01{ width:50px; height:20px; line-height:20px; display:block; float:left; margin:0px 5px 5px 5px;}
+.txt_02{ width:128px; height:20px; line-height:20px; display:block; float:left; text-align:center; color:#FF0; margin:0px 0px 5px 0px;}
+.txt_03{ width: 200px; height: 23px; line-height: 12px; display: block; float: left; text-align: left; color:#999; margin:0px 0px 7px 0px; border-bottom: 1px solid #c3bea7;}
+.txt_04{ width: 200px; line-height: 20px; display: block; float: left; margin-bottom:8px;}
+.box_01{ background-color: #EAE3C1; text-align:center; line-height:23px;}
+.box_02{ background-color: #FFF; text-align:center; line-height:23px;}
+.txt_04 table.01 {border-collapse:separate; border-spacing:10px;}
+.txt_04 table tr td{ border-bottom:solid 1px #c3bea7; text-align:center; line-height:23px; }
+
+

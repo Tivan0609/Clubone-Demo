@@ -1,0 +1,29 @@
+/* datetime-carousel */
+.datetime-carousel {
+	width: 550px;
+	height: 138px;
+	padding-top:10px;
+	position: relative;
+	display:block;
+	margin-left:15px;
+}
+.datetime-carousel * { margin: 0; padding: 0;}
+.datetime-carousel ul, .abgne-yahoo-carousel li { list-style: none;}
+.datetime-carousel .page_date { position: absolute; top: 0px; right: 15px;}
+.datetime-carousel .btnt_s { width: 550px; height: 25px; position: absolute; top: 65px; left: 0; border:none !important;}
+.datetime-carousel .btnt_s a { width: 20px; height: 24px; float: left; text-indent: -9999px;}
+.datetime-carousel .btnt_s a.prev { float:left;  background:url(../images/my_date_skin.png) no-repeat -380px top;}
+.datetime-carousel .btnt_s a.next { float:right; background:url(../images/my_date_skin.png) no-repeat -430px top;}
+.datetime-carousel .datetime {
+	position: relative;
+	overflow: hidden;
+	width: 510px;	/* (li 的寬度 + li 的邊框寬度 * 2 ) * 一次要顯示的數量 + li 的右邊界 * (一次要顯示的數量 - 1) */
+	height: 135px;
+	line-height:23px !important;
+	text-align:center;
+	color:#FFF;
+	left: 20px;
+}
+.datetime-carousel ul { width: 99999px; position: absolute;}
+.datetime-carousel li { width:128px; height:128px; background:url(../images/my_date_skin.png) -260px -170px; float:left; line-height:23px !important; position: relative;}
+.datetime-carousel li img{ vertical-align:middle; margin:-3px 3px 0 0;}

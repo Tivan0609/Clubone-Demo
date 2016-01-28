@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html{ margin: 0; height: 100%; background: #000; font-family: Arial, 微軟正黑體, Helvetica, sans-serif; font-size: 12px; line-height: 20px;}
+a, a:link, a:visited{ color: #ffa100; text-decoration: none;}
+a:hover{ color: #a5c700;}
+.wrapper_main{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	min-height: 900px;
+}
+.wrapper_play{ width: 100%; position: relative; overflow: hidden; min-width: 1200px;}
+.imgBG{ width: 100%; height: 100%; background-image: url(../images/loginBG.jpg); background-repeat: no-repeat; background-position: center center; background-size: contain; position: absolute; z-index:0; top: 0;}
+.clubLogo{ width: 420px; height: 218px; background: url(../images/assets_others.png) no-repeat 0 -181px;}
+.interface{ 
+	position: relative;
+	width: 1400px; 			
+	margin: 0 auto;	
+	z-index: 99;
+	margin-top: 20px;
+	margin-bottom: 10px;	
+}
+.interface .userIn, .interface .playerInstall{ 
+	width: 385px;
+	background: url(../images/transparentBlack.png) repeat; 
+	-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+	padding: 20px 0;	
+	overflow: hidden;
+}
+.interface .userIn, .interface .playerInstall, .interface .clubLogo{ margin-left: 100px;}
+.welcomeSlogun{ width: 229px; height: 76px; background: url(../images/assets_others.png) no-repeat -214px -31px; margin: 0 auto; margin-top: 20px; margin-bottom: 30px;}
+.playerInstall{ margin-top: 6px;}
+
+.btn{ background: url(../images/assets.png) no-repeat; margin: 0 auto; margin-bottom: 10px; cursor: pointer;}
+.btn, .btn a{ width: 325px; height: 75px; display: block;}
+.btn.loginSignin{ background-position: 0 0;}
+.btn.loginSignin:hover{ background-position: -342px 0;}
+
+.btn.guest{ background-position: 0 -75px;}
+.btn.guest:hover{ background-position: -342px -75px;}
+
+.btn.unityPlayer{ background-position: 0 -150px;}
+.btn.unityPlayer_no{ background-position: 0 -224px;}
+.btn.unityPlayer:hover{ background-position: -342px -150px;}
+
+.desc{ color: #fff; width: 300px; margin: 0 auto; font-size: 15px;}
+
+
+.homeFooter{ 
+	height: 22px;
+	text-align:center;
+	padding-top:2px;
+	color:#999;
+	margin: 0 auto;
+	background:url(../images/homeFooter_bg.jpg);
+	overflow: hidden;
+	margin-top:3px;
+}
+.homeFooter > div{ margin-left: 140px;}
+.clubLogo_footer{ width: 114px; height: 25px; background: url(../images/assets_others.png) no-repeat -216px 0; margin-top: 25px;}
+.rightWords{ font-size: 12px; color: #fff; padding: 5px;}
+
+/* play.html */
+.headerTop, .pageHeader{ width: 1400px; margin: 0 auto;}
+.headerTop{ height: 17px; background: #000;}
+.pageHeader{ height: 94px; background: #000; position: relative; z-index: 999; background: url(../images/headerBack.png) repeat-x;}
+.pageHeader .navigator{ width: 1400px; margin: 0 auto; position: relative;}
+.pageHeader .navigator, .pageHeader .navigator .menu, .pageHeader .navigator .menu .menuItem{ height: 94px;} 
+.pageHeader .navigator .menu{ background: url(../images/headerMenuBack.png) no-repeat left 0; padding-left: 96px; position: absolute; top: 0; right: 0; width: 750px;}
+.pageHeader .navigator .menu .menuItem{ background: url(../images/headerMenuBack.png) no-repeat right -110px; padding-right: 50px;}
+.bodyContent{ width: 1400px; margin: 0 auto; position: relative;}
+.playContent{ margin-right: 200px;}
+.playIM{ width: 200px;  height: 100%; position: absolute; right: 0; top: 3px; background: #1b1a17;/*url(../images/imBack.jpg) repeat-y left top;*/}
+
+.mainLogo{ width: 300px; height: 110px; background: url(../images/assets_others.png) no-repeat 0 -420px; float: left; margin-top: -15px; margin-left: 15px; display:block}
+.gameSlogun{ width: 357px; height: 48px; background: url(../images/assets_others.png) no-repeat 0 -119px; float: left; margin-top: 35px;}
+
+.menuBtn{ background: url(../images/assets.png) no-repeat; float: right; overflow: hidden;}
+.menuBtn, .menuBtn a{ width: 105px; height: 80px; display: block; color: #cca974; font-size: 12px; text-align: center; overflow:hidden;}
+.menuBtn a{ padding-top: 52px;}
+.menuBtn a:hover, .menuBtn.selected a{ color: #726516;}
+.menuBtn.menu1{ background-position: -784px -150px;}
+.menuBtn.menu2{ background-position: -784px -230px;}
+.menuBtn.menu3{ background-position: -784px -310px;}
+
+.menuBtn.menu1:hover, .menuBtn.menu1.selected{ background-position: -889px -150px;}
+.menuBtn.menu2:hover, .menuBtn.menu2.selected{ background-position: -889px -230px;}
+.menuBtn.menu3:hover, .menuBtn.menu1.selected{ background-position: -889px -310px;}
+
+
+ul, ul li{ list-style: none; float: left; margin: 0; margin-right: 10px; padding: 0;}
+.menuInfo{ position: relative; top: 18px;}
+.menuInfo > div, .menuInfo .memberInfo, .menuInfo .money{ position: absolute;}
+
+.memberPhoto{ width: 54px; height:54px; background: url(../images/assets.png) no-repeat -889px -21px; text-align: center;}
+.memberPhoto img{ vertical-align: middle; margin-top: 4px;}
+.memberInfo{ left: 70px; }
+.memberName{ color: #fff;}
+.memberType{ color: #feda02;}
+.btnTypeUpgrade{ background: url(../images/assets.png) no-repeat -784px -51px; cursor: pointer;}
+.btnTypeUpgrade, .btnTypeUpgrade a{ width: 40px; height: 19px;}
+.btnTypeUpgrade:hover{ background-position: -836px -51px;}
+
+.money{
+	width: 158px;
+	height: 27px;
+	background: url(../images/assets.png) no-repeat -784px -83px;
+}
+.money li{ line-height: 27px; color: #fff; margin: 0;}
+.money.gold{
+	left: 60px;
+	top: 26px;
+}
+.money.silver{
+	left: 222px;
+	top: 26px;
+}
+.moneyType{ padding-left: 12px; padding-right: 12px;}
+.moneyType.gold{}
+.moneyType.silver{}
+li.moneyAmount{ color: #feda02; width: 88px; overflow: hidden;}
+li.btnMoneyUpgrade{ background: url(../images/assets.png) no-repeat -784px -28px;}
+li.btnMoneyUpgrade, li.btnMoneyUpgrade a{ width: 17px; height: 17px; margin-top: 4px; display: block; cursor: pointer;}
+li.btnMoneyUpgrade:hover{ background-position: -807px -28px;}
+
+@media only screen and (max-width : 1359px) {
+	.headerTop, .pageHeader{ width: 1200px; margin: 0 auto;}
+	.pageHeader .navigator, .bodyContent{ width: 1200px;}
+	.wrapper_play{ width: 100%; margin: 0 auto;}
+	.desc-before.imgbefore, .pagebox{ width: 970px;}
+}
+
+@media only screen and (min-width : 1360px) and (max-width : 1439px) {
+	.headerTop, .pageHeader{ width: 1320px; margin: 0 auto;}
+	.pageHeader .navigator, .bodyContent{ width: 1320px;}
+	.wrapper_play{ width: 100%; margin: 0 auto;}
+	.desc-before.imgbefore, .pagebox{ width: 1000px;}
+}hatop
+
+@media only screen and (min-width : 1440px) {
+	.headerTop, .pageHeader{ width: 1400px; margin: 0 auto;}
+	.pageHeader .navigator, .bodyContent{ width: 1400px;}
+	.wrapper_play{ width: 100%; margin: 0 auto;}
+	.desc-before.imgbefore, .pagebox{ width: 1200px;}
+}
+
+/* 404 page */
+.interface-404{ position: relative; width: 100%; height:100%; margin: 0 auto; z-index: 99; margin-top: 20px; margin-bottom: 10px;}
+.imgBG404{ width: 100%; height: 100%; background-image: url(../images/404-BG.jpg); background-repeat: no-repeat; background-position: center top; background-size: contain; position: absolute; z-index:0; top: 0;}
+.interface .clubLogo-404{ width: 320px; height: 150px; background: url(../images/assets_others.png) no-repeat 0 -420px; margin:120px 0 50px 380px;}
+.desc-404{ color: #fff; width: 30%; margin-left:33%; margin-top:23%; font-size: 14px;}
+.btn404{ width:23%; height: 8%; margin: 0 auto; margin-bottom: 10px; margin-top:2%; cursor: pointer;}
+.btn404,.btn404 a{ display: block;}
+.btn404.backplay{ background: url(../images/imgbackplay-1.png) no-repeat; background-size: contain;}
+.btn404.backplay:hover{ background: url(../images/imgbackplay-1.png) no-repeat; background-size: contain;}
+
+/* before-page */
+.loadbg{ width: 100%; height: 0; background: url(../images/load-BG.jpg); clear: both; display: block; content: ".";}
+.interface-before{ position: relative; width: 100%; height:100%; margin: 0 auto; z-index: 99; margin-top: 30px; margin-bottom: 10px;}
+.desc-before,.desc-before2{ color: #fff; width:100%; margin-top:10%; margin:0 auto; font-size: 15px; line-height:26px;}
+.desc-before2{ width:28%; text-indent:-55px;}
+.imgbefore{ width: 100%; height: 100%; background: url(../images/before-bg.png) center top; background-size: 100%;background-repeat: no-repeat;}
+.pagebox,.pagebox2{ width:50%; margin-left:20%; padding-top:10%;}.pagebox2{ padding-top:10%;}
+.btn-before{ width:320px; height:70px; margin: 0 auto; margin-bottom: 10px; margin-top:10%; cursor: pointer;}
+.btn-before,.btn-before a{ display: block;}
+.btn-before.backplay{ background: url(../images/imgbackplay-1.png) no-repeat; background-size: contain;}
+.btn-before.backplay:hover{ background: url(../images/imgbackplay-1.png) no-repeat; background-size: contain;}
+.iconbox{ width:380px; height:70px; margin:5% 0 10px 0; cursor: pointer;}.iconbox img{ width:60px; padding:5px 8px; background:rgba(92,92,92,0.3); border-radius:10px; margin-right:5px;}.iconbox img:hover{ background:rgba(255,204,0,0.3);}
+.hatop{ width:200px; height:60px; background:url(../images/assets.png)left -390px; margin-bottom:5px;}
+span.no1,span.no2{ width:110px; height:30px; background:url(../images/assets.png)left -465px; display:block;}
+span.no2{background:url(../images/assets.png)left -514px; margin-top:10px;}
+span.pagetxt,span.pagetxt2{ width:85%; display:block; line-height:20px; padding-bottom:5px; margin-left:1%;}span.pagetxt2{ margin:1% 0;}
+span.pagetxt3{ width:100%; display:block; line-height:20px; padding-bottom:10%; margin-left:1%; margin-bottom:14%;}
+span.pagetxt3 img{ text-align:right; width:300px;}
+.him50{ margin-top:20%;}
+
+.btn2{ background: url(../images/assets.png) no-repeat; background-size:800px; margin: 0 auto; margin-bottom: 10px; cursor: pointer;}
+.btn2, .btn2 a{ width: 255px; height: 55px; display: block;}
+.btn2.Signin-s{ background-position: 0 0;}
+.btn2.Signin-s:hover{ background-position: -274px 0;}
+.btn2.unityPlayer-s{ background-position: 0 -120px;}
+.btn2.unityPlayer-s:hover{ background-position: -274px -120px;}
+.btn2.ConfirmPC2{ background-position: 0 -500px;}
+.btn2.ConfirmPC2:hover{ background-position: -274px -500px;}
+.btn2.Confirming2{ background-position: 0 -560px;}

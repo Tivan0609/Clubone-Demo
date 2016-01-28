@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Club One</title>
+<link href="css/vip_v1.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		// 預設顯示第一個 Tab
+		var _showTab = 0;
+		var $defaultLi = $('ul.tabsvip li').eq(_showTab).addClass('active');
+		$($defaultLi.find('a').attr('href')).siblings().hide();
+		
+		// 當 li 頁籤被點擊時...
+		// 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
+		$('ul.tabsvip li').click(function() {
+			// 找出 li 中的超連結 href(#id)
+			var $this = $(this),
+				_clickTab = $this.find('a').attr('href');
+			// 把目前點擊到的 li 頁籤加上 .active
+			// 並把兄弟元素中有 .active 的都移除 class
+			$this.addClass('active').siblings('.active').removeClass('active');
+			// 淡入相對應的內容並隱藏兄弟元素
+			$(_clickTab).stop(false, true).fadeIn().siblings().hide();
+
+			return false;
+		}).find('a').focus(function(){
+			this.blur();
+		});
+	});
+</script>
+
+<!--[if lt IE 10]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<!-- [endif]  -->
+</head>
+<body>
+<div class="all">
+<div id="vip_msg_01">
+<div id="vip_top">
+<div id="hd_01"></div>
+<div id="icon_close"><a href="../play.html"></a></div>
+</div>
+<div id="vip_content">
+
+<div class="abgne_tab">
+<ul class="tabsvip">
+	<li><a href="#vip_my">經營的</a></li>
+	<li><a href="#vip_join">加入的</a></li>
+    <li><a href="#vip_verify">受邀的</a></li>
+    <div class="button_11"><a href=""><span>您經營的俱樂部已達上限!</span></a></div>
+</ul>
+ 
+<div class="tab_container">
+
+<!-- 經營的  -->
+<div id="vip_my" class="tab_contentvip">
+  <div class="club_cont">
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">前往</a></div>
+    </div>
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">前往</a></div>
+    </div>
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">前往</a></div>
+    </div>
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">前往</a></div>
+    </div>
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">前往</a></div>
+    </div>
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">前往</a></div>
+    </div>
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">前往</a></div>
+    </div>
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">前往</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- 加入的  -->
+<div id="vip_join" class="tab_contentvip">
+  <div class="club_cont">
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">退出</a></div><div class="button_out"><a href="">前往</a></div>
+    </div>
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">退出</a></div><div class="button_out"><a href="">前往</a></div>
+    </div>
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">退出</a></div><div class="button_out"><a href="">前往</a></div>
+    </div>
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">退出</a></div><div class="button_out"><a href="">前往</a></div>
+    </div>
+  </div>  
+</div>
+
+<!-- 受邀的  -->
+<div id="vip_verify" class="tab_contentvip">
+  <div class="club_cont">
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">拒絕</a></div><div class="button_out"><a href="">同意</a></div>
+    </div>
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">拒絕</a></div><div class="button_out"><a href="">同意</a></div>
+    </div>
+    <div class="club_list">
+      <div class="club_img"><img src="images/vip/vip-club-img.png"></div><div class="club_text"><p>只能放入8個字喔!</p><p class="psc">人數：123456</p></div>
+      <div class="club_rig"></div><div class="button_out"><a href="">拒絕</a></div><div class="button_out"><a href="">同意</a></div>
+    </div>
+  </div>  
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+<div id="vip_footer">
+<div class="button_01"><a href="../vip_club/vip.html"></a></div>
+</div>
+</div>
+</div>
+</body>
+</html>

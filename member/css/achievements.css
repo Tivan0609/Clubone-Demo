@@ -1,0 +1,341 @@
+/*success_box1*/
+.success_box1{
+        width: 520px;
+        height: 281px;
+        background: url(../images/success_box1.png) no-repeat;
+        position: relative;
+        margin: 8px 0 0 15px;
+        padding: 3px 4px 0 0;
+        overflow-x:hidden;
+        overflow-y:auto;
+}
+
+.success_box1_sb{ width:521px ;height: 267px; overflow-y:auto; overflow-x:hidden; margin:5px 3px 5px 0;}
+.success_btn{
+	width: 495px;
+	height: 83px;
+	background: url(../images/success_object.png) 0 -240px no-repeat;
+	margin: 0 0 6px 8px;
+	float: left;
+	display: block;
+	position:relative;
+}
+.success_btn_no{
+	width: 495px;
+	height: 83px;
+	background: url(../images/success_object.png) 0 -149px no-repeat;
+	margin: 0 0 6px 8px;
+	float: left;
+	display: block;
+	position:relative;
+}
+.success_btn .layup{ position:absolute; z-index:999;}
+.success_kindicon{
+	width: 60px;
+	height: 50px;
+	float: left;
+	margin-right: 5px;
+}
+.success_kindicon img{
+	margin-top: 18px;
+	margin-left: 12px;
+}
+.success_btntxtbox{
+        float: left;
+        width: 270px;
+        word-break: break-all;
+}
+.success_btntxtbox h1,.success_getbox h1{
+        font-size: 13px;
+        font-weight: bold;
+        color: #fff;
+        margin: 8px 0 0 2px;
+}
+
+.success_getbox h1{
+	margin-top: 19px;
+	text-align: center;
+}
+.success_btntxtbox p{
+        font-size: 12px;
+        color: #000;
+        margin: 0 0 0 2px;
+        line-height: 15px;
+        height: 33px;
+}
+
+.bounsbar{
+	width: 268px;
+	height: 19px;
+	background: url(../images/success_object.png) -180px -6px no-repeat;
+	float: left;
+	display: block;
+
+}
+.bounsbar h2,.success_getbox h2{
+        color: #eddf95;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 20px;
+        float: left;
+        display: block;
+        margin: 0 0 0 2px;
+}
+.bounsbar h2.info,.success_getbox h2.info{width:125px; height:20px; overflow:hidden;}
+.bounsbar h2.cointxt,.success_getbox h2.cointxt{width:103px; height:20px; font-weight:normal !important; overflow:hidden;}
+.success_getbox h2{ float:none; text-align:center; color:#FFF; font-weight:normal;}
+.bounsbaricon{
+        width: 16px;
+        height: 16px;
+        background: url(../images/cion_g.png) no-repeat;
+        float: left;
+        margin: 1px 0 0 4px;
+}
+.bounsbaricon2{
+        width: 16px;
+        height: 16px;
+        background: url(../images/cion_f.png) no-repeat; 
+        float: left;
+        margin: 1px 0 0 4px;
+}
+.bounsbaricon3{
+        width: 16px;
+        height: 16px;
+        background: url(../images/cion_info.png) no-repeat;
+        float: left;
+        margin-top: 1px;
+}
+.success_getbox{
+	width: 80px;
+	height: 71px;
+	background: url(../images/success_object.png) -400px -335px no-repeat;
+	float: left;
+	margin: 7px 0 0 5px;
+}
+.success_getbtn{
+	width: 63px;
+	height: 37px;
+	float: right;
+	margin: 23px 5px 0 0;
+}
+.success_getbtn a{
+	background: url(../images/success_object.png) -158px -36px no-repeat;
+	width: 63px;
+	height: 37px;
+	display: block;
+}
+.success_getbtn a:hover{
+	background: url(../images/success_object.png) -157px -35px no-repeat;
+}
+
+/*success_box2*/
+
+.success_titlebar{
+	width: 554px;
+	height: 34px;
+	margin-top: 10px;
+	background-color: #2c221f;
+}
+.success_title{
+	width: auto;
+	color: #f0eabc;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	float: left;
+	position: relative;
+	line-height: 34px;
+	margin-left: 20px;
+}
+.success_box2{
+	width: 526px;
+	height: 187px;
+	background: url(../images/success_box2.png) no-repeat;
+	position: relative;
+	margin: 10px 0 0 15px;
+	padding-top: 3px;
+	font-size:12px;
+}
+.success_box2 h3{
+	width:120px;
+	height: 32px;
+	color: #f0eabc;
+	font-size: 12px;
+	margin: 3px 2px 3px 5px;
+	float: left;
+	display:block;
+	position:relative;
+	text-align:right;
+}
+.success_box2 h3 span{ position:absolute; width:100%; top:50%; transform:translateY(-50%); line-height:15px !important;}
+.allrunnnning{
+	background: url(../images/success_object.png) -3px -339px no-repeat;
+	width: 379px;
+	height: 18px;
+	display: block;
+	float: left;
+	margin-top: 11px;
+	position: relative;
+}
+.allrunnnning h4{
+	position: absolute;
+	right: 0;
+	color: #221914;
+	font-size: 11px;
+	line-height:11px;
+	font-weight:bold;
+ 	margin: 4px 8px 0 0;
+ 	letter-spacing: 2px;
+	z-index:99;
+	display: block;
+}
+.allrunnnning img{
+	position: absolute;
+	right: 0;
+	top:1px;
+	z-index:9;
+	display: block;
+}
+.otherrunnnn{
+	width: 523px;
+	height: 138px;
+	display: block;
+	float: left;
+	overflow-y: auto; overflow-x:hidden;
+	-ms-scrollbar-base-color:#312923;-ms-scrollbar-track-color:#221F1D;
+}
+.otherrunnnn-box2 .srunnnning{
+	background: url(../images/success_object.png) -3px -371px no-repeat;
+	width: 120px;
+	height: 18px;
+	display: block;
+	float: left;
+	position: relative;
+	margin:5px 0 6px 0;
+}
+.otherrunnnn-box2 .srunnnning h4{
+	position: absolute;
+	right: 0;
+	color: #221914;
+	font-size: 11px;
+	line-height:11px;
+	font-weight:bold;
+ 	margin: 4px 8px 0 0;
+ 	letter-spacing: 2px;
+	z-index:99;
+	display: block;
+}
+.otherrunnnn-box2 .srunnnning img{
+	position: absolute;
+	right: 0;
+	top:1px;
+	z-index:9;
+	display: block;
+}
+.otherrunnnn .otherrunnnn-box1{
+	width: 127px;
+	float: left;
+	display: block;
+	margin-left: 5px;
+}
+.otherrunnnn .otherrunnnn-box1 h3{
+	float: left;
+	width: 125px;
+	height:29px;
+	line-height:27px;
+	margin: 0;
+	padding-right:2px;
+	display:block;
+	position:relative;
+}
+.otherrunnnn .otherrunnnn-box1 h3 span{ position:absolute; width:100%; left:0; top:50%; transform:translateY(-50%); line-height:12px !important; text-align:right;}
+.otherrunnnn .otherrunnnn-box2{
+	width: 120px;
+	float: left;
+	display: block;
+}
+.space{width: 1px;height: 100px;display: block;float: left;}
+.notyetbox{
+	background: url(../images/notyetbg.png);
+	width: 409px;
+	height: 229px;
+	margin: auto;
+	margin-top: 25px;
+}
+.success_box1 h3{
+	color: #f3eec1;
+	font-size: 13px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+/*success_box3*/
+.success_box3{
+	width: 524px;
+	height: 457px;
+	background: url(../images/success_box3.png) no-repeat;
+	margin:0 0 0 15px;
+	padding:5px 4px 0 0;
+	float: left;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.success_radio{
+	width: 539px;
+	height: 34px;
+	float: left;
+	display: block;
+	margin-top: 5px;
+}
+.success_radio input{
+	margin: 14px 5px 0 25px!important;
+	float: left;
+}
+.success_radio p{
+	color: #fff;
+	font-size: 13px;
+	float: left;
+	margin: 0;
+	letter-spacing: 0px;
+	margin-top: 12px;
+}
+.success_showtag{
+	background: url(../images/success_object.png) -235px -32px no-repeat;
+	width: 155px;
+	height: 35px;
+	float: right;
+	display: block;
+}
+.success_showtag p{
+	margin-left: 8px;
+	margin-right: 2px;
+	color: #f0eabc;
+	font-size: 13px;
+	letter-spacing: 0px;
+	display:block;
+	float:left;
+}
+.success_luckbtn{
+	background: url(../images/success_object.png) -403px -33px no-repeat;
+	width: 41px;
+	height: 48px;
+	display: block;
+	float: right;
+	margin: 23px 14px 0 0;
+}
+.success_btngary{
+
+}
+
+/* pager  */
+.page_box{ width:524px; height:30px; margin:0 auto !important; padding:0 !important; display:inline-block;}
+.pager{ text-align:center; margin:8px 0 !important;}
+.pager > div{ display:inline-block; float: left;}
+.pager > div a{ color:#ded1c8; font-size: 14px; width:25px; height:25px; line-height:25px; background:#221f1d; border:solid 1px #121212; margin-left:-5px; display:block; text-decoration:none;}
+.pager > div a:hover{ background:#443b35;}
+.pager > div a.selected{ background:#443b35;}
+.pager > div a.first{ border-radius:3px 0 0 3px;float: left;}
+.pager > div a.last{ border-radius:0 3px 3px 0;float: left;}
+.pages,.pagesnum,.num_box{float: left;}
+.num_box{padding:0px 0px 0px 190px !important;}

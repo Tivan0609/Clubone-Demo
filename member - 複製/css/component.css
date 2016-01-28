@@ -1,0 +1,125 @@
+ul.og-grid {
+	list-style: none;
+	margin: 6px 0 0 15px;
+	width: 555px;
+	height:482px;
+}
+
+ul.og-grid li {
+	display: inline-block;
+	margin: 0;
+	padding-right: 5px;
+	vertical-align: top;
+	width: 130px;
+	height: 137px;
+}
+ul.og-grid li > a,
+ul.og-grid li > a img {
+	border: none;
+	outline: none;
+	display: block;
+	position: relative;
+}
+ul.og-grid li.og-expanded > a::after {
+	top: auto;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: ;
+	border-width: 15px;
+	background:url(../images/my_date_skin.png) -218px -315px;
+	left: 50%;
+	margin: -17px 0 0 -15px;
+}
+.og-expander {
+	position:absolute;
+	top: auto;
+	left: 0;
+	color:#000;
+	background: #83776f;
+	width: 538px !important;
+	margin: 5px 0 0 15px;
+	padding: 4px 0 0 10px;
+	text-align: left;
+	height: 66px !important;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	overflow: hidden;
+	display:block;
+}
+.og-expander {
+	
+}
+.og-expander-inner {
+	padding: 0;
+	height:  20px;
+}
+
+.og-close {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+}
+
+.og-close::before,
+.og-close::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 1px;
+	background: #a0938a;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.og-close::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.og-close:hover::before,
+.og-close:hover::after {
+	background: #423530;
+}
+
+.og-fullimg,.og-loading,.og-fullimg img {
+	display:none;
+}
+
+.og-details h3 {
+	width:400px;
+	font-weight:bold;
+	font-size: 15px;
+	line-height: 27px;
+	display:block;
+}
+.og-details .title {
+	width:330px;
+	font-weight:bold;
+	font-size: 15px;
+	line-height: 27px;
+	display:inline-block;
+	text-align:left;
+}
+.og-details .date {
+	width:200px;
+	font-weight:bold;
+	font-size: 8px;
+	line-height: 27px;
+	display:inline-block;
+	text-align:right;
+}
+.og-details p {
+	font-size: 12px;
+	line-height: 18px;
+
+}

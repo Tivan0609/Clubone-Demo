@@ -1,0 +1,104 @@
+::-webkit-scrollbar-track-piece{background-color:#000;}
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-thumb{background:#312923;} 
+
+ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+.mesg_page_tab {
+	width: 520px;
+	display: block;
+	margin-top: 13px;
+	margin-right: auto;
+	margin-bottom: 13px;
+	margin-left: auto;
+}
+.abgne_tab {
+	clear: left;
+	margin: 0 auto;
+}
+.abgne_tab ul.tabs {
+	width: 500px;
+	height: 30px;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+	text-align: center;
+	padding-left: 20px;
+}
+.abgne_tab ul.tabs li {
+	float: left;
+	height: 30px;
+	width: 130px;
+	line-height: 32px;
+	position: relative;
+	margin-right: 2px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border-left: none;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+	background-color: #2b221d;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	font-weight: bold;
+}
+
+.abgne_tab ul.tabs li a {
+	    height: 30px;
+		display: block;
+		color: #fff;
+		text-decoration: none;
+}
+.abgne_tab ul.tabs li a:hover {
+	    height: 30px;
+		color: #FFF;
+		background:#5B4841;
+		border-radius: 5px 5px 0 0;
+}
+
+.abgne_tab ul.tabs li.active  {
+		background: #82756d;
+}
+	
+.abgne_tab div.tab_container {
+	font-family: "微軟正黑體";
+	clear: left;
+	color: #FFF;
+	overflow: hidden;
+	border-radius: 0 5px 5px 5px;
+	height: 530px;
+}
+.abgne_tab div.tab_container .tab_content { padding: 15px 8px; position:relative;}
+.title1 {
+	font-family: "微軟正黑體";
+	font-size: 18px;
+	line-height: 30px;
+	color: #C90;
+}
+
+.tab_content ul,.tab_content ul li,.tab_content ul li a{ display:inline-block;color: #87E8F7;}
+.tab_content ul li a:hover{color: #f3f787;}
+.tab_content ul li img{ float: left;margin:5px 10px 0 0;}
+.tab_content ul li{ border-bottom:dashed 1px #000;width: 662px;}
+.tab_content ul li:nth-child(even) {background:#443b35;}
+.evencolor{background:#443b35;}
+
+.tab_content table tr td{ line-height:38px;}
+.tab_content table.table2box tr td{ line-height:34px;}
+
+
+#apDiv1,#apDiv2,#apDiv3{
+	position: absolute;
+	right:40px;
+	top: 220px;
+	width: 145px;
+	height: 37px;
+	text-align:center;
+	z-index: 1;
+	color:#e6ba56;
+	background:url(../../images/myclub/Lobby_VipClub_01.png) -250px -90px;
+	background-size:1020px;
+	display:block;
+}
+#apDiv2{ top:256px !important;}
+#apDiv3{ top:292px !important;}
+#apDiv1 img,#apDiv2 img,#apDiv3 img{ float:right; margin:2px 2px 0 0;}

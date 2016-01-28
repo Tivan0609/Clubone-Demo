@@ -1,0 +1,78 @@
+ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+.abgne_tab {
+	clear: left;
+	margin: 0 auto;
+}
+.abgne_tab ul.tabs {
+		width: 100%;
+		height: 29px;
+		border-radius:5px 5px 0 0;
+}
+.abgne_tab ul.tabs li {
+	float: left;
+	height: 30px;
+	line-height: 31px;
+	overflow: hidden;
+	position: relative;
+	margin-right: 2px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border-left: none;
+	border-radius: 5px 5px 0 0;
+	background: #3a342f;
+}
+.abgne_tab ul.tabs li a {
+		display: block;
+		padding: 0 20px;
+		color: #f6f6f6;
+		text-decoration: none;
+}
+.abgne_tab ul.tabs li a:hover {
+		color: #FFF;
+		background: #7e756e;
+}
+.abgne_tab ul.tabs li.active  {
+		color: #FFF;
+		background:#4e453f;
+}
+.abgne_tab ul.tabs li.active a:hover {
+		color: #FFF;
+		background:#4e453f;
+}
+	
+.abgne_tab div.tab_container {
+	font-family:"微軟正黑體";
+	clear: left;
+	color: #FFF;
+	overflow: hidden;
+	border-radius: 0 5px 5px 5px;
+	background:#4e453f;
+}
+.abgne_tab div.tab_container .tab_content { padding: 8px;}
+
+.tab_content ul,.tab_content ul li,.tab_content ul li a{ display:block;}
+.tab_content ul li{ border-bottom:dashed 1px #000;}
+.tab_content ul li:nth-child(even) {background:#443b35;}
+.tab_content ul li:hover{ background:#7e756e;}
+.tab_content ul li a{ width:674px; height:33px; line-height:33px; color:#FFF;}.tab_content ul li a:hover span.faq_subject{ color:#FF9; font-size:14px;}
+.sort01,.sort02,.sort03,.sort04,.sort05,.sort06,.sort07,.sort_tato,.faq_subject,.faq_date{ display:inline-block; text-align:center;}
+span.sort01,span.sort02,span.sort03,span.sort04,span.sort05,span.sort06,span.sort07{ width:50px; height:20px; line-height:20px; margin:5px; border-radius:10px;}
+span.sort01{ background:#e5846e; font-weight: 900;font-size: 14;}span.sort02{ background:#e59d4f; font-weight: 900;font-size: 14;}span.sort03{ background:#918bde; font-weight: 900;font-size: 14;}
+span.sort04{ background:#809ed4; font-weight: 900;font-size: 14;}span.sort05{ background:#dcc03d; font-weight: 900;font-size: 14;}span.sort06{ background:#7bc7bf; font-weight: 900;font-size: 14;}
+span.sort07{ background:#0D87FD; font-weight: 900;font-size: 14;}
+span.sort_tato{ width:90px;}
+span.faq_subject{ width:440px; font-family:"微軟正黑體"; text-align:left;}
+span.faq_date{ width:80px; font-size:10px;}
+
+
+/* pager  */
+.page_box{ width:674px; margin:0 auto; display:inline-block;}
+.pager{ text-align:center; padding:15px 0;}
+.pager > div{ display:inline-block;}
+.pager > div a{ color:#ded1c8; font-size: 14px; width:25px; height:25px; line-height:25px; background:#221f1d; border:solid 1px #121212; margin-left:-5px; display:block; text-decoration:none;}
+.pager > div a:hover{ background:#443b35;}
+.pager > div a.selected{ background:#443b35;}
+.pager > div a.first{ border-radius:3px 0 0 3px;}
+.pager > div a.last{ border-radius:0 3px 3px 0;}

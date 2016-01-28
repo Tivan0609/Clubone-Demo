@@ -1,0 +1,138 @@
+::-webkit-scrollbar-track-piece{background-color:#000;}
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-thumb{background:#312923;} 
+
+ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+.mesg_page_tab {
+	width: 900px;
+	display: block;
+	margin-top: 13px;
+	margin-right: auto;
+	margin-bottom: 13px;
+	margin-left: auto;
+}
+.abgne_tab {
+	clear: left;
+	margin: 0 auto;
+}
+.abgne_tab ul.tabs {
+	width: 600px;
+	height: 40px;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+	text-align: center;
+	padding-left: 300px;
+}
+.abgne_tab ul.tabs li {
+	float: left;
+	height: 35px;
+	width: 130px;
+	line-height: 40px;
+	position: relative;
+	margin-right: 2px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border-left: none;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+	background-color: #827773;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset;
+	font-weight: bold;
+}
+
+
+
+.abgne_tab ul.tabs li a {
+	    height: 35px;
+		display: block;
+		color: #fff;
+		text-decoration: none;
+}
+.abgne_tab ul.tabs li a:hover {
+	    height: 35px;
+		color: #FFF;
+		background:#5B4841;
+		border-radius: 5px 5px 0 0;
+}
+
+	
+.abgne_tab div.tab_container {
+	font-family: "微軟正黑體";
+	clear: left;
+	color: #FFF;
+	overflow: hidden;
+	border-radius: 0 5px 5px 5px;
+	height: 530px;
+}
+.abgne_tab div.tab_container .tab_content { padding: 8px;}
+.title1 {
+	font-family: "微軟正黑體";
+	font-size: 18px;
+	line-height: 30px;
+	color: #C90;
+}
+
+.tab_content ul,.tab_content ul li,.tab_content ul li a{ display:inline-block;color: #87E8F7;}
+.tab_content ul li a:hover{color: #f3f787;}
+.tab_content ul li img{ float: left;margin:5px 10px 0 0;}
+.tab_content ul li{ border-bottom:dashed 1px #000;width: 662px;}
+.tab_content ul li:nth-child(even) {background:#443b35;}
+.evencolor{background:#443b35;}
+
+
+
+.mesg_subject,.mesg_date{ display:inline-block;}
+.mesg_hilight{font-size: 15px; font-weight: bold;width: auto;display: block;margin-top: 5px;}
+.mesg_subject{ width:480px; font-family:"微軟正黑體";color: #afa7a2;}
+.mesg_date{ width:120px;color: #afa7a2;font-size: 13px;float: right;margin: 20px 12px 20px 0;}
+.mesg_h1{color: #fff;font-size: 15px;font-weight: bold;line-height: 50px;}
+.mesg_h2{color: #fff;font-size: 15px;font-weight: bold;line-height: 18px;margin-top: 12px;display: block;}
+
+
+.agreebtn a{float: left;margin: 17px 0 0 10px;background: url(../images/newsmesg_pic.png) no-repeat -1px -1px ;width: 63px;height: 30px;display: block;}
+.disagreebtn a{float: left;margin: 17px 0 0 10px;background: url(../images/newsmesg_pic.png) no-repeat -74px -1px;width: 63px;height: 30px;display: block;}
+.agreebtn a:hover{background: url(../images/newsmesg_pic.png) no-repeat -0 0 ;}
+.disagreebtn a:hover{background: url(../images/newsmesg_pic.png) no-repeat -73px 0;}
+.giveupbtn a{float: left;margin: 6px 0 0 10px;background: url(../images/newsmesg_pic.png) no-repeat -107px -42px ;width: 87px;height: 30px;display: block;}
+.gotogamebtn a{float: left;margin: 6px 0 0 10px;background: url(../images/newsmesg_pic.png) no-repeat -197px -42px;width: 87px;height: 30px;display: block;}
+.giveupbtn a:hover{background: url(../images/newsmesg_pic.png) no-repeat -106px -41px ;}
+.gotogamebtn a:hover{background: url(../images/newsmesg_pic.png) no-repeat -196px -41px;}
+.cancelbtn a{margin-right: 12px;background: url(../images/newsmesg_pic.png) no-repeat -4px -33px;width: 21px;height: 20px;float: right;display: block;margin-top: 18px;}
+.cancelbtn a:hover{background: url(../images/newsmesg_pic.png) no-repeat -31px -33px;}
+.mesg_gameicon{background: url(../images/newsmesg_pic.png) no-repeat -64px -33px;width: 27px;height: 32px;float: left;display: block;}
+.mesg_timebox{background: url(../images/newsmesg_pic.png) no-repeat -140px 0;width: 128px;height: 37px;color: #fff;font-size: 13px;float: left;display: block;margin: 0 0 0 43px;line-height: 37px;text-align: center;}
+.mesggame_num{	color: #fff;font-size: 20px;margin: 0 5px;}
+.havmesg{background: url(../images/newsmesg_pic.png) no-repeat -6px -74px;width: 22px;height: 20px;display: block;position: absolute;z-index: 1;margin-top: -11px;right: 0;}
+.havgame{background: url(../images/newsmesg_pic.png) no-repeat -46px -74px;width: 22px;height: 20px;display: block;position: absolute;z-index: 1;margin-top: -11px;right: 0;}
+.mesgicon{width: 27px;height: 24px;background: url(../images/newsmesg_pic.png) no-repeat -86px -74px;display: block;float: left;margin:11px 5px 0 0; }
+
+
+.underbox{padding:5px 0 0 5px; float: left;}
+.mbox1{margin:0 0 0 9px;float: left;width: 480px;height: 57px;}
+.mbox2{float: left;}
+.mbox3{margin:5px 0 0 9px;float: left;}
+.mbox4{margin:0 0 0 9px;float: left;width: 480px;height: 57px;}
+.mesg_gamebox{width: 662px;height: 117px;display: block;}
+.mesggame_boxbtn{float: left;display: inline-block;width: 500px;margin-top: 5px;}
+
+
+
+.space{width: 56px;height: 42px;float: left;display: block;}
+.inline{color: #fff;font-size: 15px;font-weight: bold;line-height: 50px;}
+.linehi{line-height: 30px !important;padding-top: 5px;}
+.margin50{margin-left: 50px;width: 600px !important;}
+.margin5{margin-top: 5px;}
+/* pager  */
+.page_box{ width:678px;height: 440px;overflow: auto;max-height: 440px; margin:0 auto; display:inline-block; 
+	overflow-x:hidden; 	-ms-scrollbar-base-color:#312923;-ms-scrollbar-track-color:#221F1D;}
+.pager{ text-align:center; padding:15px 250px;}
+.pager > div{ display:block;}
+.pager > div a{ color:#ded1c8; font-size: 14px; width:25px; height:25px; line-height:25px; background:#221f1d; border:solid 1px #121212; margin-left:-5px; display:block; text-decoration:none;}
+.pager > div a:hover{ background:#443b35;}
+.pager > div a.selected{ background:#443b35;}
+.pager > div a.first{ border-radius:3px 0 0 3px;}
+.pager > div a.last{ border-radius:0 3px 3px 0;}
+
+.first,.last,.pagesnum,.pages{display: block;float: left;}

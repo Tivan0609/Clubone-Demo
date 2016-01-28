@@ -1,0 +1,58 @@
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.abgne_tab {
+	clear: left;
+	margin: 0 auto;
+	font-size:13px;
+	position:relative;
+}
+.abgne_tab ul.tabs {
+	width: 568px;
+	height: 29px;
+	border-bottom:solid 1px #160b04;
+	position:absolute;
+	padding-left:10px;
+	left:0px;
+}
+.abgne_tab ul.tabs li {
+	float: left;
+	width: 101px;
+	height: 30px;
+	line-height: 31px;
+	text-align:center;
+	overflow: hidden;	
+	margin-right: 1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border-left: none;
+	background:url(../images/menu_tabBg.png) 0 -79px no-repeat;
+}
+.abgne_tab ul.tabs li a {
+	display: block;
+	width: 101px;
+	color: #f6f6f6;
+	text-decoration: none;
+}
+.abgne_tab ul.tabs li a:hover {
+	color: #FFF;
+	background:url(../images/menu_tabBg.png) -101px -79px no-repeat;
+}
+.abgne_tab ul.tabs li.active  {
+	color: #FFF;
+	background:url(../images/menu_tabBg.png) -101px -79px no-repeat;
+}
+.abgne_tab ul.tabs li.active a:hover {}
+.abgne_tab div.tab_container {
+	width: 100%;
+	height:543px;
+	clear: left;
+	color: #FFF;
+	overflow: hidden;
+	background:url(../images/my_date_img02_bg.jpg);
+	border-top:solid 1px #83776f;
+	position:absolute;
+	top:30px;
+	left:0;
+}
+.abgne_tab div.tab_container.forchbig {height:340px !important; background:#382d28 !important;}

@@ -1,0 +1,54 @@
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.chang_06boxbox .abgne_tab {
+	clear: left;
+	margin: 0 auto;
+	font-size:13px;
+}
+.chang_06boxbox .abgne_tab ul.tabs {
+	width: 100%;
+	height: 30px;
+	padding-left:8px;
+	left:0px;
+}
+.chang_06boxbox .abgne_tab ul.tabs li {
+	float: left;
+	width: 122px;
+	height: 30px;
+	line-height: 31px;
+	text-align:center;
+	overflow: hidden;	
+	margin-right: 5px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border-left: none;
+	background:url(../images/event_tabBg.png) no-repeat;
+}
+.chang_06boxbox .abgne_tab ul.tabs li a {
+	display: block;
+	width: 122px;
+	color: #f6f6f6;
+	text-decoration: none;
+}
+.chang_06boxbox .abgne_tab ul.tabs li a:hover {
+	color: #FFF;
+	background:url(../images/event_tabBg.png) -122px 0 no-repeat;
+}
+.chang_06boxbox .abgne_tab ul.tabs li.active  {
+	color: #FFF;
+	background:url(../images/event_tabBg.png) -122px 0 no-repeat;
+}
+.chang_06boxbox .abgne_tab ul.tabs li.active a:hover {}
+.chang_06boxbox .abgne_tab div.tab_container {
+	width: 100%;
+	height:440px;
+	clear: left;
+	color: #FFF;
+	overflow: hidden;
+	top:30px;
+	left:0;
+}
+.tab_content {height:440px;}
+#tab1{background:url(../images/chang_img1.jpg) no-repeat;}
+#tab2{background:url(../images/chang_img2.jpg) no-repeat;}

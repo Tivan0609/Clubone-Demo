@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ClubOne</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="script/jquery-ui.min.js"></script>
+<script type="text/javascript" src="script/im_ux.js"></script>
+<!-- ranking yahoo-carousel  -->
+<link href="css/gamelist_abgne.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="Script/tabjs.js"></script>
+<script type="text/javascript" src="Script/JScript.js"></script>
+<script>
+$(document).ready(function(){
+	$( "#im-menuTabs" ).widget_tab();
+		
+	// IM accordion friend - jQuery accordion
+	$("#accordion-resizer").css("height", $(".playIM").innerHeight()-105 + "px");
+	$( "#accordion" ).accordion({
+    	heightStyle: "fill",
+		collapsible: true
+    });				
+	
+	$("#vipClub_list").loadSubmenu();  // vip club 子清單
+	$("#friend_online_list").loadSubmenu();  // 線上好友 子清單	
+	$("#msg_list").alignToParentBottom(); //內容器往下申展至 parrent bottom
+	$("#msg_detail").alignToParentBottom(); //內容器往下申展至 parrent bottom
+		
+			
+	$(window).resize(function(){
+		$("#accordion-resizer").css("height", $(".playIM").innerHeight()-105 + "px");
+		$( "#accordion" ).accordion( "refresh" );
+		
+		$("#msg_list").alignToParentBottom(); //內容器往下申展至 parrent bottom
+		$("#msg_detail").alignToParentBottom(); //內容器往下申展至 parrent bottom
+	});	
+	
+	$(window).trigger("resize");
+});
+
+// demo 畫面用的互動
+// show message detail
+function show(_id){
+	var $obj = $(document.getElementById(_id));	
+	$obj.stop().hide().fadeIn();
+	
+	_callerTop = $('#msg_list').position().top;
+	_callerLeft = $('#msg_list').position().left;
+
+	$obj.css({
+		"position": "absolute", 
+		"width": $("#msg_list").width() + "px", 
+		"top": _callerTop + "px",
+		"left": _callerLeft + "px"}
+	);
+	
+	$("#msg_detail").alignToParentBottom();
+}
+
+// hide message detail
+function hide(_id){
+	var $obj = $(document.getElementById(_id));	
+	$obj.hide();
+}
+
+// remove message listitem
+function removeMsg(_obj){
+	$(_obj).parent().parent().parent().remove();
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link href="css/club_one_layout.css" rel="stylesheet" type="text/css">
+<link href="css/clubOne_IM.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 8]>
+<style>
+.wrapper_play{ min-width: 1400px;}
+</style>
+<![endif]-->
+
+<!--[if lt IE 10]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<!-- [endif]  -->
+
+<script type="text/javascript">
+        $(function(){
+            $("ul.navigation > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
+            $("ul.navigation > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
+        });
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/bbtn001-2.jpg','images/bbtn002-2.jpg','images/bbtn003-2.jpg','images/bbtn004-2.jpg','images/bbtn005-2.jpg','images/bbtn006-2.jpg','images/cc_img01.jpg','images/cc_img02.jpg','images/cc_img03.jpg','images/cc_img04.jpg')">
+<div class="wrapper_play">	
+    <div class="pageHeader">
+       <div class="LobbyTop">
+    	<div class="logo Png"><img src="images/logo.png"/></div><!--logo-->
+        <div class="nav_Big">
+        	<ul class="NavList BigList clear">
+            	<li><a class="hover" href="play.html"><span class="Nav_ico dat_ico"></span><span class="menutitletxt">大廳</span></a></li>
+                <li><a href="eventPage01.html"><span class="Nav_ico sai_ico"></span><span class="menutitletxt">賽事</span></a></li>
+                <li><a href="play-vipclub-3-1.html"><span class="Nav_ico dlo_ico"></span><span class="menutitletxt">微端下載</span></a></li>                
+                <li><a href="#"><span class="Nav_ico act_ico"></span><span class="menutitletxt">活動中心</span></a></li>
+                <li><a href="stored_value/stored_value_page.html"><span class="Nav_ico cz_ico"></span><span class="menutitletxt">充值</span></a></li>
+                <li class="NoBg"><a href="#"><span class="Nav_ico kef_ico"></span><span class="menutitletxt">客服</span></a></li>
+            </ul><!--NavList-->
+        </div><!--nav_Big-->
+        <div class="MyMessage clear">
+        	<div class="MyMess">
+            	<p class="mbbigimg"><img src="member/images/title_img/title_C_01.png"></p>
+            	<p class="MyToux"><a href="member/member_info.html"><img src="member/images/demo-img.jpg"></a></p>
+                <p class="MyName">我是名字我是名字我是名字</p>
+                <p class="MyVip"><img src="images/VIP_CLUB_LEVEL_2.png"></p>
+                <p class="Money"><img src="images/jin.png"><span class="MTxt mgck">金幣</span><span class="MUnmb">100,000,000.00<a href="stored_value/stored_value_page.html" class="Mjia"></a></span></p>
+                <p class="Money"><img src="images/ying.png"><span class="MTxt">銀幣</span><span class="MUnmb">10,000,000,000<a href="stored_value/stored_value_page.html" class="Mjia"></a></span></p>
+            </div>
+        </div><!--MyMessage-->
+        <div class="Domain">
+            <ul class="navigation">Language
+              <li><a href="play.html"><img src="images/TWicon.png">繁體中文</a>
+                  <ul>
+                   <li><a href="../Demo-EN/play.html"><img src="images/ENicon.png">English</a></li>
+                   <li><a href="play.html"><img src="images/CNicon.png">简体中文</a></li>
+                  </ul>
+              </li>
+            </ul>
+            <ul class="DomainList clear">
+                <li><a href="services/services_page.html"><span class="Dom_ico hlop_ico"></span></a></li>
+                <li><a href="newsmesg/services_mesg_frnanplat-part2.html"><span class="Dom_ico xxi_ico"></span></a></li>
+                <li><a href="#"><span class="Dom_ico tuic_ico"></span></a></li>
+            </ul><!--DomainList-->
+        </div><!--Domain-->
+    </div><!--LobbyTop-->
+    </div>
+    <div class="bodyContent">
+    	<div class="playContent">
+        <div class="style1">
+       <div id="light" class="cstyle_box"><table border="0" cellspacing="0" cellpadding="0">
+       <tr>
+    <td colspan="4">您可以自由變換喜愛的大廳風格樣式</td>
+    <td align="right"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/xx.png" id="cstyle_xxx"/></a></td>
+  </tr>
+  <tr class="ci">
+    <td width="25%"><span class="yesit"><img src="images/cc_img01.jpg"/></span></td>
+    <td width="25%"><a href="play_cstyle2.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image61','','images/cc_img02.jpg',1)"><img src="images/cc_img02-2.jpg" id="Image61" /></a></td>
+    <td width="25%"><a href="play_cstyle3.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image62','','images/cc_img03.jpg',1)"><img src="images/cc_img03-2.jpg" id="Image62" /></a></td>
+    <td width="25%"><a href="play.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image63','','images/cc_img04.jpg',1)"><img src="images/cc_img04-2.jpg" id="Image63" /></a></td>
+  </tr>
+</table>
+</div>
+       <div class="ccbg_gif"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img src="images/pageFlip-nobg.png"/></a></div>
+       <div id="fade" class="black_xx"></div>
+       </div><!-- style1 end -->
+  </div>
+        <div class="recentGs">
+          <div class="Newly">
+            	<div class="NewlyTop">最近玩過</div><!--NewlyTop-->
+                <ul class="NewlyList clear">
+                    <li><a class="li_img" href="play-ingame.html"><img src="images/ico_a.png" /><span class="jinbi Png"><img src="images/jin.png" ></span><span class="Li_Hov Png"></span></a><a class="li_txt" href="play-ingame.html">四川麻將</a></li>
+                    <li><a class="li_img" href="play-ingame.html"><img src="images/ico_b.png" /><span class="jinbi Png"><img src="images/ying.png"></span><span class="Li_Hov Png"></span></a><a class="li_txt" href="play-ingame.html">十三張</a></li>
+                    <li><a class="li_img" href="play-ingame.html"><img src="images/ico_c.png" /><span class="jinbi Png"><img src="images/jin.png" ></span><span class="Li_Hov Png"></span></a><a class="li_txt" href="play-ingame.html">骰寶</a></li>
+                </ul><!--NewlyList-->
+            </div><!--Newly-->
+        </div>
+    	<div class="playIM">
+        	<!-- IM -->
+        	<div class="widgetIM" id="im">
+            	<div id="im-menuTabs">
+                    <ul class="im-tabsBar">
+                        <li class="im-tab friend"><a href="#tab-friends">好友</a></li>
+                        <li class="im-tab msg"><a href="#tabs-msg">聊天</a></li>                        
+                    </ul>
+                    
+                    <!-- tabs container -->
+                    <div class="tabsContainer">
+                    	
+                        <!-- 好友 -->
+                    	<div id="tab-friends" class="im-tabsDiv">
+                    		<div class="im-btn-fbFriends"><a href="member/member_fb_Invite.html"></a></div>
+                            
+                            <!-- according function -->
+                            <div id="accordion-resizer">
+                                <div id="accordion">
+                                    <h3 class="accbar">我的VIP Club <span class="groupAmount">(32)</span></h3>
+                                    <div>
+                                    	<div class="bg-block noticeDesc">您尚未創立或加入VIP Club<br /><a href="vip/vip_02.html">快速創立 VIP Club</a><br /><a href="vip_club/vip.html">前往 VIPClub 總覽頁</a></div>
+                                        <!-- 清單 -->
+                                        <div class="im-itemlist" id="vipClub_list">
+                                        	<div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="name">VIP Club名稱VIP Club</div>
+                                                <div class="status">會員人數： 399人</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="vip_club/vip.html">前往VIPClub</a></div>
+                                                </div>
+                                            </div>      
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="name">VIP Club名稱VIP Club</div>
+                                                <div class="status">會員人數： 399人</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="vip_club/vip.html">前往VIPClub</a></div>
+                                                </div>
+                                            </div>    
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="name">VIP Club名稱VIP Club</div>
+                                                <div class="status">會員人數： 399人</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="vip_club/vip.html">前往VIPClub</a></div>
+                                                </div>
+                                            </div>    
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="name">VIP Club名稱VIP Club</div>
+                                                <div class="status">會員人數： 399人</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="vip_club/vip.html">前往VIPClub</a></div>
+                                                </div>
+                                            </div>    
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="name">VIP Club名稱VIP Club</div>
+                                                <div class="status">會員人數： 399人</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="vip_club/vip.html">前往VIPClub</a></div>
+                                                </div>
+                                            </div>     
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="name">VIP Club名稱VIP Club</div>
+                                                <div class="status">會員人數： 399人</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="vip_club/vip.html">前往VIPClub</a></div>
+                                                </div>
+                                            </div> 
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="name">VIP Club名稱VIP Club</div>
+                                                <div class="status">會員人數： 399人</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="vip_club/vip.html">前往VIPClub</a></div>
+                                                </div>
+                                            </div> 
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="name">VIP Club名稱VIP Club</div>
+                                                <div class="status">會員人數： 399人</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="vip_club/vip.html">前往VIPClub</a></div>
+                                                </div>
+                                            </div> 
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="name">VIP Club名稱VIP Club</div>
+                                                <div class="status">會員人數： 399人</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="vip_club/vip.html">前往VIPClub</a></div>
+                                                </div>
+                                            </div> 
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="name">VIP Club名稱VIP Club</div>
+                                                <div class="status">會員人數： 9人</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="vip_club/vip.html">前往VIPClub</a></div>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                    </div>
+                                    <h3 class="accbar">線上好友 <span class="groupAmount">(32)</span></h3>
+                                    <div>
+                                    	<div class="bg-block noticeDesc">
+                                        	<div class="descLeft">您的好友尚未上線，建議您可由上方邀請好友按鈕來請好友一起遊戲，或是在 Clubone 內尋找志同道合的夥伴。</div>
+                                            <a href="member/member_friendList.html">前往好友清單進行搜尋</a>
+                                        </div>
+                                        <div class="im-itemlist" id="friend_online_list">
+                                        	<div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="statusLight"></div>
+                                                <div class="name">會員暱稱八個中文</div>
+                                                <div class="status">完美麻將</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="#">查看資料</a></div>
+                                                    <div class="item"><a href="#">加入遊戲</a></div>
+                                                    <div class="item"><a href="#">邀請遊戲</a></div>
+                                                </div>
+                                            </div>  
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="statusLight"></div>
+                                                <div class="name">會員暱稱八個中文</div>
+                                                <div class="status">線上</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="#">查看資料</a></div>
+                                                    <div class="item"><a href="#">加入遊戲</a></div>
+                                                    <div class="item"><a href="#">邀請遊戲</a></div>
+                                                </div>
+                                            </div>  
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="statusLight"></div>
+                                                <div class="name">會員暱稱八個中文</div>
+                                                <div class="status">線上</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="#">查看資料</a></div>
+                                                    <div class="item"><a href="#">加入遊戲</a></div>
+                                                    <div class="item"><a href="#">邀請遊戲</a></div>
+                                                </div>
+                                            </div> 
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="statusLight offline"></div>
+                                                <div class="name">會員暱稱八個中文</div>
+                                                <div class="status offline">離線</div>
+                                                <div class="im-itemSubmenu" style="display: none;">
+                                                	<div class="item"><a href="#">聊天</a></div>
+                                                    <div class="item"><a href="#">查看資料</a></div>
+                                                    <div class="item"><a href="#">加入遊戲</a></div>
+                                                    <div class="item"><a href="#">邀請遊戲</a></div>
+                                                </div>
+                                            </div>                                       
+                                        </div>
+                                    </div>
+                                    <h3 class="accbar offline">離線好友 <span class="groupAmount">(32)</span></h3>
+                                    <div>
+                                    	<div class="bg-block noticeDesc">
+                                        	<div class="descLeft">您的好友尚未上線，建議您可由上方邀請好友按鈕來請好友一起遊戲，或是在 Clubone 內尋找志同道合的夥伴。</div>
+                                            <a href="member/member_friendList.html">前往好友清單進行搜尋</a>
+                                        </div>
+                                        <div class="im-itemlist" id="friend_offline_list">
+                                        	<div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="statusLight offline"></div>
+                                                <div class="name">會員暱稱八個中文</div>
+                                                <div class="status offline">離線</div>                                                
+                                            </div>  
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="statusLight offline"></div>
+                                                <div class="name">會員暱稱八個中文</div>
+                                                <div class="status offline">離線</div>                                                
+                                            </div> 
+                                            <div class="im-item">
+                                            	<div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                                <div class="statusLight offline"></div>
+                                                <div class="name">會員暱稱八個中文</div>
+                                                <div class="status offline">離線</div>                                                
+                                            </div> 
+                                            
+                                        </div>                                        
+                                    </div>
+                                </div><!-- according function end -->
+                            </div>
+                        </div>
+                        
+                        <!-- 聊天 -->
+                        <div id="tabs-msg" class="im-tabsDiv">
+                        	<h3 class="im-listHeader"> <span class="groupAmount">(32)</span></h3>                                
+                            <div class="im-itemlist" id="msg_list">
+                            	<div class="im-item">
+                                    <div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                    <div class="unRead"><span class="smallLetter">99+</span></div>
+                                    <div class="statusLight none"></div>
+                                    <div class="name">VIP Club名稱VIP Club</div>
+                                    <div class="im-itemActionBar">
+                                    	<div class="im-actBtn open"><a href="javascript:show('msg_detail')"></a></div>
+                                        <div class="im-actBtn close"><a href="#" onclick="javascript:removeMsg(this);"></a></div>
+                                    </div>                                
+                                </div> 
+                            	<div class="im-item">
+                                    <div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                    <div class="unRead"><span class="smallLetter">99+</span></div>
+                                    <div class="statusLight"></div>
+                                    <div class="name">會員暱稱八個中文</div>
+                                    <div class="im-itemActionBar">
+                                    	<div class="im-actBtn open"><a href="javascript:show('msg_detail')"></a></div>
+                                        <div class="im-actBtn close"><a href="#" onclick="javascript:removeMsg(this);"></a></div>
+                                    </div>                                             
+                                </div>
+                                <div class="im-item">
+                                    <div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                    <div class="unRead"><span class="smallLetter">99+</span></div>
+                                    <div class="statusLight offline"></div>
+                                    <div class="name">會員暱稱八個中文</div>
+                                    <div class="im-itemActionBar">
+                                    	<div class="im-actBtn open"><a href="javascript:show('msg_detail')"></a></div>
+                                        <div class="im-actBtn close"><a href="#" onclick="javascript:removeMsg(this);"></a></div>
+                                    </div>                                                 
+                                </div>                                  
+                            </div><!-- msg_list end -->
+                            
+                            <div id="msg_detail" class="im-itemlist">
+                            	<div class="im-item">
+                                    <div class="photo"><img src="images/IM/vipicon.jpg" /></div>
+                                    <div class="unRead"><span class="smallLetter">99+</span></div>
+                                    <div class="statusLight"></div>
+                                    <div class="name">會員暱稱八個中文</div>
+                                    <div class="im-itemActionBar">
+                                        <div class="im-actBtn collapse"><a href="javascript:hide('msg_detail')"></a></div>
+                                    </div>                                             
+                                </div>
+                                <div class="im-messages" id="imMessage">
+                                	<div class="msgDate">2014/09/02</div>
+                                    <div class="msgFromPlayer">
+                                    	<div class="playerName">賭神一二三四五六：</div>
+                                        <div class="playerMsg">一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六</div>
+                                        <div class="msgTime">(08:10)</div>
+                                    </div>
+                                    
+                                    <div class="msgFromPlayer self">
+                                    	<div class="playerName">賭神一二三四五六：</div>
+                                        <div class="playerMsg">一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六</div>
+                                        <div class="msgTime">(08:10)</div>
+                                    </div>
+                                    <div class="msgDate">2014/09/02</div>
+                                    <div class="msgFromPlayer">
+                                    	<div class="playerName">賭神一二三四五六：</div>
+                                        <div class="playerMsg">一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六</div>
+                                        <div class="msgTime">(08:10)</div>
+                                    </div>
+                                    <div class="msgFromPlayer">
+                                    	<div class="playerName">賭神一二三四五六：</div>
+                                        <div class="playerMsg">一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六</div>
+                                        <div class="msgTime">(08:10)</div>
+                                    </div>
+                                    <div class="msgFromPlayer self">
+                                    	<div class="playerName">賭神一二三四五六：</div>
+                                        <div class="playerMsg">一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六一二三四五六</div>
+                                        <div class="msgTime">(08:10)</div>
+                                    </div>                                    
+                                </div>
+                                <div class="im-msgBox">
+                                	<textarea class="box" placeholder="最多一百字聊天訊息"></textarea>
+                                    <div class="btnSubmit"><a href="#">發送</a></div>
+                                </div>
+                            </div><!-- msg_detail end -->
+                        	
+                        </div>
+                    </div><!-- tabs container end -->   
+                </div>
+            </div><!-- IM end -->
+        </div>
+</div>
+</div>
+<div class="homeFooter"><div class="Copyright">copyright <span style="font-family:Arial">&copy; </span>2015 PerfectPairs all rights reserved.</div></div>
+</body>
+</html>

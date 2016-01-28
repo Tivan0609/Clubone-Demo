@@ -1,0 +1,58 @@
+@import url("reset.css");
+
+html,body{
+	font-family:Arial, Helvetica, sans-serif;
+	background-color: #000;
+	font-size: 12px;	
+}
+#all{
+	width: 760px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../images/member/m_bg.jpg);
+	height: 735px;
+}
+#all #wrapper{
+	width: 760px;
+	overflow: hidden;
+	margin-top: 8px;
+}
+#all #wrapper #header {
+	width: 660px;
+	height: 90px;
+	display: block;
+	padding-left: 100px;
+}
+#all #wrapper #header #icon_link {
+	float: left;
+	width: 600px;
+	height: 75px;
+}
+#all #wrapper #header #icon_closs {
+	float: right;
+	height: 30px;
+	width: 30px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+#all #wrapper #content {
+	width: 680px;
+	padding-right: 40px;
+	padding-left: 40px;
+	height: 300px;
+	display: block;
+}
+#all #wrapper #content #cont_up {
+	width: 680px;
+}
+#all #wrapper #content #cont_down {
+	width: 680px;
+}
+.vipclub_list {
+	background-image: url(../images/member/m_viplist_bg.jpg);
+	height: 290px;
+	width: 220px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #b9aa5f;
+}

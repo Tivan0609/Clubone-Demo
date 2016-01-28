@@ -1,0 +1,72 @@
+ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+.abgne_tab {
+	clear: left;
+	margin: 0 auto;
+}
+.abgne_tab ul.tabs {
+		width: 100%;
+		height: 29px;
+		border-radius:5px 5px 0 0;
+}
+.abgne_tab ul.tabs li {
+	float: left;
+	height: 30px;
+	line-height: 31px;
+	overflow: hidden;
+	position: relative;
+	margin-right: 2px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border-left: none;
+	border-radius: 5px 5px 0 0;
+	background: #3a342f;
+	border-top:solid 1px #443e39;
+}
+.abgne_tab ul.tabs li a {
+		display: block;
+		padding: 0 20px;
+		color: #f6f6f6;
+		text-decoration: none;
+}
+.abgne_tab ul.tabs li a:hover {
+		color: #FFF;
+		background: #7e756e;
+}
+.abgne_tab ul.tabs li.active  {
+		color: #FFF;
+		background:#81756e;
+		border-top:solid 1px #90827a;
+}
+.abgne_tab ul.tabs li.active a:hover {
+		color: #FFF;
+		background:#81756e;
+}
+.abgne_tab div.tab_container {
+	font-family:"微軟正黑體";
+	clear: left;
+	color: #FFF;
+	height:420px;
+	overflow: hidden;
+	border-radius: 0 5px 5px 5px;
+	background:#81756e;
+}
+.abgne_tab div.tab_container .tab_content { padding: 8px 0 0 0;}
+.pd2 { width:100%; height:410px; background:#28221d; padding:2px 2px 5px 0; border-top:solid 1px #675b54; overflow: hidden; border-radius: 0 0 5px 5px; display:block;}
+.tab_content .buycoin_list{ width:100%; height:400px; overflow-x:hidden; background:#25201b;}
+.buycoin_list ul,.buycoin_list ul li{ display:block;}
+.buycoin_list ul li{ width:100%; height:100px; box-shadow:inset 0px -5px 40px #2d2420; background:#3f332e; text-shadow:1px 1px 2px #000; border-bottom:solid 1px #352b26;}
+.buycoin_list ul li:nth-child(even) {background:#4d3f39; box-shadow:inset 0px -10px 40px #3a312b;}
+.buycoin_list ul li:hover{  box-shadow:inset 0px 0px 60px #120e0b;}
+
+.pd3 { width:100%; height:398px; padding:2px 2px 0 0; overflow-x: hidden; display:block;}
+.pd3 .menu{ width:100%; padding-bottom:20px;}
+.pd3 .menu a{ width:100%; font-size:14px !important; line-height:35px; color:#FFF; padding-left:10px; text-decoration:none; font-size:12px; margin-bottom:2px; text-shadow:1px 1px 2px #000; display:block;}
+.pd3 a:hover{ color:#ffd800;}
+.pd3 ul{margin:0;padding:0;list-style-type: none;}
+.pd3 ul li{ width:100%; line-height:35px; background:#3f332e; box-shadow:inset 0px -5px 40px #2d2420;}
+.pd3 ul.submenu{ list-style-type:disc; display:none;}
+.pd3 ul.submenu li{ width:98%; font-size:12px; line-height:22px !important; color:#b7b3b1; background:#4d3f39; padding:5px 10px; border-bottom:solid 1px rgba(129,117,110,0.5); box-shadow:none !important;}
+.pd3 a span.txt_open{ color:#857c6b; line-height:15px; border:solid 1px #857c6b; border-radius:3px; padding:2px 3px; margin:7px 15px 0 0; background:#2b2523; float:right; display:block;}
+
